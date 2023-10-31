@@ -1,0 +1,86 @@
+<!-- Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/developer_tools.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/developer_tools.js"></script>
+    <script id="accountMenuScript" src='static/js/accountMenu.js' user_image="{{user_image}}" user_name="{{user_name}}" color_mode="{{color_mode}}"></script>
+
+    <title>Developer Tools</title>
+</head>
+
+<body class="{{color_mode}}">
+    <div id="devUtils" class="flex">
+        <div class="section">
+            <h1 class="font-bold">Actions</h1>
+            <button id="initServerButton" class="primary" style="background-color: green;">Initialize Server</button>
+            <br>
+            <button id="terminateAppButton" class="primary font-bold" style="background-color: red;">TERMINATE APP</button>
+        </div>
+        <div class="section">
+            <h1 class="font-bold">Add Access Code</h1>
+            <form id="addAccessCodeForm" class="font-normal">
+                <div class="inputGroup">
+                    <label for="accessCode">Access code</label>
+                    <input type="text" id="accessCode" name="accessCode" required>
+                </div>
+                <div class="inputGroup">
+                    <label for="assignedTo">Assigned to</label>
+                    <input type="text" id="assignedTo" name="assignedTo" required>
+                </div>
+                <div class="inputGroup">
+                    <label for="remainingUsage">Remaining usage</label>
+                    <input type="number" id="remainingUsage" name="remainingUsage" required>
+                </div>
+                <button type="submit" class="primary">Share access code</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="accessCodesSection">
+        <h1 class="font-bold my-1rem">Access Codes</h1>
+        <input type="checkbox" id="toggleHideDeletedUsers" class="font-normal" message="Hide deleted users"></input>
+        <table class="font-normal">
+            <thead class="font-bold">
+                <tr>
+                    <th>Access Code</th><th>Assigned To</th><th>Remaining Usage</th><th>Last Accessed</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr class="{% if row.remaining_usage < 0 %}deletedUser{% endif %}">
+                    <td>{{ row.access_code }}</td><td>{{ row.assigned_to }}</td><td>{{ row.remaining_usage }}</td><td>{% if row.last_accessed %}{{row.last_accessed}}{% endif %}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

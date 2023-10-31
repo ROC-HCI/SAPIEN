@@ -1,0 +1,74 @@
+<!-- Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gallery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel='stylesheet' type='text/css' media='screen' href='static/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='static/css/ptsd.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src='static/js/ptsd.js'></script>
+    <script id="accountMenuScript" src='static/js/accountMenu.js' user_image="{{user_image}}" user_name="{{user_name}}" color_mode="{{color_mode}}"></script>
+</head>
+
+<body class="{{color_mode}}">
+    <h1 class="font-normal my-2rem text-center">Meeting Setup</h1>
+    <div id="inputStatus" class="flex w-100 h-center v-center">
+        <div class="input-device">
+            <div id="microphoneCheck">
+                <svg class="granted text-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96"/></svg>
+                <div class="prompt loading"></div>
+                <svg class="denied text-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+            </div>
+            <svg id="microphone" class="indicator-yellow text-icon" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M192 448h128M384 208v32c0 70.4-57.6 128-128 128h0c-70.4 0-128-57.6-128-128v-32M256 368v80"/><path d="M256 320a78.83 78.83 0 01-56.55-24.1A80.89 80.89 0 01176 239V128a79.69 79.69 0 0180-80c44.86 0 80 35.14 80 80v111c0 44.66-35.89 81-80 81z"/></svg>
+            <select name="microphoneSelect" id="microphoneSelect" class="device-select" disabled>
+            </select>
+        </div>
+        <div class="input-device">
+            <div id="cameraCheck">
+                <svg class="granted text-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96"/></svg>
+                <div class="prompt loading"></div>
+                <svg class="denied text-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+            </div>
+            <svg id="camera" class="indicator-yellow text-icon" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M464 384.39a32 32 0 01-13-2.77 15.77 15.77 0 01-2.71-1.54l-82.71-58.22A32 32 0 01352 295.7v-79.4a32 32 0 0113.58-26.16l82.71-58.22a15.77 15.77 0 012.71-1.54 32 32 0 0145 29.24v192.76a32 32 0 01-32 32z"/><path d="M268 400H84a68.07 68.07 0 01-68-68V180a68.07 68.07 0 0168-68h184.48A67.6 67.6 0 01336 179.52V332a68.07 68.07 0 01-68 68z"/></svg>
+            <select name="cameraSelect" id="cameraSelect" class="device-select" disabled>
+            </select>
+        </div>
+        <!-- <p class="font-normal">Please allow microphone and camera access. (Camera is optional) <a href="https://google.com" target="_blank" rel="noopener noreferrer">Get Help</a></p> -->
+    </div>
+
+    <div id="gallerySection" class="flex flex-col">
+        <h1 class="font-normal my-2rem text-center">Choose your {{sapien_name}}</h1>
+        <div id="galleryGrid"></div>
+    </div>
+
+    <div class="navigation-buttons">
+        <button id="backButton" class="secondary font-bold">Back</button>
+        <button id="nextButton" class="disabled font-bold">Next</button>
+    </div>
+</body>
+
+</html>

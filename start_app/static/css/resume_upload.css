@@ -1,0 +1,75 @@
+/* Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#mainContent {
+    max-height: 88vh;
+    margin-bottom: 12vh;
+}
+
+#uploadContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 3px dashed var(--box-background-color);
+    border-radius: 75px;
+    box-sizing: border-box;
+    transition: all 300ms ease;
+}
+
+#uploadContainer.dropping {
+    border-color: var(--highlight-color);
+    background-color: var(--highlight-color-transparent);
+}
+
+#uploadText {
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#secondContentContainer {
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+#confirmText {
+    font-size: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+#pdfContainer {
+    overflow: hidden;
+    border-radius: 10px;
+    border-bottom: 8px solid rgb(79, 82, 85);
+}

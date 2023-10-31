@@ -1,0 +1,173 @@
+/* Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. */
+
+
+#inputStatus {
+    display: flex;
+    gap: 2rem;
+}
+#inputStatus > div {
+    font-size: 1.4em;
+}
+#inputStatus > div svg {
+    height: 50%;
+}
+
+.input-device {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#indicators, #checks, #microphoneCheck, #cameraCheck {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    width: 12rem;
+    height: 2rem;
+}
+.device-select {
+    width: 150px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background-color: #f2f2f2;
+    color: #333;
+}
+#checks {
+    width: 4rem;
+    height: 6rem;
+}
+#checks div {
+    width: 2rem;
+    height: 3rem;
+}
+#indicators {
+    width: 4rem;
+    height: 6rem;
+}
+#inputStatus p {
+    margin-left: 2em;
+    font-size: 1rem;
+    width: 25ch;
+}
+#inputStatus a {
+    color: var(--highlight-color);
+    text-decoration-color: var(--highlight-color);
+}
+
+.loading {
+    width: 1.2em;
+    aspect-ratio: 1;
+    background-image: url("../img/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.indicator-red {
+    fill: red;
+    color: red;
+}
+.indicator-yellow {
+    fill: orange;
+    color: orange;
+}
+.indicator-green {
+    fill: limegreen;
+    color: limegreen;
+}
+
+#gallerySection {
+    height: 80vh;
+    overflow: hidden;
+}
+
+#galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 10rem);
+    grid-gap: 1.5rem;
+    margin: 0 10vw;
+    align-self: center;
+    width: 80%;
+    max-height: 65%;
+    overflow-y: scroll;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.headshot {
+    position: relative;
+    user-select: none;
+    width: 10rem;
+    height: 10rem;
+    border: var(--box-border);
+    border-radius: 2em;
+    background-color: var(--box-background-color);
+    padding: 0;
+    margin: 4px;
+    overflow: hidden;
+}
+.hoverInfo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.headshot.selected {
+    outline: 4px solid var(--highlight-color);
+    outline-offset: -1px;
+}
+
+.headshot img {
+    transition: 200ms ease;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.headshot img:hover {
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+}
+
+.headshot p {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    color: var(--text-color-dark);
+    background-color: var(--box-background-color);
+    opacity: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    border-radius: .2em;
+    padding: .2em;
+}

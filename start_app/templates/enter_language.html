@@ -1,0 +1,89 @@
+<!-- Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Enter Topic</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel='stylesheet' type='text/css' media='screen' href='static/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='static/css/enter_language.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src='static/js/enter_language.js'></script>
+</head>
+
+<body>
+    <button class="secondary" style="position: absolute; bottom: 5vh; right: 5vw;" onClick="(function(){
+        $('body').toggleClass('dark');
+    })();return false;">💡</button>
+    <div class="h-100v">
+        <div class="flex flex-col w-100 h-90">
+            <div class="w-100 h-100 self-center flex flex-row h-center v-center">
+                <div id="textContainer" class="flex flex-col">
+                    <center>
+                        
+                        <h1 id="promptText" class="font-normal m-0"><span id="topTitle">I want to speak</span>
+                            <div class="dropdown" id="languageDropdown">
+                                <button class="dropbtn"><img src="https://flagsapi.com/US/flat/32.png">‎ ‎ ‎
+                                    English</button>
+                                <div class="dropdown-content">
+                                    {% for lang_code, details in languages.items() %}
+                                    <p data-language="{{ lang_code }}"><img src="{{ details['flag'] }}">‎ ‎ ‎ {{
+                                        details["name"] }}</p>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            
+                            <br><br>About
+                            <span id="topicInput" contenteditable>something cool</span>
+                            <span id="topicCursor" class="blink absolute">|</span>
+                            <br><br>
+                            
+                            With proficiency level
+                            <div class="dropdown" id="proficiencyDropdown">
+                                <button class="dropbtn">A1: Beginner</button>
+                                <div class="dropdown-content">
+                                    <p data-proficiency="A1: Beginner">A1: Beginner</p>
+                                    <p data-proficiency="A2: Elementary">A2: Elementary</p>
+                                    <p data-proficiency="B1: Intermediate">B1: Intermediate</p>
+                                    <p data-proficiency="B2: Upper Intermediate">B2: Upper Intermediate</p>
+                                    <p data-proficiency="C1: Advanced">C1: Advanced</p>
+                                    <p data-proficiency="C2: Proficient">C2: Proficient</p>
+                                </div>
+                            
+                            </div>
+                        </h1>
+                    </center>
+                </div>
+            </div>
+        <div class="img-credit"> Images: Unspash </div>
+        </div>
+    </div>
+    <div class="navigation-buttons">
+        <button id="backButton" class="secondary font-bold">Back</button>
+        <button id="nextButton" class="disabled font-bold">Next</button>
+    </div>
+</body>
+
+</html>

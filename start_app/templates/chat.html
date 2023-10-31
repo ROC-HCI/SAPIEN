@@ -1,0 +1,121 @@
+<!-- Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script id="accountMenuScript" src='static/js/accountMenu.js' user_image="{{user_image}}" user_name="{{user_name}}"></script> -->
+    <title>Chat</title>
+</head>
+
+<body>
+    <div id="chat-page">
+        <div class="video-holder">
+            <!-- Other src's: -->
+            <!-- http://127.0.0.1:80/ --> <!-- https://35.174.24.171:81 --> <!-- https://sapien.coach:81 -->
+            <div class="remotePlayerHolder">
+                <div id="header-container" style="visibility: hidden;">
+                    <span id="botName"></span>
+                </div>
+                
+                {% if light_mode %}
+                    <div id="light" style="display: none;"></div>
+                    <video id="remotePlayerFrame" class="t-0 not-selectable" allowFullScreen="true" title="SAPIEN" loop></video>
+                {% else %}
+                    <iframe id="remotePlayerFrame" class="not-selectable" allowFullScreen="true" src="{{iframe_url}}" title="SAPIEN">
+                    </iframe>
+                {% endif %}
+            
+                <video id="cameraElement" style="visibility: hidden;" autoplay playsinline></video>
+
+                <div id="video-buttons" class="video-buttons">
+                    <div id="modalPopup" class="modal">
+                        <div class="modal-content">
+                            <img id="modalClose" src="../static/img/x2.png" alt="close" style="position: absolute; top: 10px; right: 10px; height: 1em; cursor: pointer;" />
+                            <p style="font-family: 'Trebuchet MS', sans-serif; margin-bottom: 0;">
+                                Press and Hold the
+                                <b style="color:rgb(7, 84, 156)">
+                                    Microphpone
+                                    <img src="../static/img/available.png" alt=" "
+                                        style="height: 1.5em; vertical-align: middle;" />
+                                </b>
+                                icon or the
+                                <b style="color:rgb(7, 84, 156)">Space key
+                                    <img src="../static/img/space.png" alt=" "
+                                        style="height: 1.5em; vertical-align: middle;" />
+                                </b>
+                                to speak.<br>
+                            </p><br>
+                        </div>
+                    </div>
+
+                    <div class="buttonContainer">    
+                        <div class="recordButtonHolder">
+                            <button id="recordButton" style="visibility: hidden;"><img
+                                    src="/static/img/available.png" /></button>
+                            <p style="visibility: hidden;">Hold to Speak</p>
+                        </div>
+                        <center>
+                            <div id="message" class="hidden"></div>
+                    </center>
+                    </div>
+
+                    <div class="cameraDropdown" onmouseleave="hideMenu(event)">
+                        <button id="videoButton" onmouseover="showMenu(event)" onclick="toggleCamera()" class="dropbtn"
+                            style="visibility: hidden;"><img src="/static/img/video.png" /></button>
+                        <div id="cameraDropdownContent" class="dropdown-content">
+                            <!-- Options will be dynamically loaded here -->
+                        </div>
+                    </div>
+
+
+                    <div class="hangupButton">
+                        <button id="hangupButton" onclick="endCall()" style="visibility: hidden;"><img
+                                src="/static/img/hangup.png" /></button>
+                    </div>
+
+                    <div id="chat-timer">
+                        <p id="timer"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- JAVASCRIPT IMPORTS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js"></script>
+    <script id="chatJS" type="text/javascript" src="static/js/chat.js" iframe_url="{{iframe_url}}"></script>
+    <script type="text/javascript" src="static/js/chat.js"></script>
+    <script type="text/javascript" src="static/js/chat_audio.js"></script>
+    <script type="text/javascript" src="static/js/chat_timer.js"></script>
+</body>
+
+</html>

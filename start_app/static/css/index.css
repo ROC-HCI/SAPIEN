@@ -1,0 +1,401 @@
+/* Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 4rem;
+    z-index: 99999;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+#burger {
+    display: none;
+    width: 4ch;
+    height: 100%;
+    aspect-ratio: 1;
+
+    justify-content: space-around;
+}
+
+.burger-stripe {
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--text-color-light);
+}
+
+@media screen and (max-width: 641px) {
+    #navLinks a, #navLinks button {
+        display: none;
+    }
+    #burger {
+        display: flex;
+    }
+}
+
+#hamburgerMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    padding: 1em 1em;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 99999;
+}
+#hamburgerMenu a {
+    padding: 0 3em;
+    text-decoration-color: var(--text-color-dark);
+    margin: .7em 0;
+    color: var(--text-color-dark);
+}
+#hamburgerMenu h1 {
+    font-size: 1em;
+}
+
+.google-pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;   
+    outline-offset: 2px;
+    outline: 2px solid;
+    outline-color: var(--highlight-color);
+    transition: 200ms ease;
+    pointer-events: all;
+    overflow: hidden;
+}
+.google-pfp:hover {
+    outline-color: transparent;
+    transform: scale(110%);
+}
+
+#closeBurger {
+    justify-self: right;
+    width: 7ch;
+    padding: 0;
+    /* margin-top: 20px; */
+    /* margin-right: -12px; */
+    aspect-ratio: 1;
+    justify-content: space-around;
+    margin-left: auto;
+}
+
+nav {
+    margin: 2rem;
+}
+
+nav a {
+    color: var(--text-color-light);
+    text-decoration-color: var(--text-color-light);
+}
+
+#navLinks a {
+    font-size: .7em;
+    margin: 0 3ch;
+    text-underline-offset: 4px;
+    transition: 200ms ease;
+}
+#navLinks a:hover {
+    text-underline-offset: 8px;
+}
+#logoLink {
+    text-decoration: none;
+}
+
+#logoLink h1 {
+    /* Corrects text being slightly above where it should be */
+    padding-top: 5px;
+}
+
+#logoLink img {
+    height: 3em;
+}
+
+#logo {
+    width: 5ch;
+    aspect-ratio: 1;
+    margin-right: 2ch;
+}
+
+#backgroundVideoBlurred {
+    position: absolute;
+    z-index: -9999;
+    inset: 0;
+    overflow: hidden;
+}
+#backgroundVideoBlurred video {
+    width: 100vw;
+    filter: blur(50px);
+}
+
+#backgroundVideo {
+    position: absolute;
+    z-index: -9950;
+    inset: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+#backgroundVideo video {
+    height: 100vh;
+}
+
+#backgroundDiv {
+    margin-top: 0;
+    background-image: linear-gradient(transparent 90vh, white 90vh);
+    z-index: -1;
+}
+
+section {
+    overflow: hidden;
+    scroll-margin-top: 2em;
+    width: 80%;
+}
+section:not(#titleSection) {
+    color: var(--text-color-dark);
+    font-size: 1.8em;
+    margin-bottom: 3em;
+}
+section:not(#titleSection) h1 {
+    margin-top: .12em;
+}
+section:not(#titleSection) div h1 {
+    font-size: 1em;
+}
+section div p {
+    font-size: .7em;
+}
+
+
+#titleSection {
+    width: 90%;
+    height: 65vh;
+}
+
+#tagLine {
+    align-self: start;
+    text-align: left;
+    margin-top: 10vh;
+    font-size: 3em;
+    width: 40vw;
+    color: var(--text-color-light);
+}
+
+@media screen and (max-width: 641px) {
+    #tagLine h1 {
+        font-size: .9em;
+    }
+}
+
+#howItWorksSection h1 {
+    color: var(--text-color-light);
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+@media screen and (max-width: 641px) {
+    .card-row {
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--highlight-color);
+    padding: 1.53em 1.5em;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    color: var(--text-color-light);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+}
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 641px) {
+    .card {
+        padding: 1.53em .5em;
+    }
+}
+
+.card.person {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    width: 100%;
+    aspect-ratio: 5/6;
+    color: var(--text-color-dark);
+    background-color: var(--box-background-color);
+    border-radius: 25px;
+    text-align: center;
+    border: var(--box-border);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+.card.person svg.big {
+    max-width: 30%;
+    min-width: 20%;
+    align-self: center;
+    margin: 1em 0;
+}
+.card.person h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+}
+.card.person p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.card.person .headshot {
+    align-self: center;
+    width: 50%;
+    aspect-ratio: 1;
+    margin: .6em auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card.person {
+    padding: 1ch;
+}
+
+@media screen and (max-width: 641px) {
+    .card.person {
+        background-color: transparent;
+        filter: none;
+        justify-content: flex-start;
+        height: fit-content;
+        aspect-ratio: unset;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .card.person .headshot {
+        width: 40%;
+    }
+    .card.person .icon-row {
+        display: none;
+    }
+    .card.person p {
+        display: none;
+    }
+}
+
+.icon-row {
+    margin: 0.2em 0;
+}
+.icon-row a {
+    text-decoration: none;
+}
+.icon-row svg {
+    width: 2ch;
+}
+
+#demoSection {
+    overflow: hidden;
+}
+
+#demoVideoContainer {
+    position: relative;
+}
+
+.demo-video-container {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: black;
+    height: fit-content;
+}
+.demo-video-container iframe {
+    width: 100%;
+}
+
+@media screen and (max-width: 641px) {
+    #demoVideoContainer {
+        transition: transform 500ms ease;
+    }
+    .demo-video-container {
+        flex-shrink: 0;
+    }
+}
+
+#sliderControls {
+    position: absolute;
+    height: fit-content;
+    margin: auto;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+#sliderControls > button {
+    padding: 0;
+    width: 3em;
+    margin: 1em;
+    aspect-ratio: 1;
+    pointer-events: all;
+}
+
+@media screen and (max-width: 641px) {
+    #missionSection p {
+        padding: 0;
+        text-align: left;
+    }
+}
+
+#footer {
+    text-align: center;
+    background-color: var(--box-background-color);
+    padding: 1.2em;
+    font-size: .9em;
+}

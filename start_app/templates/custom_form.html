@@ -1,0 +1,164 @@
+<!-- Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/custom_form.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script id="accountMenuScript" src='static/js/accountMenu.js' user_image="{{user_image}}" user_name="{{user_name}}" color_mode="{{color_mode}}"></script>
+    <title>Form</title>
+</head>
+
+<body class="{{color_mode}}">
+    <div id="form-page">
+        <div class="galleryHeader">
+            <h1>Customize SAPIEN</h1>
+        </div>
+
+        <form class="form-block" id="form-block">  <!-- action="/form" method="POST" -->
+
+            <div class="about-metahuman">
+                <div class="image-metahuman">
+                    <img id="mh-file" />
+                </div>
+                <div class="input-metahuman">
+                    <h1 class="content">Whom would you like to speak to?</h1>
+                    <div class="input-name">
+                        <div class="form-content">
+                            <label for="bot_fname">First Name<span style="color:red;">*</span></label>
+                            <input type="text" id="bot_fname" name="bot_fname" placeholder="First Name"
+                                required="true"><br><br>
+                        </div>
+                        <div class="form-content">
+                            <label for="bot_lname">Last Name</label>
+                            <input type="text" id="bot_lname" name="bot_lname" placeholder="Last Name"><br><br>
+                        </div>
+                    </div>
+
+                    <div class="input-other">
+                        <div class="form-content">
+                            <label for="bot_pronoun">Pronoun</label>
+                            <select id="bot_pronoun" name="bot_pronoun">
+                                <option value="She/Her">She/Her</option>
+                                <option value="He/Him">He/Him</option>
+                                <option value="They/Them">They/Them</option>
+                            </select>
+                        </div>
+
+                        <div class="form-content">
+                            <label for="bot_age">Age</label>
+                            <input type="number" id="bot_age" name="bot_age" placeholder="Age" min="0" max="150">
+                        </div>
+                    </div>
+
+                    <div class="input-bio">
+                        <div class="form-content-textarea">
+                            <label for="bot_narrative">Bio</label>
+                            <textarea id="bot_narrative" name="bot_narrative" rows="1"
+                                placeholder="Who are they? What are they like?"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="presets">
+                <h1 class="preset-content content">
+                    Presets
+                </h1>
+                <div class="preset-list"></div>
+            </div>
+
+            <div class="not-about-metahuman">
+                <div class="about-you">
+                    <h1 class="content">Tell us about yourself!</h1>
+                    <div class="form-content">
+                        <label for="user_fname">First Name<span style="color:red;">*</span></label>
+                        <input type="text" id="user_fname" name="user_fname" placeholder="User First Name" value="{{user_name.split(' ')[0] if user_name else ''}}"
+                            required="true"><br><br>
+                    </div>
+                    <div class="form-content">
+                        <label for="user_lname">Last Name</label>
+                        <input type ="text" id="user_lname" name="user_lname" placeholder="User Last Name" value="{{' '.join(user_name.split(' ')[1:]) if user_name and user_name.split(' ')[1:] else '' }}">
+                    </div>
+
+                    <div class="form-content-textarea">
+                        <label for="user_narrative">About You</label>
+                        <textarea id="user_narrative" name="user_narrative" rows="1"
+                            placeholder="Who are you? What are you like?"></textarea>
+                    </div><br>
+
+                    <div class="form-content">
+                        <label for="user_language">Language</label>
+                        <select id="user_language" name="user_language">
+                            {% for lang_code, details in languages.items() %}
+                                <option value="{{ lang_code }}">{{ details["name"] }}</option>
+                            {% endfor %}
+                        </select><br><br>
+                    </div>
+                    
+                </div>
+
+
+                <div class="about-conversation">
+                    <h1 class="content">Tell us about the conversation!</h1>
+                    <div class="form-content-textarea">
+                        <label for="premise">Conversation <br>Premise</label>
+                        <textarea id="premise" name="premise" rows="1"
+                            placeholder="What would you like to talk about?"></textarea>
+                    </div>
+
+                    <div class="form-content-textarea">
+                        <label for="relationship">Relationship</label>
+                        <textarea id="relationship" name="relationship" rows="1"
+                            placeholder="What is your relationship with the person?"></textarea>
+                    </div>
+
+                    <div class="form-content-textarea">
+                        <label for="goal">Goal</label>
+                        <textarea id="goal" name="goal" rows="1"
+                            placeholder="What would you like to get out of this conversation?"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button id="backButton" class="secondary font-bold">Back</button>
+                <button type="submit" id="nextButton" class="primary font-bold">Next</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <div id="loadingContainer" class="loading-container" style="display: none;">
+        <img src="../static/img/loading.gif" alt="Loading animation">
+        Loading SAPIEN
+    </div>
+
+    <!-- JAVASCRIPT IMPORTS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/custom_form.js"></script>
+</body>
+
+</html>

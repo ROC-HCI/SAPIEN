@@ -1,0 +1,372 @@
+/* Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. */
+
+
+@font-face {
+    font-family: "Atkins";
+    src: url("../fonts/Atkinson_Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2");
+    font-style: normal;
+}
+@font-face {
+    font-family: "AtkinsBold";
+    src: url("../fonts/Atkinson_Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "AtkinsItalic";
+    src: url("../fonts/Atkinson_Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2");
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "AtkinsBoldItalic";
+    src: url("../fonts/Atkinson_Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2");
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+:root {
+    --background-color: rgb(249, 249, 249);
+    --text-color-dark: rgb(40, 40, 40);
+    --text-color-mid: rgb(173, 173, 173);
+    --text-color-light: white;
+    
+    --highlight-color: hsl(203, 48%, 54%);
+    --highlight-color-light: hsl(203, 48%, 64%);
+    --highlight-color-transparent: rgba(81, 151, 194, 0.308);
+    
+    --box-border: 1px solid lightgray;
+    --box-background-color: #e2e2e2;
+}
+
+:root .dark {
+    --background-color: #21232d;
+    --text-color-dark: rgb(199, 199, 199);
+    --text-color-light: rgb(40, 40, 40);
+    --text-color-mid: rgb(104, 104, 104);
+
+    --highlight-color: hsl(203, 48%, 54%);
+    --highlight-color-light: hsl(203, 48%, 64%);
+
+    --box-border: 1px solid hsl(229, 15%, 35%);
+    --box-background-color: hsl(230, 15%, 29%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+    transition: background-color 200ms ease;
+}
+
+.font-normal {
+    font-family: 'Atkins';
+}
+
+.font-bold {
+    font-family: 'AtkinsBold';
+}
+
+.font-italic {
+    font-family: 'AtkinsItalic';
+}
+
+.font-bold-italic {
+    font-family: 'AtkinsBoldItalic';
+}
+
+.color-highlight {
+    color: var(--highlight-color)
+}
+
+a:visited {
+    text-decoration: none;
+    /* color: var(--text-color-dark); */
+}
+
+input {
+    color: var(--text-color-dark);
+}
+
+button {
+    font-size: 1rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 40px;
+    transition: background 200ms ease;
+    cursor:pointer;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:has(.button-icon) {
+    padding: 0;
+}
+
+button.primary {
+    background-color: var(--highlight-color);
+    color: var(--text-color-light);
+}
+.primary:hover {
+    background-color: var(--highlight-color-light);
+}
+
+button.secondary {
+    outline: 2px solid var(--box-background-color);
+    outline-offset: -2px;
+    color: var(--text-color-dark);
+    background-color: var(--background-color);
+}
+.secondary:hover {
+    background-color: var(--box-background-color);
+}
+
+button.disabled {
+    background-color: var(--box-background-color);
+    color: var(--text-color-light);
+    pointer-events: none;
+}
+
+.navigation-buttons {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 7vh;
+}
+
+.navigation-buttons button {
+    margin: 0 15px;
+}
+
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.h-center {
+    justify-content: center;
+}
+
+.v-center {
+    align-items: center;
+}
+.align-start {
+    align-items: start;
+}
+
+.self-center {
+    align-self: center;
+}
+.self-flex-start {
+    align-self: flex-start;
+}
+.self-flex-end {
+    align-self: flex-end;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.text-icon {
+    display: flex;
+    margin: 0 .5ch;
+    width: 3ch;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.h-1p5em {
+    height: 1.5em;
+}
+
+.button-icon {
+    margin: 15px 25px;
+    width: 1.5rem;
+}
+
+.svg-highlight {
+    fill: var(--highlight-color);
+    color: var(--highlight-color);
+}
+.svg-text-light {
+    fill: var(--text-color-light);
+    color: var(--text-color-light);
+}
+.svg-text-dark {
+    fill: var(--text-color-dark);
+    color: var(--text-color-dark);
+}
+
+.cursor-pointer {
+    cursor:pointer;
+}
+
+.w-fit-content {
+    width: fit-content;
+}
+.h-fit-content {
+    height: fit-content;
+}
+
+.w-2em {
+    width: 2em;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.ml-1rem {
+    margin-left: 1rem;
+}
+
+.mb-1em {
+    margin-bottom: 1em;
+}
+
+p-0 {
+    padding: 0;
+}
+
+m-0 {
+    margin: 0;
+}
+
+.ml-1rem {
+    margin-left: 1rem;
+}
+
+.mb-1em {
+    margin-bottom: 1em;
+}
+
+.mt-4em {
+    margin-top: 4em;
+}
+
+.my-1rem {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-2rem {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.px-20 {
+    padding: 0 20%;
+}
+
+.gap-1em {
+    gap: 1em;
+}
+.gap-5rem {
+    gap: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-justify: inter-word;
+}
+.text-left {
+    text-align: left;
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+
+.t-0 {
+    top: 0;
+}
+.b-0 {
+    bottom: 3rem;
+}
+
+.w-50 {
+    width: 50%;
+}
+.w-60 {
+    width: 60%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-80 {
+    width: 80%;
+}
+.w-90 {
+    width: 90%;
+}
+.w-100 {
+    width: 100%;
+}
+
+.h-70 {
+    height: 70%;
+}
+.h-90 {
+    height: 90%;
+}
+.h-100 {
+    height: 100%;
+}
+.h-100v {
+    height: 100vh;
+}
+
+.title-section {
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.title-section h1 {
+    font-size: 3rem;
+}
+
+.title-section h2 {
+    font-size: 2rem;
+}

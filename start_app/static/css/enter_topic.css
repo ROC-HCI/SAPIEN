@@ -1,0 +1,124 @@
+/* Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. */
+
+
+h1,
+input {
+    font-size: 2rem;
+}
+
+#textContainer {
+    display: inline-block;
+}
+
+#topicInput {
+    display: inline-block;
+    outline: none;
+    color: var(--text-color-mid);
+    outline: 0;
+    border: 0;
+    font-weight: bold;
+    background-color: transparent;
+    min-width: 1ch;
+    /* background-color: red; */
+}
+
+#topicInput:focus {
+    outline: 0;
+    border: 0;
+    color: var(--highlight-color);
+}
+
+#topicInput.has-text {
+    color: var(--highlight-color);
+}
+
+#topicCursor {
+    color: var(--text-color-mid);
+    font-size: 2rem;
+}
+
+#user_language {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding: 0.2em;
+    color: var(--highlight-color);
+    background-color: var(--background-color);
+    border: 2px solid var(--text-color-mid);
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#user_language:focus {
+    outline: none;
+    border: 2px solid var(--highlight-color);
+    background-color: var(--background-color);
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: max-content; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content p {
+    color: black;
+    text-decoration: none;
+    display: flex; /* Define the flex layout */
+    align-items: center; /* Center the items vertically */
+    font-size: 1rem;
+    text-align: left;
+}
+
+.dropdown-content p:hover {
+    background-color: #ddd;
+}

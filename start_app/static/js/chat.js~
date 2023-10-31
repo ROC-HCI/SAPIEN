@@ -1,0 +1,286 @@
+const cameraElement = document.getElementById('cameraElement');
+
+const cameraDropdown = document.getElementById('cameraDropdown');
+cameraDropdown.addEventListener('change', event => {
+  const cameraId = event.target.value;
+  // console.log('Selected camera ID:', cameraId);
+  if (cameraId !== 'default') {
+    const cameraLabel = event.target.options[event.target.selectedIndex].text;
+    // make background color of all options black except the selected one, make it blue
+    for (let i = 0; i < event.target.options.length; i++) {
+      if (i === event.target.selectedIndex) {
+        event.target.options[i].style.backgroundColor = 'blue';
+      } else {
+        event.target.options[i].style.backgroundColor = 'black';
+      }
+    }
+    console.log('Selected camera:', cameraLabel);
+    updateCamera(cameraId);
+    startCamera(cameraId);
+
+    // console.log(selectedValue);
+    event.target.value = 'default';
+  }
+});
+
+navigator.mediaDevices.enumerateDevices()
+  .then(devices => {
+    console.log('Devices:', devices);
+    const videoDevices = devices.filter(device => device.kind === 'videoinput');
+    console.log('Video Devices:', videoDevices);
+
+    // add the video devices to the dropdown
+    videoDevices.forEach(device => {
+      const option = document.createElement('option');
+      option.value = device.deviceId;
+      option.text = device.label;
+      cameraDropdown.appendChild(option);
+    });
+
+    if (videoDevices.length === 0) {
+      console.error('No video devices found.');
+      cameraDropdown.remove();
+    } else if (videoDevices.length === 1) {
+      startCamera(videoDevices[0].deviceId);
+      // event.target.value = 'default';
+      cameraDropdown.remove();
+    } else {
+      const cameraId = sessionStorage.getItem('cameraId');
+      if (cameraId) {
+        console.log('Camera ID from session:', cameraId);
+        // get index by value
+        const cameraIndex = [...cameraDropdown.options].findIndex(option => option.value === cameraId);
+        console.log('Camera index:', cameraIndex);
+        // hover color is #1E90FF
+        cameraDropdown.options[cameraIndex].style.backgroundColor = 'blue';
+        // cameraDropdown.value = cameraId;
+
+        startCamera(cameraId);
+        cameraDropdown.value = 'default';
+      } else {
+        startCamera(videoDevices[0].deviceId);
+      }
+    }
+  })
+  .catch(error => {
+    console.error('Error accessing video:', error);
+  });
+
+async function startCamera(cameraId) {
+  try {
+    const cameraStream =  await navigator.mediaDevices.getUserMedia({ video: { deviceId: cameraId } });
+
+    // Set the source of the video element to the camera
+    cameraElement.srcObject = cameraStream;
+
+    console.log('Camera started:', cameraStream);
+  } catch (error) {
+    console.error('Error accessing video:', error);
+  }
+}
+
+// Updates Flask session with the selected camera
+function updateCamera(cameraId) {
+  console.log("cameraId: " + cameraId);
+  const data = { 'cameraId': cameraId };
+  sessionStorage.setItem('cameraId', cameraId);
+  const jsonData = JSON.stringify(data);
+
+  const xhr = new XMLHttpRequest();
+  var method = "POST";
+  var url = "/chat";
+  xhr.open(method, url, true);
+
+  xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+      // console.log(xhr.responseText);
+    }
+  }
+
+  xhr.send(jsonData);
+}
+
+// const sendFramesButton = document.getElementById('sendFramesButton');
+// sendFramesButton.addEventListener('click', sendFramesToFlask);
+
+let isRecording = false;
+function sendFramesToFlask() {
+  isRecording = !isRecording;
+
+  const video = document.getElementById('cameraElement');
+  const canvas = document.createElement('canvas');
+  canvas.width = video.videoWidth;
+  canvas.height = video.videoHeight;
+  const ctx = canvas.getContext('2d');
+
+  function sendFrame() {
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    const imageData = canvas.toDataURL('image/jpeg', 0.5);
+    // encodedImage = encodeURIComponent(imageData);
+    const data = { "imageData": imageData, "isRecording": isRecording };
+    const jsonData = JSON.stringify(data);
+
+    // display image
+    // const img = document.createElement('img');
+    // img.src = imageData;
+    // document.body.appendChild(img);
+
+    const xhr = new XMLHttpRequest();
+    var method = "POST";
+    var url = "/chat";
+    xhr.open(method, url, true);
+
+    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    xhr.send(jsonData);
+
+    const fps = 5; // fps to send camera frames to get emotion
+    if (isRecording) {
+      setTimeout(sendFrame, 1000 / fps);
+    }
+  }
+
+  console.log('isRecording:', isRecording);
+  console.log('sendFrame');
+  sendFrame()
+}
+
+
+
+var tempSwapStore = 0;
+var tempNamesMH = ['Ada', 'Chandra', 'Cooper', 'Danielle', 'Dhruv', 'Erno', 'Farrukh', 'Glenda', 'Hadley', 'Hana', 'Hudson', 'Jesse', 'Keiji', 'Kendra', 'Koda', 'Lena', 'Maria', 'Myles', 'Nasim', 'Natalia', 'Orla', 'Oskar', 'Pia', 'Sadhil', 'Seneca', 'Sook-ja', 'Vincent', 'Vivian', 'Wallace', 'Zeva', 'Zhen']
+function tempSwitchMH(direction) {
+  tempSwapStore += direction;
+  if (tempSwapStore < 0) {
+    tempSwapStore = tempNamesMH.length - 1;
+  }
+  if (tempSwapStore >= tempNamesMH.length) {
+    tempSwapStore = 0;
+  }
+  console.log("Debug switched to MH: " + tempNamesMH[tempSwapStore]);
+  sendDataMessage("MH", tempNamesMH[tempSwapStore]);
+}
+
+
+// makes the iframe fullscreen
+document.addEventListener('keydown', event => {
+  const iframe = document.getElementById('remotePlayerFrame');
+  switch (event.key) {
+    case 'f':
+      console.log("entering fullscreen");
+      if (!document.fullscreenElement) {
+        iframe.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+      break;
+    case 'ArrowRight':
+      tempSwitchMH(1);
+      break;
+    case 'ArrowLeft':
+      tempSwitchMH(-1);
+      break;
+  }
+});
+
+async function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+const remotePlayerFrame = document.getElementById('remotePlayerFrame');
+
+window.addEventListener('message', event => {
+  // TODO: IMPORTANT: check the origin of the data!
+  // alert("got message from " + event.origin + " with data " + event.data);
+    console.log("got message from " + event.origin + " with data: " + event.data);
+  if (event.origin === 'http://192.5.53.168') {
+    if (event.data === "ready") {
+      const mhName = sessionStorage.getItem('mhFNameCurrent');
+	    console.log("sending MH message");
+      sendDataMessage("MH", mhName);
+      
+      // Make remotePlayerFrame unclickable
+      remotePlayerFrame.style.pointerEvents = 'none';
+      remotePlayerFrame.setAttribute('tabindex', '-1');
+      window.focus();
+      console.log("done setting up MH");
+    } else {
+	    console.log("message data was not 'ready'");
+    }
+  } else {
+    // The data was NOT sent from your site!
+    // Be careful! Do not use it. This else branch is
+    // here just for clarity, you usually shouldn't need it.
+    return;
+  }
+});
+
+function sendDataMessage(category, item) {
+  console.log("in sendBP, about to send " + category + ", " + item);
+  let descriptor = {
+    Category: category,
+    Item: item
+  };
+  remotePlayerFrame.contentWindow.postMessage(descriptor, '*');
+}
+
+// DISPLAY TOGGLES
+
+const vidButtons = document.getElementById('video-buttons');
+// if the mouse does not hover over remotePlayerFrame for 5 seconds, hide the buttons
+// when the mouse hovers over remotePlayerFrame, show the buttons
+// do this with a fade in/out
+
+let timer;
+
+const remotePlayerHolder = document.getElementsByClassName('remotePlayerHolder')[0];
+console.log("remotePlayerHolder:", remotePlayerHolder);
+
+remotePlayerHolder.addEventListener('mouseenter', () => {
+  // console.log("mouse entered");
+  clearTimeout(timer);
+  vidButtons.classList.add('show');
+  vidButtons.style.opacity = 1;
+});
+
+remotePlayerHolder.addEventListener('mouseleave', () => {
+  // console.log("mouse left");
+  timer = setTimeout(() => {
+  vidButtons.classList.remove('show');
+  vidButtons.style.opacity = 0.2;
+  }, 1500);
+});
+
+let isCamFullscreen = false;
+cameraElement.addEventListener('click', () => {
+  if (isCamFullscreen) {
+    cameraElement.classList.remove('cameraElement-fullscreen');
+    isCamFullscreen = false;
+  } else {
+    cameraElement.classList.add('cameraElement-fullscreen');
+    isCamFullscreen = true;
+  }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const socket = io.connect(location.origin + '/chat');
+
+    socket.on('connect', () => {
+        console.log('Connected to the server');
+    });
+
+    socket.on('disconnect', () => {
+        console.log('Disconnected from the server');
+    });
+
+    socket.on('occupied', (message) => {
+        alert(message);
+    });
+
+    window.addEventListener('beforeunload', () => {
+        socket.disconnect();
+    });
+});

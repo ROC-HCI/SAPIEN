@@ -1,0 +1,388 @@
+/* Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. */
+
+
+#chat-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.remotePlayerHolder {
+    position: relative;
+}
+
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+
+#remotePlayerFrame {
+    border: none;
+    width: 100%;
+    /* height: calc(100vh - 50px); */
+    height: 100vh;
+    /* Adjust 60px to the height of your navbar */
+    aspect-ratio: 16/9;
+    max-width: 100%;
+}
+
+video {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    border: 2px solid gray;
+    background-color: black;
+
+    /* margin-top: 100px;
+    margin-right: 50px; */
+
+    z-index: 70;
+    width: 25%;
+    height: auto;
+}
+
+video#cameraElement {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.video-holder,
+.remotePlayerHolder {
+    position: relative;
+    /* height: calc(100vh - 50px); */
+    height: 100vh;
+    /* Adjust 60px to the height of your navbar */
+}
+
+#header-container {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 10px;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#botName {
+    /* position: relative; */
+    /* margin: 10px; */
+    color: rgb(32, 172, 125);
+    font-family: 'Michroma', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-right: 25px;
+}
+
+#chat-timer {
+    color: white; 
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    margin-left: -7%;
+    display: flex;             /* Establishes the container as a flex container */
+    justify-content: center;   /* Horizontally aligns the content in the center */
+    align-items: center;       /* Vertically aligns the content in the center */
+    height: 80%;              /* The container must have a height for this to work */
+}
+
+.recordButtonHolder {
+    /* width: 15vw; */
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recordButtonHolder p {
+    margin: 0vh;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.cameraDropdown {
+    /* width: 15vw; */
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* positioning the dropdown menu */
+    width: 150%;
+    /* ensure it takes full width of the parent */
+    left: 95%;
+    /* align it to the left side of the parent */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown-content span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content span:hover,
+.dropdown-content span.active {
+    background-color: #ddd;
+}
+
+/* add this class to show the dropdown content */
+.show {
+    display: block;
+}
+
+
+.hangupButton {
+    /* width: 15vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+    .video-buttons {
+        height: 10vw;
+    }
+
+    .recordButtonHolder {
+        height: 10vw;
+    }
+
+    .recordButtonHolder p {
+        height: 2vw;
+        font-size: 1.5vw;
+    }
+
+    .video-buttons button {
+        height: 8vw;
+    }
+
+    .hangupButton {
+        height: 10vw;
+    }
+
+    .cameraDropdown {
+        height: 10vw;
+    }
+    .modal-content {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .video-buttons {
+        height: 10vh;
+    }
+
+    .recordButtonHolder {
+        height: 10vh;
+    }
+
+    .recordButtonHolder p {
+        height: 2vw;
+        font-size: 14px;
+    }
+
+    .video-buttons button {
+        height: 8vh;
+    }
+
+    .hangupButton {
+        height: 8vh;
+    }
+
+    .cameraDropdown {
+        height: 8vw;
+    }
+    .modal-content {
+        font-size: 20px;
+    }
+}
+
+.video-buttons {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    z-index: 70;
+
+    /* margin-left: 15px; */
+    margin-bottom: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+
+    width: 72%;
+
+    /* border: 2px solid gray; */
+    transition: opacity 0.3s ease;
+}
+
+.video-buttons button {
+    background-color: transparent;
+    border: none;
+
+    width: 100%;
+}
+
+.video-buttons button:focus {
+    outline: none;
+}
+
+.recordButtonHolder img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+.cameraDropdown img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+.hangupButton img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+select {
+    padding: 10px;
+
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    border: none;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#cameraDropdown {
+    margin: 0px;
+}
+
+/* write attribute to cameraElement that is called fullscreen but don't add it to the classlist */
+.cameraElement-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.modal {
+    display: none;
+    position: absolute; /* Fixed also acceptable */
+    z-index: 1000;
+    left: 0;
+    bottom: calc(10vh + 7px);
+    width: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe77;
+    padding: 10px 30px;
+    border: 1px solid #888;
+    width: 35%;
+    text-align: center;
+    margin: 0;
+    /* Center the text */
+    border-radius: 20px;
+    transform: translateX(-100vw);
+    /* Start from left */
+    transition: transform 0.5s ease-out;
+    /* Add transition effect */
+}
+
+.buttonContainer {
+    position: relative; /* This is needed so that the message div is positioned relative to this div */
+}
+
+#message {
+    position: absolute;
+    bottom: 110%;
+    left: 2%;
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    background: rgba(0, 0, 0, 0.5);
+    color: gray; /* Make the text color gray */
+    border: 2px solid gray; /* Add a gray border */
+    border-radius: 10px; /* Add a border radius */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgb(0, 0, 0);
+}
+
+.hidden {
+    display: none;
+}

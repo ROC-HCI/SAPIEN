@@ -1,0 +1,594 @@
+[
+    {
+        "title": "Senior Software Engineer, C++ (Algo Trading Team)",
+        "company_name": "DRW",
+        "location": "  Chicago, IL   ",
+        "via": "via Glassdoor",
+        "description": "DRW is a technology-driven, diversified principal trading firm. We trade our own capital at our own risk, across a broad range of asset classes, instruments and strategies, in financial markets around the world. As the markets have evolved over the past 25 years, so has DRW \u2013 maximizing opportunities to include real estate, cryptoassets and venture capital. With nearly 1,000 employees at our... Chicago headquarters and offices around the world, we work together to solve complex problems, challenge consensus and deliver meaningful results. It's a place of high expectations, deep curiosity and thoughtful collaboration.\n\nDRW is looking for an outstanding Senior Software Engineer to join one of our trading desks. In this role, you will focus on designing, building, and implementing trading applications and tools. You will be an integral member of an algorithmic trading team comprising experienced technologists, quantitative researchers, and traders. Your team will work closely to solve challenging technological problems and contribute to our full tech stack, from hardware and software development to devops, testing and release management. We are looking for talented programmers eager to develop new technologies that directly impact our business.\n\nResponsibilities:\n\u2022 Perform full life cycle development of applications and libraries for exchange gateways, trading strategy execution, risk management, trade reporting and market data feed processing using C++\n\u2022 Develop and maintain systems to ensure application performance, integrity and reliability for maintaining maximal up-time, and logging and traceability to aid in the support of mission-critical production systems\n\u2022 Collaborate with quantitative researchers and traders on strategy development\n\u2022 Design, develop, and deploy software using agile methodologies\n\u2022 Guide junior engineers on best practices through mentoring, pair programming, and code reviews\n\u2022 Provide production support, maintenance and performance improvements of existing systems\n\u2022 Evaluate new technology and improve our technology stack\n\nRequirements:\n\u2022 10+ years of experience developing high-availability server-side systems, preferably in C++\n\u2022 3+ years of experience using any combination of the modern C++ (14/17/20) standards\n\u2022 A background in multi-threaded programming and a strong understanding of hardware/software interaction\n\u2022 Bachelor's degree in Computer Science, Engineering or related field, and strong practical knowledge of computer science, especially algorithms, data structures, distributed systems and concurrency.\n\u2022 Strong verbal and written communication skills\n\nNice to haves:\n\u2022 Experience working in the trading industry or another latency-sensitive business that involves solving complex and novel problems\n\u2022 Experience with numerical computing and/or working with Quantitative Researchers\n\u2022 Experience with full life-cycle software development utilizing exotic hardware/software architectures\n\u2022 Detailed understanding of TCP, UDP, IPV4 and related hardware/software\n\u2022 Comfort with multiple programming languages, particularly including Java, Python, JavaScript, Ruby\n\nFor more information about DRW's processing activities and our use of job applicants' data, please view our Privacy Notice at https://drw.com/privacy-notice.\n\nCalifornia residents, please review the California Privacy Notice for information about certain legal rights at https://drw.com/california-privacy-notice",
+        "job_highlights": [
+            {
+                "title": "Qualifications",
+                "items": [
+                    "10+ years of experience developing high-availability server-side systems, preferably in C++",
+                    "3+ years of experience using any combination of the modern C++ (14/17/20) standards",
+                    "A background in multi-threaded programming and a strong understanding of hardware/software interaction",
+                    "Bachelor's degree in Computer Science, Engineering or related field, and strong practical knowledge of computer science, especially algorithms, data structures, distributed systems and concurrency",
+                    "Strong verbal and written communication skills",
+                    "Experience working in the trading industry or another latency-sensitive business that involves solving complex and novel problems",
+                    "Experience with numerical computing and/or working with Quantitative Researchers",
+                    "Experience with full life-cycle software development utilizing exotic hardware/software architectures",
+                    "Detailed understanding of TCP, UDP, IPV4 and related hardware/software",
+                    "Comfort with multiple programming languages, particularly including Java, Python, JavaScript, Ruby"
+                ]
+            },
+            {
+                "title": "Responsibilities",
+                "items": [
+                    "In this role, you will focus on designing, building, and implementing trading applications and tools",
+                    "You will be an integral member of an algorithmic trading team comprising experienced technologists, quantitative researchers, and traders",
+                    "Your team will work closely to solve challenging technological problems and contribute to our full tech stack, from hardware and software development to devops, testing and release management",
+                    "Perform full life cycle development of applications and libraries for exchange gateways, trading strategy execution, risk management, trade reporting and market data feed processing using C++",
+                    "Develop and maintain systems to ensure application performance, integrity and reliability for maintaining maximal up-time, and logging and traceability to aid in the support of mission-critical production systems",
+                    "Collaborate with quantitative researchers and traders on strategy development",
+                    "Design, develop, and deploy software using agile methodologies",
+                    "Guide junior engineers on best practices through mentoring, pair programming, and code reviews",
+                    "Provide production support, maintenance and performance improvements of existing systems",
+                    "Evaluate new technology and improve our technology stack"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "https://www.google.com/search?hl=en&q=DRW&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCNMJ",
+                "text": "See web results for DRW"
+            }
+        ],
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqXfB8jhsuwBPJUwq-vqt5aZUEiFuAYE_27Cj02IU&s",
+        "extensions": [
+            "6 days ago",
+            "Full-time"
+        ],
+        "detected_extensions": {
+            "posted_at": "6 days ago",
+            "schedule_type": "Full-time"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJTZW5pb3IgU29mdHdhcmUgRW5naW5lZXIsIEMrKyAoQWxnbyBUcmFkaW5nIFRlYW0pIiwiaHRpZG9jaWQiOiJMZV9BYVJmb0F2WUFBQUFBQUFBQUFBPT0iLCJobCI6ImVuIiwiZmMiOiJFb3dDQ3N3QlFVMXJNbXhzU2xkd04xZHllVmt0UzJKSmJIbHBlalJYT0RWQlZVdFlPWFJVYUVKV1JYTnZTRTl3ZEhSZmVYRkRiVkJrTVZsWGJrTkVVMEZpUjFkQ2FYaEdTM2hhYkd4R04xbERhRTVsYzA5alVHWjVkRmR1VVROTlltSlFWbWRGVmtrMFgwUXlWR3cwUmtOUlRXcGhVM05aUjJ0eFQwVlZkM0ZYWlZOM1FrSTJTVzV3YUhSaVFVdHhhRFYwVHpac2QxZDZRMlE1VGxkMWRXTm5ObHBXTVY4MFExVk5iUzFFU1doVVNUbHFXVlpCVTBrMFZUWlhlWGxHVkhaNE9VRkhOWEExZVhoME1VczNTV2hKRWhkbk4waExXa3hEUTBJMmRXdzFUbTlRYTNSSFN6QkJieG9pUVV4RlV6bDFUVXhxZDI1eFdVTjRaMlppWkd3MWNtTjFaWFU1YUhadVpsWmlVUSIsImZjdiI6IjMiLCJmY19pZCI6ImZjXzEiLCJhcHBseV9saW5rIjp7InRpdGxlIjoiLm5GZzJlYntmb250LXdlaWdodDo1MDB9LkJpNkRkY3tmb250LXdlaWdodDo1MDB9QXBwbHkgb24gR2xhc3Nkb29yIiwibGluayI6Imh0dHBzOi8vd3d3LmdsYXNzZG9vci5jb20vam9iLWxpc3Rpbmcvc2VuaW9yLXNvZnR3YXJlLWVuZ2luZWVyLWMtYWxnby10cmFkaW5nLXRlYW0tZHJ3LUpWX0lDMTEyODgwOF9LTzAsNDRfS0U0NSw0OC5odG0/amw9MTAwNzMzMTQ2ODIzOVx1MDAyNnV0bV9jYW1wYWlnbj1nb29nbGVfam9ic19hcHBseVx1MDAyNnV0bV9zb3VyY2U9Z29vZ2xlX2pvYnNfYXBwbHlcdTAwMjZ1dG1fbWVkaXVtPW9yZ2FuaWMifX0="
+    },
+    {
+        "title": "Software Developer",
+        "company_name": "Seerist, Inc",
+        "location": "  Chicago, IL   ",
+        "via": "via Glassdoor",
+        "description": "Company Overview:\n\nJoin the world\u2019s only threat intelligence business integrating leading-edge AI technology with expert human analysis! Seerist was founded on the premise, \"what we see, saves.\" We\u2019re helping some of the largest companies and critical government agencies proactively predict potential threats impacting their people, operations, and assets to make quicker, more strategic... decisions.\n\nAbout the Role:\n\nSeerist is looking for a Software Developer to join our growing Development team. You will work on a wide range of problems creating new capabilities and enhancing existing ones.\n\nResponsibilities:\n\u2022 Collaborate with the Head of Product and Tech Lead in solving customer problems\n\u2022 Work in an Agile software environment delivering iterative solutions and assisting in Code Reviews\n\u2022 Participate in discovery sessions aimed at solving though problems and translating solutions into software\n\u2022 Utilize TDD / XP best practices\n\u2022 Clearly and concisely communicate work status, methods, instructions, problems, requirements, options, and concerns with team members, managers, and customers through various means\n\nTechnologies We Currently Use:\n\u2022 Primary: Node/JavaScript, Vue (front end), Elasticsearch, AWS\n\u2022 Additional: Python, Docker, Postgres, Atlassian Suite (Jira, Confluence, Bamboo, BitBucket)\n\nRequired Qualifications:\n\u2022 Possess a Bachelor\u2019s degree or higher in Computer Science or related experience (at least 5 years)\n\u2022 At least 1 year of experience with Node.js and javascript based frontends\n\u2022 Experience building cloud native REST based microservice APIs\n\u2022 Coding knowledge and experience with several languages such as: Node, JavaScript, Vue, python, Java\n\u2022 Experience in building Web Applications multi-tenant SaaS preferred\n\u2022 Experience working in an Agile environment\n\u2022 Experience in building DevOps pipelines for automated testing and deployment\n\u2022 Strong problem-solving skills with an emphasis on product development\n\u2022 Excellent written and verbal communication skills for coordinating across teams\n\u2022 Strong interpersonal skills and the ability to work as part of a team\n\u2022 Demonstrated success in working proactively and collaboratively on multiple projects with simultaneous deadlines under fast-paced conditions; must be available to perform duties in high tempo environments\n\u2022 Ability to clearly and concisely communicate work status, methods, instructions, problems, requirements, options, and concerns with team members, managers, and customers\n\u2022 TDD / Extreme Programming Experience\n\u2022 Experience working with web based mapping technologies\n\u2022 Strong ability to plan, lead, and implement the successful completion of major project initiatives and efforts, as required\n\nDesired Qualifications:\n\u2022 At least 1 year of experience with CloudFormation, ElasticSearch / Open Search, Vue, AWS, Lambda, Step Functions, and API Gateway\n\u2022 Other desirable technological experience: Elasticsearch, Docker, Machine Learning, NLP\n\nCompensation & Benefits:\n\u2022 Competitive salary, bonus plan, 401(k) matching, and equity potential\n\u2022 Healthcare, dental, vision and life plans\n\u2022 Opportunity to work in a fast-moving, high-growth SaaS company\n\u2022 Strong, results-oriented culture\n\u2022 Hybrid work environment\n\u2022 Paid time off\n\u2022 Paid Parental Leave (16 Weeks Primary, 8 Secondary)\n\u2022 Tuition Reimbursement\n\u2022 Professional Development Stipend\n\nSeerist is an equal opportunity employer. Seerist does not discriminate on the basis of race, religion, color, sex, sexual orientation, gender identity, age, non-disqualifying physical or mental disability, national origin, veteran status or any other basis covered by appropriate law. All employment is decided on the basis of qualifications, merit, and business need. #SNA",
+        "job_highlights": [
+            {
+                "title": "Qualifications",
+                "items": [
+                    "Primary: Node/JavaScript, Vue (front end), Elasticsearch, AWS",
+                    "Possess a Bachelor\u2019s degree or higher in Computer Science or related experience (at least 5 years)",
+                    "At least 1 year of experience with Node.js and javascript based frontends",
+                    "Experience building cloud native REST based microservice APIs",
+                    "Coding knowledge and experience with several languages such as: Node, JavaScript, Vue, python, Java",
+                    "Experience working in an Agile environment",
+                    "Experience in building DevOps pipelines for automated testing and deployment",
+                    "Strong problem-solving skills with an emphasis on product development",
+                    "Excellent written and verbal communication skills for coordinating across teams",
+                    "Strong interpersonal skills and the ability to work as part of a team",
+                    "Demonstrated success in working proactively and collaboratively on multiple projects with simultaneous deadlines under fast-paced conditions; must be available to perform duties in high tempo environments",
+                    "Ability to clearly and concisely communicate work status, methods, instructions, problems, requirements, options, and concerns with team members, managers, and customers",
+                    "TDD / Extreme Programming Experience",
+                    "Experience working with web based mapping technologies",
+                    "Strong ability to plan, lead, and implement the successful completion of major project initiatives and efforts, as required"
+                ]
+            },
+            {
+                "title": "Responsibilities",
+                "items": [
+                    "You will work on a wide range of problems creating new capabilities and enhancing existing ones",
+                    "Collaborate with the Head of Product and Tech Lead in solving customer problems",
+                    "Work in an Agile software environment delivering iterative solutions and assisting in Code Reviews",
+                    "Participate in discovery sessions aimed at solving though problems and translating solutions into software",
+                    "Utilize TDD / XP best practices",
+                    "Clearly and concisely communicate work status, methods, instructions, problems, requirements, options, and concerns with team members, managers, and customers through various means"
+                ]
+            },
+            {
+                "title": "Benefits",
+                "items": [
+                    "Competitive salary, bonus plan, 401(k) matching, and equity potential",
+                    "Healthcare, dental, vision and life plans",
+                    "Opportunity to work in a fast-moving, high-growth SaaS company",
+                    "Strong, results-oriented culture",
+                    "Hybrid work environment",
+                    "Paid time off",
+                    "Paid Parental Leave (16 Weeks Primary, 8 Secondary)",
+                    "Tuition Reimbursement",
+                    "Professional Development Stipend"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "https://www.google.com/search?hl=en&q=Seerist,+Inc&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCJwK",
+                "text": "See web results for Seerist, Inc"
+            }
+        ],
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxixFvWJAUMlq99QMnUOHcD3YPaaoacdmWDBInii4&s",
+        "extensions": [
+            "6 days ago",
+            "Full-time",
+            "Health insurance",
+            "Dental insurance",
+            "Paid time off"
+        ],
+        "detected_extensions": {
+            "posted_at": "6 days ago",
+            "schedule_type": "Full-time"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJTb2Z0d2FyZSBEZXZlbG9wZXIiLCJodGlkb2NpZCI6IlFwSmEzaHRlNnpVQUFBQUFBQUFBQUE9PSIsImhsIjoiZW4iLCJmYyI6IkV1SUJDcUlCUVUxck1teHNTbTlFYWpOUVdtWkZSbmgzVmxwRGVYTlJiR0V3UVVKNlRreHBXbGR2ZFVaVFMwSTVXVlJ3TUhJMlFsZHJUMDlGUVZnNU9Hc3RXVVpoT0VOalNsWktOM1J0U0VJek1tTldVbXgzVGtrMU5saFRWamMzTTNWdmMzRklYelJpYm1kVFRYTkdXbXBPWmtFd05GZzBWa1JEUkhOeVVIRmxRa2gxV1hCQ1VXWldWMnh2UTNsblYwNUZVMjA0YjBSbk5GbHdWVVE0T0dGak1YbFRZbVpuRWhkbk4waExXa3hEUTBJMmRXdzFUbTlRYTNSSFN6QkJieG9pUVV4RlV6bDFUV0ZNYmxkSFF6aENMVEZhTFZGSFJUSlJTM0ZPVlZKTVdHUlFadyIsImZjdiI6IjMiLCJmY19pZCI6ImZjXzIiLCJhcHBseV9saW5rIjp7InRpdGxlIjoiQXBwbHkgZGlyZWN0bHkgb24gR2xhc3Nkb29yIiwibGluayI6Imh0dHBzOi8vd3d3LmdsYXNzZG9vci5jb20vam9iLWxpc3Rpbmcvc29mdHdhcmUtZGV2ZWxvcGVyLXNlZXJpc3QtSlZfSUMxMTI4ODA4X0tPMCwxOF9LRTE5LDI2Lmh0bT9qbD0xMDA4Nzg0NTI4MjQ1XHUwMDI2dXRtX2NhbXBhaWduPWdvb2dsZV9qb2JzX2FwcGx5XHUwMDI2dXRtX3NvdXJjZT1nb29nbGVfam9ic19hcHBseVx1MDAyNnV0bV9tZWRpdW09b3JnYW5pYyJ9fQ=="
+    },
+    {
+        "title": "Full stack software engineer",
+        "company_name": "Landry's Seafood House",
+        "location": "  Chicago, IL   ",
+        "via": "via Jooble",
+        "description": "If you are a Full Stack Software Engineer with Java experience, please read on!\n\u2022 Hiring fully remote\n...\nFor 30 years, We have been a leading Enterprise Content Management (ECM) provider to Federal, Civilian, Defense, and Intelligence agencies since 1995. Our core products include our branded Content Services Platform and our tool that uses relational databases storing all data, including metadata records.\n\nIn short, we help organizations focus on their core mission, we also offer highly technical teams that streamline the process to stand up and maintain custom solutions that best meet your needs.\n\nOur services also include Digitization and Content Conversion Services, Systems Integration, Professional Support Services, Installation, Software Feature Development, Configuration, Data Migration and training.\n\nWhat You Need for this Position\n\nMust have 5+ years of relevant Software Development Experience\n\nLooking For Candidates That Have Hands-on With\n\nJavaScript framework React or Angular.\n\nHTML, CSS, JavaScript, AJAX. -\n\ndesigning and developing REST API using Spring Framework or JAX-RS (Jersey). SpringBoot experience is a plus.\n\napplication servers such as Tomcat, Jetty, WebLogic or JBoss/Wildfly. -\n\ncontinuous integration (CI/CD) and automation tools such as GIT/SVN, Maven, Jenkins, Nexus, Ansible or Terraform\n\ntroubleshooting multi-tiers distributed systems on Linux environment.\n\nWhat You Will Be Doing\n\nFull Stack Engineer is a technical role that is focused on influencing, designing, implementing and supporting production for an Enterprise Retrieval Information System.\n\nWhat's In It for You\n\n$130k-$160k\n\nGenerous PTO + 10 paid holidays\n\nComprehensive Benefits\n\n401 w/ Match\n\nReimbursement for professional development- job related courses and also pays for attendance at approved conferences, seminars and workshops.\n\nSo, if you are a Fully Remote- Full Stack Software Engineer with experience, please apply today!\n\nEmail Your Resume In Word To\n\nLooking forward to receiving your resume through our website and going over the position with you. Clicking apply is the best way to apply, but you may also:\n\nView email address on jobs.institutedata.com\n\u2022 Please do NOT change the email subject line in any way. You must keep the JobID: linkedin : SG6-1755798L175 -- in the email subject line for your application to be considered.***\n\nSean Gur - Lead Recruiter - CyberCoders\n\nApplicants must be authorized to work in the U.S.\n\nCyberCoders is proud to be an Equal Opportunity Employer\n\nAll qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability, protected veteran status, or any other characteristic protected by law.\n\nYour Right to Work \u2013 In compliance with federal law, all persons hired will be required to verify identity and eligibility to work in the United States and to complete the required employment eligibility verification document form upon hire.\n\nCyberCoders will consider for Employment in the City of Los Angeles qualified Applicants with Criminal Histories in a manner consistent with the requirements of the Los Angeles Fair Chance Initiative for Hiring (Ban the Box) Ordinance",
+        "job_highlights": [
+            {
+                "title": "Qualifications",
+                "items": [
+                    "Must have 5+ years of relevant Software Development Experience",
+                    "Looking For Candidates That Have Hands-on With",
+                    "JavaScript framework React or Angular",
+                    "HTML, CSS, JavaScript, AJAX",
+                    "designing and developing REST API using Spring Framework or JAX-RS (Jersey)",
+                    "application servers such as Tomcat, Jetty, WebLogic or JBoss/Wildfly",
+                    "Applicants must be authorized to work in the U.S"
+                ]
+            },
+            {
+                "title": "Responsibilities",
+                "items": [
+                    "continuous integration (CI/CD) and automation tools such as GIT/SVN, Maven, Jenkins, Nexus, Ansible or Terraform",
+                    "troubleshooting multi-tiers distributed systems on Linux environment",
+                    "Full Stack Engineer is a technical role that is focused on influencing, designing, implementing and supporting production for an Enterprise Retrieval Information System"
+                ]
+            },
+            {
+                "title": "Benefits",
+                "items": [
+                    "$130k-$160k",
+                    "Generous PTO + 10 paid holidays",
+                    "Comprehensive Benefits",
+                    "401 w/ Match",
+                    "Reimbursement for professional development- job related courses and also pays for attendance at approved conferences, seminars and workshops"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "https://www.google.com/search?hl=en&q=Landry%27s+Seafood+House&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCOkK",
+                "text": "See web results for Landry's Seafood House"
+            }
+        ],
+        "extensions": [
+            "3 days ago",
+            "Full-time",
+            "No degree mentioned",
+            "Health insurance",
+            "Paid time off"
+        ],
+        "detected_extensions": {
+            "posted_at": "3 days ago",
+            "schedule_type": "Full-time"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJGdWxsIHN0YWNrIHNvZnR3YXJlIGVuZ2luZWVyIiwiaHRpZG9jaWQiOiJnMG4zbHktSWFtZ0FBQUFBQUFBQUFBPT0iLCJobCI6ImVuIiwiZmMiOiJFb3dDQ3N3QlFVMXJNbXhzU1ZseGNDMTVWMHhzU1RNNVNHOVdNVVE0VDBkRE1GaG9USEp5UjNkNlJtMTNkVFp5V1ZWdGVtTXhYMkowYUUxVVdETlFUbVJhYzNsdWFXTjViVk5IV2xRMWJrSTFSWEUyTVZkdmFXNWhSMFZLTjFsTmFHaG5SVFZrUmt4TWRsZDBTVkJ3VWxSeWVGbElWREIyUkdkaldIRlljVmhOUzJoMFJVRTBWR1ZOZGxsRFRrbFpOVkZDU2toTGRIVnVkbFV0YmtwbFh6UnBYMGRJTWtKM1VsUmpNV0pGYldaTWNYTlFhbU5tU0ZGU2JFSlZTakUzUmpWTWRsZFBVM04yWldjeExXNXdTbDlMRWhkbk4waExXa3hEUTBJMmRXdzFUbTlRYTNSSFN6QkJieG9pUVV4RlV6bDFUVVY1VG1WS2JXcFpXV2xzWjBJMFJXNTVNRlpzVUdvMU1XdzRadyIsImZjdiI6IjMiLCJmY19pZCI6ImZjXzMiLCJhcHBseV9saW5rIjp7InRpdGxlIjoiQXBwbHkgb24gSm9vYmxlIiwibGluayI6Imh0dHBzOi8vam9vYmxlLm9yZy9qZHAvLTIzMzc3ODk4NzA2MDE5MTY4MDgvRnVsbC1zdGFjay1zb2Z0d2FyZS1lbmdpbmVlci1DaGljYWdvJTJDLUlMP3V0bV9jYW1wYWlnbj1nb29nbGVfam9ic19hcHBseVx1MDAyNnV0bV9zb3VyY2U9Z29vZ2xlX2pvYnNfYXBwbHlcdTAwMjZ1dG1fbWVkaXVtPW9yZ2FuaWMifX0="
+    },
+    {
+        "title": "Software Development Team Lead - Java",
+        "company_name": "Uline",
+        "location": "  Glenview, IL   ",
+        "via": "via My Stateline Jobs",
+        "description": "Software Development Team Lead - Java\n\nCorporate Headquarters...\n\n12575 Uline Drive, Pleasant Prairie, WI 53158\n\nDevelop your ideal IT career, crafting custom software solutions, at Uline. Bring your expertise to help manage our industry-leading team behind one of the largest e-commerce sites in the U. S.\n\nBetter together than apart. This position is on-site, and we are looking for good people who share our passion.\n\nPosition Responsibilities\n\u2022 Collaborate with other departments to prioritize Enterprise Java Applications development needs.\n\u2022 Lead daily activities and provide mentorship to a team of 5 - 7 software developers.\n\u2022 Perform code reviews to ensure high quality and that standards are being met.\n\u2022 Provide management-level communications regarding project and team performance.\n\nMinimum Requirements\n\u2022 Bachelor's degree. Computer Science or Software Engineering majors a plus.\n\u2022 8 years hands-on Java development experience with 4+ years of leadership experience preferred.\n\u2022 Proficient in design patterns and strong experience in delivering enterprise solutions with Spring framework using Spring Boot, Hibernate, Security and MVC.\n\u2022 Extensive experience in developing and consuming REST webservices and working in a micro-services environment.\n\nBenefits\n\u2022 Complete medical, dental, vision and life insurance coverage, Flexible Spending Accounts and wellness programs.\n\u2022 401(k) with 5% employer match.\n\u2022 Paid holidays and generous paid time off.\n\u2022 Tuition Assistance Program that covers professional continuing education.\n\u2022 Bonus programs that include annual performance, sales goals and profit sharing.\n\nEmployee Perks\n\u2022 On-site caf\u00e9 with executive chefs and seasonal dinner-to-go options.\n\u2022 First-class fitness center with complimentary personal trainers.\n\u2022 Over four miles of beautifully maintained walking trails.\n\nAbout Uline\n\nUline is North America's leading distributor of shipping, industrial and packaging materials. We're a family-owned company known for incredible service, quality products and same-day shipping of our huge in-stock inventory. With over 9,000 employees across 13 locations, it's time you joined Uline.\n\nUline is proud to operate as a drug-free workplace. All new hires must complete a pre-employment hair follicle drug screening.\n\nEEO/AA Employer/Vet/Disabled\n\n#LI-MW2\n\n#CORP\n\n(#IN-PPIT)\n\nOur employees make the difference and we are committed to offering exceptional benefits and perks! Explore Uline. jobs to learn more",
+        "job_highlights": [
+            {
+                "title": "Qualifications",
+                "items": [
+                    "Bachelor's degree",
+                    "Proficient in design patterns and strong experience in delivering enterprise solutions with Spring framework using Spring Boot, Hibernate, Security and MVC",
+                    "Extensive experience in developing and consuming REST webservices and working in a micro-services environment"
+                ]
+            },
+            {
+                "title": "Responsibilities",
+                "items": [
+                    "Collaborate with other departments to prioritize Enterprise Java Applications development needs",
+                    "Lead daily activities and provide mentorship to a team of 5 - 7 software developers",
+                    "Perform code reviews to ensure high quality and that standards are being met",
+                    "Provide management-level communications regarding project and team performance"
+                ]
+            },
+            {
+                "title": "Benefits",
+                "items": [
+                    "Complete medical, dental, vision and life insurance coverage, Flexible Spending Accounts and wellness programs",
+                    "401(k) with 5% employer match",
+                    "Paid holidays and generous paid time off",
+                    "Tuition Assistance Program that covers professional continuing education",
+                    "Bonus programs that include annual performance, sales goals and profit sharing",
+                    "Employee Perks",
+                    "On-site caf\u00e9 with executive chefs and seasonal dinner-to-go options",
+                    "First-class fitness center with complimentary personal trainers",
+                    "Over four miles of beautifully maintained walking trails"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "http://www.uline.com/",
+                "text": "uline.com"
+            },
+            {
+                "link": "https://www.google.com/search?hl=en&q=Uline&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCLML",
+                "text": "See web results for Uline"
+            }
+        ],
+        "extensions": [
+            "1 day ago",
+            "Full-time",
+            "Health insurance",
+            "Dental insurance",
+            "Paid time off"
+        ],
+        "detected_extensions": {
+            "posted_at": "1 day ago",
+            "schedule_type": "Full-time"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJTb2Z0d2FyZSBEZXZlbG9wbWVudCBUZWFtIExlYWQgLSBKYXZhIiwiaHRpZG9jaWQiOiJKVXZvMlN6QUM0QUFBQUFBQUFBQUFBPT0iLCJobCI6ImVuIiwiZmMiOiJFb3dDQ3N3QlFVMXJNbXhzVEZKRE9XMWhkRXhJTkdOUVFqRm1jMVJsVlRSaVMwcHhSelpxTkhCVGJVMUhaVWhFWjJvNE0yTkRWazVKTlVaRU1tNU5hQzFHYmpWSk1FUTJVMWhTU0cwM1lYcE1TekZEVmxsSFpHeFBUak15ZUdnNWIzb3lRV1k0TVZsVVVVMDBORVU1UkVWNVUwSkJkbkJHY1VNNVUwdDZWMTlNTTJ0ZlpHZDFTV1pvVHprelYyUTROemxYVmxneFZubE9kVEJJVVVWWmJGbHhkMWxST1RZMFpUZFVjRzFmVm0xNk9YVkZla3hSYkhaNE9WQlJUaTFKU2xSbVkxcGZSMGcwT1ZWSmNXdEhOVXh5RWhkbk4waExXa3hEUTBJMmRXdzFUbTlRYTNSSFN6QkJieG9pUVV4RlV6bDFUMjloU2tZMVZXZEtNVnBmUTFkd1FWSkVZVTVSTUdreFdIZE1RUSIsImZjdiI6IjMiLCJmY19pZCI6ImZjXzUiLCJhcHBseV9saW5rIjp7InRpdGxlIjoiQXBwbHkgb24gTXkgU3RhdGVsaW5lIEpvYnMiLCJsaW5rIjoiaHR0cHM6Ly9qb2JzLm15c3RhdGVsaW5lLmNvbS9qb2JzL3NvZnR3YXJlLWRldmVsb3BtZW50LXRlYW0tbGVhZC1qYXZhLWdsZW52aWV3LWlsbGlub2lzLzEwNzgxNjM4NTItMi8/dXRtX2NhbXBhaWduPWdvb2dsZV9qb2JzX2FwcGx5XHUwMDI2dXRtX3NvdXJjZT1nb29nbGVfam9ic19hcHBseVx1MDAyNnV0bV9tZWRpdW09b3JnYW5pYyJ9fQ=="
+    },
+    {
+        "title": "Software Engineer Sr",
+        "company_name": "Medline Industries, Inc",
+        "location": "  Libertyville, IL   ",
+        "via": "via ZipRecruiter",
+        "description": "JOB SUMMARY\n\nMedline Industries is seeking a Senior Software Engineer with extensive experience in modernizing business systems using Java, microservices, AKS, and other modern technologies. The ideal candidate will have a proven track record of successful modernization projects, strong leadership skills, and the ability to work collaboratively with cross-functional teams...\n\nMAJOR RESPONSIBILITIES\n\u2022 Design, develop, and maintain highly scalable and reliable software solutions to modernize Medline systems using Java, micro-services, AKS, and other modern technologies in Cloud.\n\u2022 Collaborate with cross-functional teams to gather requirements, create technical specifications, and develop software solutions that meet business needs.\n\u2022 Lead and mentor junior software engineers on the team, providing guidance on technical and professional development.\n\u2022 Write clean, well-documented, and efficient code using software development best practices and ensure its robustness and scalability.\n\u2022 Work with product owners to understand and prioritize business requirements and translate them into technical designs and implementations.\n\u2022 Drive continuous improvement of software development processes, including code review, testing, and deployment strategies.\n\u2022 Keep up to date with emerging trends and technologies in software development and apply them where appropriate.\n\u2022 Troubleshoot and debug production issues as needed.\n\u2022 Ensure software solutions are secure, scalable, and maintainable.\n\u2022 Contribute to the overall architecture and design of application modernization.\n\nMinimum Job Requirements\n\nEducation\n\nBachelor's in Computer Science, Software Engineering or related field\n\nWork Experience\n\nAt least 7 years of experience in software engineering, with a focus on application modernization.\n\nKnowledge/ Skills/ Abilities\n\u2022 At least 7 years of experience in software engineering, with a focus on application modernization.\n\u2022 Strong experience with Java, spring framework, REST API, Kubernetes, cloud services, and cloud technology.\n\u2022 Strong experience working and implementing architecture patterns like microservice, service mesh, event bus patterns.\n\u2022 Strong experience in Java Design Patterns, Java Collections, Data Structures, PL/SQL, data search and sort algorithms.\n\u2022 Experience with cloud data repository operations like Azure Redis, Azure Cosmos DB and Azure SQL.\n\u2022 Experience with implementing security using OAuth2.0.\n\u2022 Experience with containerization and deployment tools such as Docker, Kubernetes, and Helm.\n\u2022 Proven track record of successful software development projects and technical leadership.\n\u2022 Experience with DevOps tools such as GitHub, Jenkins, Azure DevOps and Terraform.\n\u2022 Experience with test automation frameworks such as JUnit, Mockito, and Selenium.\n\u2022 Strong understanding of database design and implementation.\n\u2022 Excellent communication and collaboration skills, with a strong ability to work effectively in a team environment.\n\u2022 Ability to work in a fast-paced, dynamic environment and adapt to changing priorities.\n\u2022 Experience with front-end technologies such as React or Angular\n\nPreferred Job Requirements\n\nCertification/ Licensure\n\u2022 Spring Professional Certification by VMware\n\u2022 Oracle Certified Professional: Java SE 11 Developer",
+        "job_highlights": [
+            {
+                "title": "Qualifications",
+                "items": [
+                    "The ideal candidate will have a proven track record of successful modernization projects, strong leadership skills, and the ability to work collaboratively with cross-functional teams",
+                    "Bachelor's in Computer Science, Software Engineering or related field",
+                    "At least 7 years of experience in software engineering, with a focus on application modernization",
+                    "Strong experience with Java, spring framework, REST API, Kubernetes, cloud services, and cloud technology",
+                    "Strong experience working and implementing architecture patterns like microservice, service mesh, event bus patterns",
+                    "Strong experience in Java Design Patterns, Java Collections, Data Structures, PL/SQL, data search and sort algorithms",
+                    "Experience with cloud data repository operations like Azure Redis, Azure Cosmos DB and Azure SQL",
+                    "Experience with implementing security using OAuth2.0",
+                    "Experience with containerization and deployment tools such as Docker, Kubernetes, and Helm",
+                    "Proven track record of successful software development projects and technical leadership",
+                    "Experience with DevOps tools such as GitHub, Jenkins, Azure DevOps and Terraform",
+                    "Experience with test automation frameworks such as JUnit, Mockito, and Selenium",
+                    "Strong understanding of database design and implementation",
+                    "Excellent communication and collaboration skills, with a strong ability to work effectively in a team environment",
+                    "Ability to work in a fast-paced, dynamic environment and adapt to changing priorities",
+                    "Experience with front-end technologies such as React or Angular",
+                    "Certification/ Licensure",
+                    "Spring Professional Certification by VMware",
+                    "Oracle Certified Professional: Java SE 11 Developer"
+                ]
+            },
+            {
+                "title": "Responsibilities",
+                "items": [
+                    "Design, develop, and maintain highly scalable and reliable software solutions to modernize Medline systems using Java, micro-services, AKS, and other modern technologies in Cloud",
+                    "Collaborate with cross-functional teams to gather requirements, create technical specifications, and develop software solutions that meet business needs",
+                    "Lead and mentor junior software engineers on the team, providing guidance on technical and professional development",
+                    "Write clean, well-documented, and efficient code using software development best practices and ensure its robustness and scalability",
+                    "Work with product owners to understand and prioritize business requirements and translate them into technical designs and implementations",
+                    "Drive continuous improvement of software development processes, including code review, testing, and deployment strategies",
+                    "Keep up to date with emerging trends and technologies in software development and apply them where appropriate",
+                    "Troubleshoot and debug production issues as needed",
+                    "Ensure software solutions are secure, scalable, and maintainable",
+                    "Contribute to the overall architecture and design of application modernization"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "http://www.medline.com/",
+                "text": "medline.com"
+            },
+            {
+                "link": "https://www.google.com/search?hl=en&q=Medline+Industries,+Inc&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCP8L",
+                "text": "See web results for Medline Industries, Inc"
+            }
+        ],
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzO2L81msl14APnBLZdiL6hIUVoDy_1_v9A8hNWAE&s",
+        "extensions": [
+            "2 days ago",
+            "Full-time"
+        ],
+        "detected_extensions": {
+            "posted_at": "2 days ago",
+            "schedule_type": "Full-time"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJTb2Z0d2FyZSBFbmdpbmVlciBTciIsImh0aWRvY2lkIjoiLTBjMWNjVHJoUTRBQUFBQUFBQUFBQT09IiwiaGwiOiJlbiIsImZjIjoiRW93Q0Nzd0JRVTFyTW14c1NqUlVXa2hrVmpsamVHTnBha0V4V1ROUFRtSmhibHBXTlZGTE5scHVWa3BuWVZCalJWRm5RVE16ZURKclgyaGxSVjlGZG1KRlFXaGtZemxqVm14alRteFBNREJyT0ZoZmRUUjBValJqV2s4MVpsTTVNelZvT0ZObWFGTXhWMEpLWVdoRlEwTnNSVmhNY0UxeFRETjVabVpoVVRZNVZTMWFObUY2U0UwdE5XMU1iVU5qTFV0dFUwaFhTRlZJUmpGd04yeG5OV3BrZFVSa09XVjRPSG94Um5KcU5rSkpWeloyYTIxSVREWkhjMlpxWWtJMVVsUnZZVE51VWpCT01GcElkbVY0VURkbEVoZG5OMGhMV2t4RFEwSTJkV3cxVG05UWEzUkhTekJCYnhvaVFVeEZVemwxVFRoWFVrSkRTbXBKVW5sR00zTllVakZVT1RacU1VVmZkME10ZHciLCJmY3YiOiIzIiwiZmNfaWQiOiJmY183IiwiYXBwbHlfbGluayI6eyJ0aXRsZSI6IkFwcGx5IG9uIFppcFJlY3J1aXRlciIsImxpbmsiOiJodHRwczovL3d3dy56aXByZWNydWl0ZXIuY29tL2MvTWVkbGluZS1JbmR1c3RyaWVzLC1JbmMvSm9iL1NvZnR3YXJlLUVuZ2luZWVyLVNyLy1pbi1MaWJlcnR5dmlsbGUsSUw/amlkPWMwNjc4NTlkY2Q5Mzk4ZTdcdTAwMjZ1dG1fY2FtcGFpZ249Z29vZ2xlX2pvYnNfYXBwbHlcdTAwMjZ1dG1fc291cmNlPWdvb2dsZV9qb2JzX2FwcGx5XHUwMDI2dXRtX21lZGl1bT1vcmdhbmljIn19"
+    },
+    {
+        "title": "Director, Software Engineering- Marketing Technology",
+        "company_name": "Capital One",
+        "location": "  Joliet, IL   ",
+        "via": "via ComputerJobs",
+        "description": "Locations: VA - McLean, United States of America, McLean, VirginiaDirector, Software Engineering (Marketing Technology)\n\nWe are seeking a Director of Software Engineering who is passionate about growing and sustaining an innovative technology organization while fostering a culture of engineering and operational excellence. This individual will be an engineering leader who enjoys solving complex... business problems in a fast-paced, collaborative, inclusive, and iterative delivery environment. At Capital One, you'll be part of a big group of builders, breakers, doers and disruptors, who love to solve real problems and meet real customer needs.\n\nAs part of this role, you'll work on designing cloud native solutions and will have opportunity to work on emerging technologies such as: Angular.js, Java, GO, Scala, Python, REST, NoSQL databases, relational databases, Kafka streaming, Apache Airflow, Salesforce Marketing Cloud and AWS/Cloud Infrastructure to name a few.\n\nThis position is in the Martech org within Card Tech line of business and will be leading teams to build the next generation marketing & messaging platforms that enable segments, servicers, and marketers to author and deliver real-time, intelligent, multi-channel experiences at scale.\n\nYou will:\n\u2022 Lead multiple delivery teams and coach team through their career development and performance\n\u2022 Develop the technical strategy, roadmap and vision for the platforms you own\n\u2022 Work with product managers to understand desired application capabilities and testing scenarios - Continuously improve software engineering practices\n\u2022 Work within and across Agile teams to design, develop, test, implement, and support technical solutions across a full-stack development tools and technologies\n\u2022 Lead the craftsmanship, availability, resilience, and scalability of your solutions\n\u2022 Bring a passion to stay on top of tech trends, experiment with and learn new technologies, participate in internal & external technology communities, and mentor other members of the engineering community\n\u2022 Encourage innovation, implementation of cutting-edge technologies, inclusion, outside-of-the-box thinking, teamwork, self-organization, and diversity\n\u2022 Lead efforts to deploy new and existing applications into AWS environments\n\nBasic Qualifications:\n\n- Bachelor's Degree\n\n- At least 7 years' experience in software development\n\n- At least 5 years' experience in people management\n\n- At least 3 years' experience with public cloud technologies (AWS, Azure, GCP)\n\nPreferred Qualifications:\n\n- Master's Degree\n\n- 10+ years of experience in software development\n\n- 5+ years of experience Marketing technology (Salesforce Marketing Cloud)\n\n- 4+ years of experience in AWS\n\nCapital One will consider sponsoring a new qualified applicant for employment authorization for this position.\n\nThe minimum and maximum Full time annual salaries for this role are listed below, by location. Please note that this salary information is solely for candidates hired to perform work within one of these locations, and refers to the amount Capital One is willing to pay at the time of this posting. Salaries for part-time roles will be prorated based upon the agreed upon number of hours to be regularly worked. New York City (Hybrid On-Site): $269,400 - $307,500 for Director, Software Engineering\n\nCandidates hired to work in other locations will be subject to the pay range associated with that location, and the actual annualized salary amount offered to any candidate at the time of hire will be reflected solely in the candidate's offer letter. This role is also eligible to earn performance based incentive compensation, which may include cash bonus(es) and/or long term incentives (LTI). Incentives could be discretionary or non discretionary depending on the plan.\n\nCapital One offers a comprehensive, competitive, and inclusive set of health, financial and other benefits that support your total well-being. Learn more at the Capital One Careers website . Eligibility varies based on full or part-time status, exempt or non-exempt status, and management level. No agencies please. Capital One is an Equal Opportunity Employer committed to diversity and inclusion in the workplace. All qualified applicants will receive consideration for employment without regard to sex, race, color, age, national origin, religion, physical and mental disability, genetic information, marital status, sexual orientation, gender identity/assignment, citizenship, pregnancy or maternity, protected veteran status, or any other status prohibited by applicable national, federal, state or local law. Capital One promotes a drug-free workplace. Capital One will consider for employment qualified applicants with a criminal history in a manner consistent with the requirements of applicable laws regarding criminal background inquiries, including, to the extent applicable, Article 23-A of the New York Correction Law; San Francisco, California Police Code Article 49, Sections 4901-4920; New York City's Fair Chance Act; Philadelphia's Fair Criminal Records Screening Act; and other applicable federal, state, and local laws and regulations regarding criminal background inquiries.\n\nIf you have visited our website in search of information on employment opportunities or to apply for a position, and you require an accommodation, please contact Capital One Recruiting at 1-800-304-9102 or via email at (see below) . All information you provide will be kept confidential and will be used only to the extent required to provide needed reasonable accommodations.\n\nFor technical support or questions about Capital One's recruiting process, please send an email to (see below)\n\nCapital One does not provide, endorse nor guarantee and is not liable for third-party products, services, educational tools or other information available through this site.\n\nCapital One Financial is made up of several different entities. Please note that any position posted in Canada is for Capital One Canada, any position posted in the United Kingdom is for Capital One Europe and any position posted in the Philippines is for Capital One Philippines Service Corp. (COPSSC",
+        "job_highlights": [
+            {
+                "title": "Qualifications",
+                "items": [
+                    "Bachelor's Degree",
+                    "At least 7 years' experience in software development",
+                    "At least 5 years' experience in people management",
+                    "At least 3 years' experience with public cloud technologies (AWS, Azure, GCP)"
+                ]
+            },
+            {
+                "title": "Responsibilities",
+                "items": [
+                    "This individual will be an engineering leader who enjoys solving complex business problems in a fast-paced, collaborative, inclusive, and iterative delivery environment",
+                    "At Capital One, you'll be part of a big group of builders, breakers, doers and disruptors, who love to solve real problems and meet real customer needs",
+                    "As part of this role, you'll work on designing cloud native solutions and will have opportunity to work on emerging technologies such as: Angular.js, Java, GO, Scala, Python, REST, NoSQL databases, relational databases, Kafka streaming, Apache Airflow, Salesforce Marketing Cloud and AWS/Cloud Infrastructure to name a few",
+                    "Lead multiple delivery teams and coach team through their career development and performance",
+                    "Develop the technical strategy, roadmap and vision for the platforms you own",
+                    "Work with product managers to understand desired application capabilities and testing scenarios - Continuously improve software engineering practices",
+                    "Work within and across Agile teams to design, develop, test, implement, and support technical solutions across a full-stack development tools and technologies",
+                    "Lead the craftsmanship, availability, resilience, and scalability of your solutions",
+                    "Bring a passion to stay on top of tech trends, experiment with and learn new technologies, participate in internal & external technology communities, and mentor other members of the engineering community",
+                    "Encourage innovation, implementation of cutting-edge technologies, inclusion, outside-of-the-box thinking, teamwork, self-organization, and diversity",
+                    "Lead efforts to deploy new and existing applications into AWS environments"
+                ]
+            },
+            {
+                "title": "Benefits",
+                "items": [
+                    "Salaries for part-time roles will be prorated based upon the agreed upon number of hours to be regularly worked",
+                    "New York City (Hybrid On-Site): $269,400 - $307,500 for Director, Software Engineering",
+                    "Candidates hired to work in other locations will be subject to the pay range associated with that location, and the actual annualized salary amount offered to any candidate at the time of hire will be reflected solely in the candidate's offer letter",
+                    "This role is also eligible to earn performance based incentive compensation, which may include cash bonus(es) and/or long term incentives (LTI)",
+                    "Incentives could be discretionary or non discretionary depending on the plan",
+                    "Capital One offers a comprehensive, competitive, and inclusive set of health, financial and other benefits that support your total well-being"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "http://www.capitalone.com/",
+                "text": "capitalone.com"
+            },
+            {
+                "link": "https://www.google.com/search?hl=en&q=Capital+One&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCMUM",
+                "text": "See web results for Capital One"
+            }
+        ],
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR7rBwV2eGRGo3OqcsU5RxRhlNEbn0PkJfre4J&s=0",
+        "extensions": [
+            "2 days ago",
+            "Full-time",
+            "Health insurance"
+        ],
+        "detected_extensions": {
+            "posted_at": "2 days ago",
+            "schedule_type": "Full-time"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJEaXJlY3RvciwgU29mdHdhcmUgRW5naW5lZXJpbmctIE1hcmtldGluZyBUZWNobm9sb2d5IiwiaHRpZG9jaWQiOiJFbEdGODVxTDZuRUFBQUFBQUFBQUFBPT0iLCJobCI6ImVuIiwiZmMiOiJFcUlDQ3VJQlFVMXJNbXhzUzNCc2VFOVZXVEZpTVZKemFVVndlRFZPUkZSTVYwNW1aMUp1V1dSWFFWOUpYMWxxTUhKRGNIRTRYM1JaVUZCRFExOHpiMmxNWWtaMlRGZHZZVTlwZDJaV2FtdzFPV2R4VFhOTE5tSndXRTFWUlRFM1ZEaHlkakoyT1hORGFsOURRMTlKYnkxTFgyOWFOM05IVHpGRE1IWlBjVkkxY1RkM1ozQTNkbGhJUVcxdVZHUkVSMlJmUzNCdmNFOXFhbG93T0VoWWRsSk1jalZVU1ZCQ2RWRmFTRzh3UTFjeFpIRnFUVUpYYmtWRVNTMDJWbWRzTjJSalNEVnZaakExTmtGS2VtOWhXbVZ2U1VOcVQzVm1XRWhmV2xKa01HTnlOM3BoWVhaNFFSSVhaemRJUzFwTVEwTkNOblZzTlU1dlVHdDBSMHN3UVc4YUlrRk1SVk01ZFZCTVZubFNRWGhGVUhWQmNFMTJiMGRMYVVGbVozSTNRMHBuUjFFIiwiZmN2IjoiMyIsImZjX2lkIjoiZmNfOSIsImFwcGx5X2xpbmsiOnsidGl0bGUiOiJBcHBseSBvbiBDb21wdXRlckpvYnMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuY29tcHV0ZXJqb2JzLmNvbS91cy9lbi9zZWFyY2gtam9icy1pbi1JbGxpbm9pcywtVVNBL0RJUkVDVE9SLVNPRlRXQVJFLUVOR0lORUVSSU5HLU1BUktFVElORy1URUNITk9MT0dZLUM1MTg2Q0JFNDYxQkY0QzUwRi8/dXRtX2NhbXBhaWduPWdvb2dsZV9qb2JzX2FwcGx5XHUwMDI2dXRtX3NvdXJjZT1nb29nbGVfam9ic19hcHBseVx1MDAyNnV0bV9tZWRpdW09b3JnYW5pYyJ9fQ=="
+    },
+    {
+        "title": "Senior Software Engineer- Data Streaming Team",
+        "company_name": "Realtor",
+        "location": "  Chicago, IL   ",
+        "via": "via Chicago, IL - Geebo",
+        "description": "Who We Are Realtor.com is your one-stop-shop for homebuyers, sellers, and dreamers, with comprehensive for-sale listings, insightful information, valuable tools, and professional expertise. We make buying, selling, renting, and living in homes easier and more rewarding for everyone. We're excited and hungry to make a difference to the millions of people in the US who buy a home each year. Our aspiration starts with treating our home buyer as our focal point - we believe that delivering on experiences that truly help people through this seemingly difficult life event will lead us to continued and greater success as a company. About The Role We have an exciting and unique opportunity for a motivated and energetic Senior Software Engineer to join the Realtor.com Data Platform team. Senior Software Engineers on the Data Platform Team are responsible for the services and infrastructure capable of processing and making available the extensive volume of data produced on its platform each... day. Data Platform Engineers build the infrastructure and tools needed to enable engineers, analysts, and scientists to utilize real time data products that operate against our largest data sets. In this position, you will work to deliver high quality data in real time to services, analysts, and our data lake using industry standard real time event driven systems. We are building out a modern streaming data platform where you will get to drive decisions and be part of a team that has a lot of fun along the way! What you'll do Responsibilities Work collaboratively in teams composed of Product Managers and Engineers Implement new application features that delight our users Develop reusable components and frameworks for ingestion, routing, and data quality using services and tools offered by AWS and other cloud services Own the delivery, quality, and reliability of our streaming data platform and act as support for production issues, profile performance, and assist in root cause analysis Make it simple for Data Platform users to collect and access data Participate in hackathons and Proof Of Concept experiments to continuously improve our delivery Perform presentations of our products/features to internal stakeholders Work in a primarily Agile/Scrum product development process About you Requirements An experienced software engineer that is passionate about building great products and a quality codebase in a team-focused environment Excited and motivated to learn new technologies 5\nyears experience developing back-end server software, preferably in Python and Typescript or Javascript Experience with data streaming technologies, preferably Kafka Experience with cloud computing, preferably Amazon Web Services (AWS) Experience developing distributed stateless services that utilize messaging patterns Experience developing service oriented architectures/orchestration Experience with API design/development Experience with test-driven development with unit-testing, integration testing and end-to-end testing Experience with data serialization system and schema management - Avro, Protobuf Exposure to build, test, and deployment automation technologies Nice to Have Experience with Javascript libraries such as React for building UI for internal tools About realtor.com At realtor.com , we believe that everyone deserves a home of their own. We're a community of nearly 2,000 employees that work hard to ensure that from the moment someone starts dreaming about a new home, to the moment they walk in the door and beyond, we're there to lend a helping hand. Every month, 70 million people trust us with their journey home by visiting our site and mobile apps, and we'd love to have you join our team to help. We've got great offices across Canada and the US and lots of sweet jobs to choose from, so we're hoping you'll join us on our journey to make home buying and selling easier, and more rewarding for everyone.\nSalary Range:\n$100K -- $150K\nMinimum Qualification\nSoftware DevelopmentEstimated Salary: $20 to $28 per hour based on qualifications",
+        "job_highlights": [
+            {
+                "items": [
+                    "Who We Are Realtor.com is your one-stop-shop for homebuyers, sellers, and dreamers, with comprehensive for-sale listings, insightful information, valuable tools, and professional expertise. We make buying, selling, renting, and living in homes easier and more rewarding for everyone. We're excited and hungry to make a difference to the millions of people in the US who buy a home each year. Our aspiration starts with treating our home buyer as our focal point - we believe that delivering on experiences that truly help people through this seemingly difficult life event will lead us to continued and greater success as a company. About The Role We have an exciting and unique opportunity for a motivated and energetic Senior Software Engineer to join the Realtor.com Data Platform team. Senior Software Engineers on the Data Platform Team are responsible for the services and infrastructure capable of processing and making available the extensive volume of data produced on its platform each... day. Data Platform Engineers build the infrastructure and tools needed to enable engineers, analysts, and scientists to utilize real time data products that operate against our largest data sets. In this position, you will work to deliver high quality data in real time to services, analysts, and our data lake using industry standard real time event driven systems. We are building out a modern streaming data platform where you will get to drive decisions and be part of a team that has a lot of fun along the way! What you'll do Responsibilities Work collaboratively in teams composed of Product Managers and Engineers Implement new application features that delight our users Develop reusable components and frameworks for ingestion, routing, and data quality using services and tools offered by AWS and other cloud services Own the delivery, quality, and reliability of our streaming data platform and act as support for production issues, profile performance, and assist in root cause analysis Make it simple for Data Platform users to collect and access data Participate in hackathons and Proof Of Concept experiments to continuously improve our delivery Perform presentations of our products/features to internal stakeholders Work in a primarily Agile/Scrum product development process About you Requirements An experienced software engineer that is passionate about building great products and a quality codebase in a team-focused environment Excited and motivated to learn new technologies 5\nyears experience developing back-end server software, preferably in Python and Typescript or Javascript Experience with data streaming technologies, preferably Kafka Experience with cloud computing, preferably Amazon Web Services (AWS) Experience developing distributed stateless services that utilize messaging patterns Experience developing service oriented architectures/orchestration Experience with API design/development Experience with test-driven development with unit-testing, integration testing and end-to-end testing Experience with data serialization system and schema management - Avro, Protobuf Exposure to build, test, and deployment automation technologies Nice to Have Experience with Javascript libraries such as React for building UI for internal tools About realtor.com At realtor.com , we believe that everyone deserves a home of their own. We're a community of nearly 2,000 employees that work hard to ensure that from the moment someone starts dreaming about a new home, to the moment they walk in the door and beyond, we're there to lend a helping hand. Every month, 70 million people trust us with their journey home by visiting our site and mobile apps, and we'd love to have you join our team to help. We've got great offices across Canada and the US and lots of sweet jobs to choose from, so we're hoping you'll join us on our journey to make home buying and selling easier, and more rewarding for everyone.\nSalary Range:\n$100K -- $150K\nMinimum Qualification\nSoftware DevelopmentEstimated Salary: $20 to $28 per hour based on qualifications"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "https://www.google.com/search?hl=en&q=Realtor&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCPkM",
+                "text": "See web results for Realtor"
+            }
+        ],
+        "extensions": [
+            "3 days ago",
+            "20\u201328 an hour",
+            "Full-time",
+            "No degree mentioned"
+        ],
+        "detected_extensions": {
+            "posted_at": "3 days ago",
+            "schedule_type": "Full-time",
+            "salary": "20\u201328 an hour"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJTZW5pb3IgU29mdHdhcmUgRW5naW5lZXItIERhdGEgU3RyZWFtaW5nIFRlYW0iLCJodGlkb2NpZCI6IklsUk5DajFNSlp3QUFBQUFBQUFBQUE9PSIsImhsIjoiZW4iLCJmYyI6IkVvd0NDc3dCUVUxck1teHNTMkZIWm1kb1ZERlhWR3hZTUVadk5rbGlZbW94U1hka1ptbDVNelZEYVhRM2IydzBRbGR5V210VVdXdzBlWE00VjAwMWRGOVBZWE00VWxod1VtTkVYM2xJYkdKM2MxcHlYMjF5YlRGdFJHNWpjV3g0TVVwMmMzQlZSR3N5ZGpKR1ZtVkZPR3hKWlVveE9UQktjMnRhWmtSRmRYUlZhRWRSVmxGNlQwdGlkRlZ2YTJFelZTMUZkRm90TFRKUVUwbEpka3B1TmtVNVVuUTRNMmxUWm1sU1YydExVa1J1ZUhCcVVXeEVUVkpQWjJWb2EzcHlNek5QTUhoNGRsVk5NM05xTkRGVmFrcGtFaGRuTjBoTFdreERRMEkyZFd3MVRtOVFhM1JIU3pCQmJ4b2lRVXhGVXpsMVQxRmhRbFJMZWtac1lXcDZNRTF5ZHpaTVJrYzJURXhZVGxKSGR3IiwiZmN2IjoiMyIsImZjX2lkIjoiZmNfMTEiLCJhcHBseV9saW5rIjp7InRpdGxlIjoiQXBwbHkgZGlyZWN0bHkgb24gQ2hpY2FnbywgSUwgLSBHZWVibyIsImxpbmsiOiJodHRwczovL2NoaWNhZ28taWwuZ2VlYm8uY29tL2pvYnMtb25saW5lL3ZpZXcvaWQvMTEyMzUyMzc5MC1zZW5pb3Itc29mdHdhcmUtZW5naW5lZXItZGF0YS0vP3V0bV9jYW1wYWlnbj1nb29nbGVfam9ic19hcHBseVx1MDAyNnV0bV9zb3VyY2U9Z29vZ2xlX2pvYnNfYXBwbHlcdTAwMjZ1dG1fbWVkaXVtPW9yZ2FuaWMifX0="
+    },
+    {
+        "title": "Senior Software Engineer, Full Stack",
+        "company_name": "Capital One",
+        "location": "  Chicago, IL   ",
+        "via": "via Salary.com",
+        "description": "Job Description\nWest Creek 4 (12074), United States of America, Richmond, Virginia\n...\nSenior Software Engineer, Full Stack\n\nDo you love building and pioneering in the technology space? Do you enjoy solving complex business problems in a fast-paced, collaborative, inclusive, and iterative delivery environment? At Capital One, you'll be part of a big group of makers, breakers, doers and disruptors, who solve real problems and meet real customer needs. We are seeking Full Stack Software Engineers who are passionate about marrying data with emerging technologies. As a Capital One Software Engineer, you'll have the opportunity to be on the forefront of driving a major transformation within Capital One.\n\nThe Enterprise SRE team is focused chiefly on improving the experience of the customer while helping developer teams balance innovation and reliability for their applications. A Software Engineer in Capital One Reliability Engineering will develop our Counslr product, focused on measuring reliability, setting reliability targets, and providing guidance to improve reliability across applications within the enterprise. They leverage SRE practices to develop quality software for our internal teams. Overall, they listen and discover ways to help promote the availability of services and applications, the reduction of repetitive processes and toil, and the observability and monitoring to enable data-driven actions.\n\nWhat You'll Do:\n\u2022 Collaborate with and across Agile teams to design, develop, test, implement, and support technical solutions in full-stack development tools and technologies\n\u2022 Share your passion for staying on top of tech trends, experimenting with and learning new technologies, participating in internal & external technology communities, mentoring other members of the engineering community\n\u2022 Collaborate with digital product managers, and deliver robust cloud-based solutions that drive powerful experiences to help millions of Americans achieve financial empowerment\n\u2022 Utilize programming languages like JavaScript, Java, HTML/CSS, TypeScript, SQL, Python, and Go, Open Source RDBMS and NoSQL databases, Container Orchestration services including Docker and Kubernetes, and a variety of AWS tools and services\n\nBasic Qualifications:\n\u2022 Bachelor's Degree\n\u2022 At least 4 years of experience in software engineering (Internship experience does not apply)\n\nPreferred Qualifications:\n\u2022 5 years of experience in at least one of the following: JavaScript, Java, TypeScript, SQL, Python, or Go\n\u2022 1 years of experience with AWS, Google Cloud Platform, Microsoft Azure, or another cloud service\n\u2022 3 years of experience in open source frameworks\n\u2022 2 years of experience in Agile practices\n\nAt this time, Capital One will not sponsor a new applicant for employment authorization for this position.\n\nThe minimum and maximum full-time annual salaries for this role are listed below, by location. Please note that this salary information is solely for candidates hired to perform work within one of these locations, and refers to the amount Capital One is willing to pay at the time of this posting. Salaries for part-time roles will be prorated based upon the agreed upon number of hours to be regularly worked.\n\nNew York City (Hybrid On-Site): $161,900 - $184,800 for Senior Software Engineer\n\nSan Francisco, California (Hybrid On-Site): $171,500 - $195,800 for Senior Software Engineer\n\nCandidates hired to work in other locations will be subject to the pay range associated with that location, and the actual annualized salary amount offered to any candidate at the time of hire will be reflected solely in the candidate's offer letter.\n\nThis role is also eligible to earn performance based incentive compensation, which may include cash bonus(es) and/or long term incentives (LTI). Incentives could be discretionary or non discretionary depending on the plan.\n\nCapital One offers a comprehensive, competitive, and inclusive set of health, financial and other benefits that support your total well-being. Learn more at the . Eligibility varies based on full or part-time status, exempt or non-exempt status, and management level.\n\nNo agencies please. Capital One is an Equal Opportunity Employer committed to diversity and inclusion in the workplace. All qualified applicants will receive consideration for employment without regard to sex, race, color, age, national origin, religion, physical and mental disability, genetic information, marital status, sexual orientation, gender identity/assignment, citizenship, pregnancy or maternity, protected veteran status, or any other status prohibited by applicable national, federal, state or local law. Capital One promotes a drug-free workplace. Capital One will consider for employment qualified applicants with a criminal history in a manner consistent with the requirements of applicable laws regarding criminal background inquiries, including, to the extent applicable, Article 23-A of the New York Correction Law; San Francisco, California Police Code Article 49, Sections 4901-4920; New York City's Fair Chance Act; Philadelphia's Fair Criminal Records Screening Act; and other applicable federal, state, and local laws and regulations regarding criminal background inquiries.\n\nIf you have visited our website in search of information on employment opportunities or to apply for a position, and you require an accommodation, please contact Capital One Recruiting at 1- or via email at . All information you provide will be kept confidential and will be used only to the extent required to provide needed reasonable accommodations.\n\nFor technical support or questions about Capital One's recruiting process, please send an email to\n\nCapital One does not provide, endorse nor guarantee and is not liable for third-party products, services, educational tools or other information available through this site.\n\nCapital One Financial is made up of several different entities. Please note that any position posted in Canada is for Capital One Canada, any position posted in the United Kingdom is for Capital One Europe and any position posted in the Philippines is for Capital One Philippines Service Corp. (COPSSC).\n\u2022 Dice Id: RTX1d8578\n\u2022 Position Id: 1299102504\n\u2022",
+        "job_highlights": [
+            {
+                "title": "Qualifications",
+                "items": [
+                    "Bachelor's Degree",
+                    "At least 4 years of experience in software engineering (Internship experience does not apply)"
+                ]
+            },
+            {
+                "title": "Responsibilities",
+                "items": [
+                    "They leverage SRE practices to develop quality software for our internal teams",
+                    "Overall, they listen and discover ways to help promote the availability of services and applications, the reduction of repetitive processes and toil, and the observability and monitoring to enable data-driven actions",
+                    "Collaborate with and across Agile teams to design, develop, test, implement, and support technical solutions in full-stack development tools and technologies",
+                    "Share your passion for staying on top of tech trends, experimenting with and learning new technologies, participating in internal & external technology communities, mentoring other members of the engineering community",
+                    "Collaborate with digital product managers, and deliver robust cloud-based solutions that drive powerful experiences to help millions of Americans achieve financial empowerment",
+                    "Utilize programming languages like JavaScript, Java, HTML/CSS, TypeScript, SQL, Python, and Go, Open Source RDBMS and NoSQL databases, Container Orchestration services including Docker and Kubernetes, and a variety of AWS tools and services"
+                ]
+            },
+            {
+                "title": "Benefits",
+                "items": [
+                    "Salaries for part-time roles will be prorated based upon the agreed upon number of hours to be regularly worked",
+                    "Candidates hired to work in other locations will be subject to the pay range associated with that location, and the actual annualized salary amount offered to any candidate at the time of hire will be reflected solely in the candidate's offer letter",
+                    "This role is also eligible to earn performance based incentive compensation, which may include cash bonus(es) and/or long term incentives (LTI)",
+                    "Incentives could be discretionary or non discretionary depending on the plan",
+                    "Capital One offers a comprehensive, competitive, and inclusive set of health, financial and other benefits that support your total well-being"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "http://www.capitalone.com/",
+                "text": "capitalone.com"
+            },
+            {
+                "link": "https://www.google.com/search?hl=en&q=Capital+One&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCL8N",
+                "text": "See web results for Capital One"
+            }
+        ],
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR7rBwV2eGRGo3OqcsU5RxRhlNEbn0PkJfre4J&s=0",
+        "extensions": [
+            "8 days ago",
+            "Full-time",
+            "Health insurance"
+        ],
+        "detected_extensions": {
+            "posted_at": "8 days ago",
+            "schedule_type": "Full-time"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJTZW5pb3IgU29mdHdhcmUgRW5naW5lZXIsIEZ1bGwgU3RhY2siLCJodGlkb2NpZCI6IkNrbXBPak0zUUk0QUFBQUFBQUFBQUE9PSIsImhsIjoiZW4iLCJmYyI6IkVvd0NDc3dCUVUxck1teHNTVEZYWW1NelUwZGliV2xuUmpsU1kwOHRPVGx0Um1sQkxVcDBiM1JJVEhGM1R6UlFlR3RTV0U5NVVtSTVZbTVsTm5nMFQycHNNRlJ3YTB4R01razVaMFJZWDFSWFkxQTVVa0pqZVRWdFUwZHBla3RUUzBSTmNWSlFOMmN5V21sRFJ6QmpPRVphYjA1c1dWWklYM0p4V0VWUk1FOUhlbnB2Ymtaa2NtUTROVVJEWlhWV2RGUjJVRm95WVhZMWVHaE1help0YW5wa1RFTTNWVjlRYjJkTVQzQjViMGgyUzA1cE5uUlFiamwxYjFkTFIxRTNVR0pVZUhodlRFWm5aekZoVFhOdGFERldFaGRuTjBoTFdreERRMEkyZFd3MVRtOVFhM1JIU3pCQmJ4b2lRVXhGVXpsMVRtRlJha0l3TW04dFVVMVlibTVwVUdWTU5XZFZjazlQVWpseFVRIiwiZmN2IjoiMyIsImZjX2lkIjoiZmNfMTIiLCJhcHBseV9saW5rIjp7InRpdGxlIjoiQXBwbHkgb24gU2FsYXJ5LmNvbSIsImxpbmsiOiJodHRwczovL3d3dy5zYWxhcnkuY29tL2pvYi9jYXBpdGFsLW9uZS9zZW5pb3Itc29mdHdhcmUtZW5naW5lZXItZnVsbC1zdGFjay9qMjAyMjExMjIwNDIyMDIxNzQ5MDgzP3V0bV9jYW1wYWlnbj1nb29nbGVfam9ic19hcHBseVx1MDAyNnV0bV9zb3VyY2U9Z29vZ2xlX2pvYnNfYXBwbHlcdTAwMjZ1dG1fbWVkaXVtPW9yZ2FuaWMifX0="
+    },
+    {
+        "title": "Senior Software Engineer",
+        "company_name": "Walgreens",
+        "location": "  Glen Ellyn, IL   ",
+        "via": "via HireSpot",
+        "description": "Job Summary :\n\nSeasoned, experienced professional with a full understanding of area of specialization, who will perform and implement activities that impact components/ processes of specified functional areas of the Walgreens Digital/Online application. Anticipates and prevents problems and roadblocks before they occur. Typically assigned to important / complicated undertakings. Implements... activities that generally impact important components / processes of the work of own unit / team / projects of the platform operation in an Agile environment.\n\nThis role is developing design skills, but has a comprehensive understanding of the organization's current software application and tools. Has in-depth knowledge of programming languages important to the organization and is proficient with them. Receives work in the form of short- and mid-term assignments that regularly require the application of independent judgement. Mentors less experienced members of the team.\n\nJob Responsibilities :\n\u2022 Plans, designs, develops and tests software systems or application for the software enhancements and new products including cloud-based or internet-related tools. Writes code that meets specifications, typically for large and highly complex software programs and systems. Develops software applications and tools. Participates in software design.\n\u2022 Writes code that meets specifications for large and highly complex software programs and systems.\n\u2022 Develops software applications and tools. Participates in software design.\n\u2022 Develops software applications and tools using Agile development methodologies.\n\u2022 Delivers software features with exceptional quality, meeting designated release plan and delivery commitments.\n\u2022 This role is assigned to important / complicated undertakings.\n\u2022 Contributes to and participates actively in the design, architecture and build phases, to aim at producing high quality deliverables, working with existing architects where appropriate. Participates in the evaluation of compatibility of programs with existing communications hardware and software features.\n\u2022 Interacts with internal and external peers and manages to exchange complex information related to areas of specialization. Work closely with other team members in guiding software architecture and technology decisions.\n\u2022 Demonstrates proficiency in most areas of the professional function and in-depth specialization in some. Work on problems of diverse scope where analysis of data requires evaluation of identifiable factors. Anticipates and prevents problems and roadblocks before they occur.\n\u2022 Networks with senior internal and external personnel in own area of expertise to exchange semi-complex information related to assigned activities.\n\u2022 Developing professional expertise, applies company policies and procedures to resolve a variety of issues\n\u2022 Developing design skills. Has a comprehensive understanding of the organization's current software applications and tools. Has in-depth knowledge of programming languages important to the organization.\n\u2022 Resolves a wide range of issues in creative ways.\n\u2022 Developing design skills and has a comprehensive understanding of the organization's current software applications and tools. Has in-depth knowledge of programming languages important to the organization.\n\u2022 Anticipates and prevents problems and roadblocks before they occur.\n\u2022 Mentors less experienced members of the team.\nAbout Walgreens and WBA :\n\nWalgreens (www.walgreens.com) is included in the U.S. Retail Pharmacy and U.S. Healthcare segments of Walgreens Boots Alliance, Inc. (Nasdaq: WBA), an integrated healthcare, pharmacy and retail leader with a 170 year heritage of caring for communities. WBA\u2019s purpose is to create more joyful lives through better health. Operating nearly 9,000 retail locations across America, Puerto Rico and the U.S. Virgin Islands, Walgreens is proud to be a neighborhood health destination serving nearly 10 million customers each day. Walgreens pharmacists play a critical role in the U.S. healthcare system by providing a wide range of pharmacy and healthcare services, including those that drive equitable access to care for the nation\u2019s medically underserved populations. To best meet the needs of customers and patients, Walgreens offers a true omnichannel experience, with fully integrated physical and digital platforms supported by the latest technology to deliver high quality products and services in communities nationwide.\nBasic Qualifications\n\u2022 Bachelor's degree and at least 4 years of experience in Engineering, Software Engineering or similar field OR High School/GED and at least 7 years of experience in Engineering, Software Engineering or similar field\n\u2022 Experience writing code for moderately complex applications\n\u2022 Experience with programming languages for online applications, microservices or mobile applications\n\u2022 Experience designing/building moderately complex applications/automation\n\u2022 Experience writing automation test or deployment scripts\n\u2022 Experience creating/coding scripting solution to fix moderately complex problems\n\u2022 Experience identifying operational issues and recommending and implementing strategies to resolve problems\n\u2022 At least 2 years of experience contributing to financial decisions in the workplace\n\u2022 At least 2 years of direct leadership, indirect leadership and/or cross-functional team leadership\n\u2022 Willing to travel up to/at least 5% of the time for business purposes (within state and out of state).\nPreferred Qualifications\n\u2022 Bachelor's degree in Computer Science, Information Technology or related field\n\u2022 Experience identifying operational issues and recommending and implementing strategies to resolve problems\n\u2022 Experience working in an Agile environment\n\u2022 Specific \"Preferred Qualifications\" by specialty\n\u2022 DevOps\n\u2022 5+ years of hands-on experience in Deployment automation for various applications laaS, PaaS, platforms on a linux environment\n\u2022 5+ years hands-on experience in automation software like Chef, Puppet, Ansible, Terraform or equivalent\n\u2022 Excellent knowledge in implementation of CI/CD pipelines for Cloud deployments using containers/Docker\n\u2022 Strong demonstrable experience in GIT workflows, pipelines and code repository management\n\u2022 Experience in working on Kubernetes platform on a microservices architecture and other DevOps tooling\n\u2022 Good understanding of infrastructure components (e.g., networking, cloud services, orchestration tools, containerization)\n\u2022 Experience in operational Web and Mobile applications through monitoring and alerting for a polygot application stack\n\u2022 Web/backend Devloper\n\u2022 Previous experience with full stack development ranging from front-end user interfaces to back-end systems\n\u2022 Expert level of knowledge of software engineering best practices including coding standards, code reviews, source control management, build process, testing & operations\n\u2022 A mindset to take up most challenging coding tasks\n\u2022 Proficiency in design, development, security & scalability of high-volume services implemented in Java, Node/Typescript, .NET, or Python etc.\n\u2022 Strong demonstrated experience of Enterprise Design patterns in development of loosely coupled & resilient systems\n\u2022 Hands on with modern UI frameworks like React with Excellent knowledge of client-side security & front-end design pattern (stateless components, conditional rendering, controlled components, hooks etc.)\n\u2022 Demonstratable experience of design, development, query & database optimization of distrubuted SQL (e.g., Oracle, MySQL) & NoSQL (MongoDB, Cassandra) databases\n\u2022 Strong knowledge of implementation, security, capacity planning & performance tuning of solutions deployed to Cloud technologies - Azure (ACS, AKS), Gooogle, IBM, AWS or Cloud Foundry\n\u2022 Mobile Developer\n\u2022 4+ years of mobile app development experience and excellent hands-on skill in Kotlin (Android)\n\u2022 Experience in building testing automation using cloud platforms like AppCenter\n\u2022 Experience in ReactNative Programming\n\u2022 Knowledge of software engineering best practices including coding standards, code reviews, source control management, build process, testing & operations\n\u2022 Experience integrating third party SDK's like Facebook, Adobe etc\n\u2022 Experience with integrating with Back-end Services (APIIs, GraphQL, etc.)\n\u2022 Data & Analytics\n\u2022 4+ years experience in integrating, transforming and consolidating data from various structured and unstructured data systems for building analytics solutions in any cloud platforms: Mircrosoft Azure, AWS or GCP\n\u2022 4 years of experience in SQL, Java or Python programming\n\u2022 Experience with relational and NoSQL databases such as Cosmos, Cassandra\n\u2022 Working experience with dimensional data modeling and strong knowledge of best practices and solution patterns\n\u2022 Knowledge in Azure cloud technologies like Data Flow, Data Bricks, Azure Synapse, Azure Analysis Services and Power BI Analytics\n\u2022 Experience in Data Pipeline and integration workflow management tools: Talend, Store Proc, Change Data Capture (CDC), Spark & Azure API's\n\u2022 Experience in any or reporting tools like Power BI, Business objects, Cognos or Tableau\n\u2022 Experience in data classification, naming, data design, and the creation of DDL\n\u2022 Experience identifying operational issues and recommending fixes to resolve problems",
+        "job_highlights": [
+            {
+                "title": "Qualifications",
+                "items": [
+                    "Has in-depth knowledge of programming languages important to the organization and is proficient with them",
+                    "Developing design skills and has a comprehensive understanding of the organization's current software applications and tools",
+                    "Mentors less experienced members of the team",
+                    "Bachelor's degree and at least 4 years of experience in Engineering, Software Engineering or similar field OR High School/GED and at least 7 years of experience in Engineering, Software Engineering or similar field",
+                    "Experience writing code for moderately complex applications",
+                    "Experience with programming languages for online applications, microservices or mobile applications",
+                    "Experience designing/building moderately complex applications/automation",
+                    "Experience writing automation test or deployment scripts",
+                    "Experience creating/coding scripting solution to fix moderately complex problems",
+                    "Experience identifying operational issues and recommending and implementing strategies to resolve problems",
+                    "At least 2 years of experience contributing to financial decisions in the workplace",
+                    "At least 2 years of direct leadership, indirect leadership and/or cross-functional team leadership",
+                    "Willing to travel up to/at least 5% of the time for business purposes (within state and out of state)"
+                ]
+            },
+            {
+                "title": "Responsibilities",
+                "items": [
+                    "Seasoned, experienced professional with a full understanding of area of specialization, who will perform and implement activities that impact components/ processes of specified functional areas of the Walgreens Digital/Online application",
+                    "Anticipates and prevents problems and roadblocks before they occur",
+                    "Typically assigned to important / complicated undertakings",
+                    "Implements activities that generally impact important components / processes of the work of own unit / team / projects of the platform operation in an Agile environment",
+                    "This role is developing design skills, but has a comprehensive understanding of the organization's current software application and tools",
+                    "Receives work in the form of short- and mid-term assignments that regularly require the application of independent judgement",
+                    "Mentors less experienced members of the team",
+                    "Plans, designs, develops and tests software systems or application for the software enhancements and new products including cloud-based or internet-related tools",
+                    "Writes code that meets specifications, typically for large and highly complex software programs and systems",
+                    "Participates in software design",
+                    "Develops software applications and tools using Agile development methodologies",
+                    "Delivers software features with exceptional quality, meeting designated release plan and delivery commitments",
+                    "Contributes to and participates actively in the design, architecture and build phases, to aim at producing high quality deliverables, working with existing architects where appropriate",
+                    "Participates in the evaluation of compatibility of programs with existing communications hardware and software features",
+                    "Interacts with internal and external peers and manages to exchange complex information related to areas of specialization",
+                    "Work closely with other team members in guiding software architecture and technology decisions",
+                    "Demonstrates proficiency in most areas of the professional function and in-depth specialization in some",
+                    "Work on problems of diverse scope where analysis of data requires evaluation of identifiable factors",
+                    "Networks with senior internal and external personnel in own area of expertise to exchange semi-complex information related to assigned activities",
+                    "Developing professional expertise, applies company policies and procedures to resolve a variety of issues"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "https://www.google.com/search?hl=en&q=Walgreens&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCIcO",
+                "text": "See web results for Walgreens"
+            }
+        ],
+        "extensions": [
+            "17 days ago",
+            "Full-time"
+        ],
+        "detected_extensions": {
+            "posted_at": "17 days ago",
+            "schedule_type": "Full-time"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJTZW5pb3IgU29mdHdhcmUgRW5naW5lZXIiLCJodGlkb2NpZCI6IlZ3dlZEX1Fhak5vQUFBQUFBQUFBQUE9PSIsImhsIjoiZW4iLCJmYyI6IkV2Y0JDcmNCUVUxck1teHNURWg2TmpsalNWVk9aMXBSVFdGNFJtVmFNSFkwVFdZMFgxZHZNWFZVWm5KT1JXZEJTa3BLVTA5Q1pITkRhbWRyU25kM2JFMDRkR1J2ZDNBM1ZXNTRaVlJmYW5odWFqVTRiQzFrVDB3dE5uQXlPVEo2VEhONFRXdDFlbEZ1WTJwNk4ydE5SamhuYWpCRVJIUkdSbW93UjFoYVZHZGFWa3N0T0ZGaFNIVjVNa0ptYjJGMFJtaHZaV1ZKUVZNeFVqWkhhVWxsZGtVeVdIVmtZM0JmWTFCMmEyaFFRbTFNTkdwRk0yRnpaWGxPT0Y5ckVoZG5OMGhMV2t4RFEwSTJkV3cxVG05UWEzUkhTekJCYnhvaVFVeEZVemwxVFhWek1tMU1UbDgzWkdwQ1kxQTNUa2RLWmpCdFpVcE1WR1YyZHciLCJmY3YiOiIzIiwiZmNfaWQiOiJmY18xNCIsImFwcGx5X2xpbmsiOnsidGl0bGUiOiJBcHBseSBvbiBIaXJlU3BvdCIsImxpbmsiOiJodHRwczovL2hpcmVzcG90Lm1lL2pvYnBhZ2Uvd2FsZ3JlZW5zL2dsZW4tZWxseW4tc2VuaW9yLXNvZnR3YXJlLWVuZ2luZWVyLWYwMTQ0MGI3Yzc1ZGM1MThkZGVlMWQ4ZDc1OGY4YWI3P3V0bV9jYW1wYWlnbj1nb29nbGVfam9ic19hcHBseVx1MDAyNnV0bV9zb3VyY2U9Z29vZ2xlX2pvYnNfYXBwbHlcdTAwMjZ1dG1fbWVkaXVtPW9yZ2FuaWMifX0="
+    },
+    {
+        "title": "Real-Time Software Engineer",
+        "company_name": "Boeing",
+        "location": "  Rochester Hills, MI   ",
+        "via": "via CareerBuilder",
+        "description": "\u2022 The successful candidate will enjoy working in a fast paced, team-oriented environment, while working creatively in all phases of the software development life cycle\n\u2022 Leads activities to develop, document and maintain architectures, requirements, algorithms, interfaces and designs for software systems\n\u2022 Leads development of code and integration of complex software components into a fully... functional software system\n\u2022 Develops software verification plans, test procedures and test environments, executing the test procedures and documenting test results to ensure software system requirements are met\n\u2022 Provides technical leadership for software projects and leads software supplier management activities. Leads development, selection, tailoring and deployment of processes, tools and metrics\n\u2022 Plans, executes and documents software research and development projects\n\u2022 Serves as a subject matter expert for software domains, system-specific issues, processes and regulations\n\u2022 Tracks and evaluates software team and supplier performance to ensure product and process conformance to project plans and industry standards\n\u2022 Works under minimal direction\n\u2022 Ability to obtain a Secret US Security clearance (Post-Start)\n\u2022 Bachelor of Science degree from an accredited course of study in Engineering, Computer Science, Physics, or other technical degree\n\u2022 3 years of work-related experience with C++/Object Oriented software development\n\u2022 3 years of work-related experience with Real-time or embedded software development\n\u2022 Work-related software experience with C# and Python\n\u2022 Experience working with Windows development environment",
+        "job_highlights": [
+            {
+                "title": "Qualifications",
+                "items": [
+                    "Ability to obtain a Secret US Security clearance (Post-Start)",
+                    "Bachelor of Science degree from an accredited course of study in Engineering, Computer Science, Physics, or other technical degree",
+                    "3 years of work-related experience with C++/Object Oriented software development",
+                    "3 years of work-related experience with Real-time or embedded software development",
+                    "Work-related software experience with C# and Python",
+                    "Experience working with Windows development environment"
+                ]
+            },
+            {
+                "title": "Responsibilities",
+                "items": [
+                    "The successful candidate will enjoy working in a fast paced, team-oriented environment, while working creatively in all phases of the software development life cycle",
+                    "Leads activities to develop, document and maintain architectures, requirements, algorithms, interfaces and designs for software systems",
+                    "Leads development of code and integration of complex software components into a fully functional software system",
+                    "Develops software verification plans, test procedures and test environments, executing the test procedures and documenting test results to ensure software system requirements are met",
+                    "Provides technical leadership for software projects and leads software supplier management activities",
+                    "Leads development, selection, tailoring and deployment of processes, tools and metrics",
+                    "Plans, executes and documents software research and development projects",
+                    "Serves as a subject matter expert for software domains, system-specific issues, processes and regulations",
+                    "Tracks and evaluates software team and supplier performance to ensure product and process conformance to project plans and industry standards",
+                    "Works under minimal direction"
+                ]
+            }
+        ],
+        "related_links": [
+            {
+                "link": "http://www.boeing.com/",
+                "text": "boeing.com"
+            },
+            {
+                "link": "https://www.google.com/search?hl=en&q=Boeing&sa=X&ved=0ahUKEwjwz_vY3b6AAxWrElkFHZKoAqoQmJACCM8O",
+                "text": "See web results for Boeing"
+            }
+        ],
+        "extensions": [
+            "20 hours ago",
+            "Full-time"
+        ],
+        "detected_extensions": {
+            "posted_at": "20 hours ago",
+            "schedule_type": "Full-time"
+        },
+        "job_id": "eyJqb2JfdGl0bGUiOiJSZWFsLVRpbWUgU29mdHdhcmUgRW5naW5lZXIiLCJodGlkb2NpZCI6InhDakVCRGZHa3c0QUFBQUFBQUFBQUE9PSIsImhsIjoiZW4iLCJmYyI6IkVvd0NDc3dCUVUxck1teHNTa3d6UlRoeVRsWllkbVJGZFZScE4xVTRNM1JTY2pWa2VtOHRSbVpuTjAxbWRtVmtOa1JtTmtsdk1HNUJhRWhuTFhwSU1tdFFNVEUyVkhReU1ISXdXVE5vUkd0eFVsODRNSEpGYUdoalFteG5hM0ppV2xCQ1pVNTZWV0YwY0RkMFRuVlpSR2xqY1VwNU5UY3pVMmhVTUhCVkxXeHhSVzVCYURaM2FFTlZXWHAxZUhaTWNEZFZaRmRFYm5KRU1GTk1lbGN0VVRaVGVWVkRZVmhKYzAxcFlXTTJiRWhyV2tVNWJHcGthalJoT0VKWmQxSjNZWGh1YW1WWVRuTndUa0puYzJWQllYaEdFaGRuTjBoTFdreERRMEkyZFd3MVRtOVFhM1JIU3pCQmJ4b2lRVXhGVXpsMVRYTk5USEZzUWpSSVVYcGlka0pDVWpSRlkzWlFiRWxyY0ZsMWR3IiwiZmN2IjoiMyIsImZjX2lkIjoiZmNfMTUiLCJhcHBseV9saW5rIjp7InRpdGxlIjoiQXBwbHkgb24gQ2FyZWVyQnVpbGRlciIsImxpbmsiOiJodHRwczovL3d3dy5jYXJlZXJidWlsZGVyLmNvbS9qb2IvSjNTMEJXNlpNSENZNUNRMFBMVj91dG1fY2FtcGFpZ249Z29vZ2xlX2pvYnNfYXBwbHlcdTAwMjZ1dG1fc291cmNlPWdvb2dsZV9qb2JzX2FwcGx5XHUwMDI2dXRtX21lZGl1bT1vcmdhbmljIn19"
+    }
+]

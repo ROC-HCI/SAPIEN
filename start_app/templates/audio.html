@@ -1,0 +1,102 @@
+<!-- Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Audio Recorder</title>
+</head>
+<body>
+    <h1>Flask Audio Recorder</h1>
+    <button id="recordButton" onmousedown="startRecording()" onmouseup="stopRecording()">Hold to Record</button>
+    <script>
+        
+
+        let mediaRecorder;
+        let recordedChunks = [];
+
+        async function startRecording() {
+            if (mediaRecorder && mediaRecorder.state === "recording") return;
+
+            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            mediaRecorder = new MediaRecorder(stream);
+            mediaRecorder.ondataavailable = handleDataAvailable;
+            mediaRecorder.start();
+
+            document.body.style.backgroundColor = "red";
+        }
+
+        function stopRecording() {
+            if (!mediaRecorder || mediaRecorder.state !== "recording") return;
+
+            mediaRecorder.stop();
+            mediaRecorder.stream.getTracks().forEach(track => track.stop());
+
+            document.body.style.backgroundColor = "";
+        }
+
+        function handleDataAvailable(event) {
+            if (event.data.size > 0) {
+                recordedChunks.push(event.data);
+                uploadAudio();
+            }
+        }
+
+        async function uploadAudio() {
+            const audioBlob = new Blob(recordedChunks, { type: "audio/webm" });
+            const formData = new FormData();
+            formData.append("audio_data", audioBlob);
+
+            const response = await fetch("/upload_audio", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                console.log("Audio uploaded successfully.");
+            } else {
+                console.error("Error uploading audio.");
+            }
+            recordedChunks = [];
+        }
+
+        async function playAudio() {
+            const response = await fetch("/get_audio");
+            if (response.ok) {
+                const arrayBuffer = await response.arrayBuffer();
+                const audioContext = new AudioContext();
+                const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+                const audioSource = audioContext.createBufferSource();
+                audioSource.buffer = audioBuffer;
+                audioSource.connect(audioContext.destination);
+                audioSource.start();
+            } else {
+                console.error("Error fetching audio.");
+            }
+        }
+    </script>
+    <button onclick="playAudio()">Play Audio</button>
+    <br><br>
+    <button id="terminate" class='btn btn-default'>Terminate App</button>
+
+</body>
+</html>

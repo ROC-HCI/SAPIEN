@@ -1,0 +1,110 @@
+<!-- Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jobs Search</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel='stylesheet' type='text/css' media='screen' href='static/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='static/css/jobs_search.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src='static/js/jobs_search.js'></script>
+    <script id="accountMenuScript" src='static/js/accountMenu.js' user_image="{{user_image}}" user_name="{{user_name}}" color_mode="{{color_mode}}"></script>
+
+    <script type="text/javascript">
+        var flaskUserFName ='{{ user_fname }}';
+        var flaskUserLName ='{{ user_lname }}';
+    </script>
+</head>
+<body class="{{color_mode}}">
+    <div id="renameOverlay" style="display: none;">
+        <div class="flex h-center gap-1em mt-4em">
+            <div class="search-bar-container">
+                <input id="renameFNameField" class="font-normal search-bar-input" type="text" name="renameFname" placeholder="First">
+            </div>
+            <div class="search-bar-container">
+                <input id="renameLNameField" class="font-normal search-bar-input" type="text" name="renameLname" placeholder="Last">
+            </div>
+            <button id="renameSubmitButton" class="primary font-bold ml-1">Update</button>
+        </div>
+    </div>
+
+    <div>
+        <div class="flex flex-col w-100">
+            <div class="w-60 self-center flex flex-col">
+                <div id="titleSection" class="title-section">
+                    <div class="flex h-center gap-1em">
+                        <h1 class="font-bold mb-1em">Hi <span id="userFirstNameTitle" class="color-highlight">{{user_fname}}</span>!</h1>
+                        <button id="renameOpenButton" class="secondary font-bold">
+                            <svg class="w-50 svg-text-dark cursor-pointer m-0" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M384 224v184a40 40 0 01-40 40H104a40 40 0 01-40-40V168a40 40 0 0140-40h167.48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M459.94 53.25a16.06 16.06 0 00-23.22-.56L424.35 65a8 8 0 000 11.31l11.34 11.32a8 8 0 0011.34 0l12.06-12c6.1-6.09 6.67-16.01.85-22.38zM399.34 90L218.82 270.2a9 9 0 00-2.31 3.93L208.16 299a3.91 3.91 0 004.86 4.86l24.85-8.35a9 9 0 003.93-2.31L422 112.66a9 9 0 000-12.66l-9.95-10a9 9 0 00-12.71 0z"/></svg>
+                        </button>
+                    </div>
+                    <h2 class="font-normal">Select or search for a job below:</h2>
+                </div>
+                <div id="searchBar" class="flex h-center my-2rem">
+                    <div class="search-bar-container">
+                        <input id="searchField" class="font-normal search-bar-input" type="text" name="jobsearch-main" placeholder="Job title, keywords or company...">
+                        <svg id="searchInsideButton" class="text-icon svg-highlight cursor-pointer" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"/></svg>
+                    </div>
+                    <div id="advancedSearch" class="flex w-fit-content ml-1rem" style="display: none;">
+                        <div class="search-bar-container">
+                            <input id="searchFieldLocation" class="font-normal search-bar-input" type="text" name="jobsearch-location" placeholder="Location...">
+                        </div>
+                        <button id="searchOutsideButton" class="primary font-bold ml-1">
+                            <svg id="searchInsideButton" class="button-icon svg-text-light cursor-pointer" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="recommendedJobsContainer">
+                    <div class="flex flex-row mb-1em v-center relative w-fit-content">
+                        <p id="recommendedJobsLabel" class="font-normal">Smart recommendations</p>
+                        <svg id="smartMatchTip" class="text-icon svg-text-dark" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M248 64C146.39 64 64 146.39 64 248s82.39 184 184 184 184-82.39 184-184S349.61 64 248 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M220 220h32v116"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M208 340h88"/><path d="M248 130a26 26 0 1026 26 26 26 0 00-26-26z"/></svg>                    
+                        <div id="smartMatchTipContent" class="absolute" style="display: none;">
+                            <p class="font-normal">Jobs we think you'll be interested in based on your resume.</p>
+                        </div>
+                    </div>
+                    <div id="recommendedJobsGrid" class="loading-background">
+                    </div>
+                </div>
+            </div>
+            <div id="searchResults" style="display: none;">
+                <div id="resultsColumn" class="loading-background">
+                    <p id="noResultsMessage" class="font-bold" style="display: none;">No Results</p>
+                    <div id="resultsColumnItems"></div>
+                </div>
+                <div id="fadeOverlay">
+                    <div id="fadeOutOverlayTop" style="display: none;"></div>
+                    <div id="fadeOutOverlayBottom"></div>
+                </div>
+                <div id="resultBig">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-buttons">
+        <button id="backButton" class="secondary font-bold">Back</button>
+        <button id="nextButton" class="disabled font-bold">Next</button>
+    </div>
+</body>
+</html>

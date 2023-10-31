@@ -1,0 +1,107 @@
+/* Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. */
+
+
+body {
+    --deletedUserDisplay: table-row;
+}
+
+#devUtils {
+    justify-content: flex-start;
+    gap: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1em 0em 1em 1em;
+    padding: 2em;
+    background-color: var(--box-background-color);
+    border: var(--box-border);
+    border-radius: 1em;
+}
+
+.section > h1 {
+    margin-bottom: 1em;
+}
+
+button {
+    width: fit-content;
+}
+
+.inputGroup {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input {
+    width: 40ch;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    box-shadow: 5px 5px 5px rgb(208, 208, 208);
+    border: var(--box-border);
+}
+
+input[type=checkbox] {
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    box-shadow: none;
+    background-color: transparent;
+}
+input[type=checkbox]:after {
+    content: attr(message);
+    white-space: nowrap;
+    padding-left: 2ch;
+}
+
+#accessCodesSection {
+    margin: 1em;
+}
+
+table {
+    margin: 1em 0;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid var(--box-background-color);
+    word-wrap: break-word;
+    width: 25vw;
+}
+
+.deletedUser {
+    display: var(--deletedUserDisplay);
+    background-color: gray;
+    opacity: 0.5;
+}
+
+th.ascending::after {
+    content: " \25B2";
+}
+th.descending::after {
+    content: " \25BC";
+}

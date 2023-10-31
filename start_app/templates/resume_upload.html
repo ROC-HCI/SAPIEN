@@ -1,0 +1,68 @@
+<!-- Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/resume_upload.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script id="accountMenuScript" src='static/js/accountMenu.js' user_image="{{user_image}}" user_name="{{user_name}}" color_mode="{{color_mode}}"></script>
+    <title>Resume Upload</title>
+</head>
+
+<body class="{{color_mode}}">
+    <div id="mainContent" class="flex flex-col h-center h-90 h-100">
+        <div id="firstContentContainer" class="flex flex-col v-center h-100">
+            <div id="uploadContainer" ondrop="updateFile(event)" ondragover="preventDefault(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)">
+                <p id="uploadText" class="font-normal">Drag & drop or upload your resume.</p>
+                <button id="uploadButton" class="primary font-bold" onclick="document.getElementById('fileInput').click();">Select file</button>
+                <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+            </div>
+        </div>
+    
+        <div id="secondContentContainer" class="flex flex-col v-center" style="display: none;">
+            <p id="confirmText" class="font-normal">Here's your resume:</p>
+            <div id="pdfContainer" class="w-90 h-70">
+                <embed id="pdfViewer" class="w-100 h-100 flex h-center v-center" src="" type="application/pdf">
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <button id="backButton" class="secondary font-bold">Back</button>
+        <button id="nextButton" class="secondary font-bold">Skip</button>
+    </div>
+
+    <script src="//mozilla.github.io/pdf.js/build/pdf.mjs" type="module"></script>
+    <script src="static/js/resume_upload.js"></script>
+
+</body>
+
+</html>

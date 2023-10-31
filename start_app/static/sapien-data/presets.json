@@ -1,0 +1,22 @@
+{
+    "Interview": {
+        "Narrative": "A recruiting manager at Google.",
+        "Premise": "An interview for a Software Engineer job position. Following is the job description.\n\nPosition: Software Engineer at Google\n\nAs a software engineer at Google, you will be responsible for designing, developing, and testing high-quality software solutions that meet the needs of Google's users and customers. You will work on a variety of projects, ranging from building scalable backend systems to developing user-facing applications for mobile and web platforms.\n\nKey Responsibilities:\n\nCollaborate with cross-functional teams to define and implement innovative software solutions\nDesign, develop, and test high-quality software code using industry best practices and tools\nParticipate in code reviews, debugging, and troubleshooting to ensure optimal performance and reliability\nContinuously improve software development processes and methodologies to increase efficiency and quality\nStay up-to-date with emerging technologies and industry trends, and provide technical guidance and mentorship to other team members\nRequirements:\n\nBachelor's degree in Computer Science or a related technical field\n2+ years of experience in software engineering, with a strong foundation in algorithms, data structures, and software design patterns\nProficiency in at least one programming language such as Java, Python, or C++\nStrong problem-solving and analytical skills, with the ability to work in a fast-paced, collaborative environment\nExcellent communication and interpersonal skills, with the ability to work effectively with cross-functional teams and stakeholders\nAt Google, we value diversity, inclusivity, and innovation, and we are committed to providing a dynamic and rewarding work environment for our employees. If you are passionate about software engineering and want to make an impact on millions of users worldwide, we encourage you to apply for this exciting opportunity.\n",
+        "Relationship": ""
+    },
+    "Dating": {
+        "Narrative": "",
+        "Premise": "First date at a Cafe. They met with each other and had a good vibe.",
+        "Relationship": "They met at Bumble and have been chatting for a few days. They are planning to meet in person for the first time."
+    },
+    "Negociation": {
+        "Narrative": "Business manager in a Software company. They manage a team of 10 software engineers. Recently their team successfully launched a new product. And they had a celebration party. They professional and friendly with team members. However, they would also like to be fair and honest about the contribution and expecation of the team.",
+        "Premise": "Negociating the terms for a raise",
+        "Relationship": "They have been working together for the past 2 years. They have a good relationship with each other."
+    },
+    "Social": {
+        "Narrative": "",
+        "Premise": "They are hanging out as friends and checking out the new restaurant in town.",
+        "Relationship": "They have been friends for the past year when they started working for an accountant farm."
+    }
+}

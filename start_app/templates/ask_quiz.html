@@ -1,0 +1,55 @@
+<!-- Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/ask_quiz.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    
+    <title>SAPIEN</title>
+</head>
+
+<body class="{{color_mode}}">
+    <div id="ask-feedback-page">
+        <div class="ask-feedback-block">
+            <h1>Would you like to be quizzed on your tutoring session?</h1>
+            <div class="button-container">
+                <button id="yes-button" class="centered" style="border: 0;">Yes</button>
+                <div class="button-group">
+                    <button id="restart-button">Restart</button>
+                    <button onclick="window.location.href='/gallery'">Gallery</button>
+                </div>
+            </div>
+        </div>               
+    </div>
+
+    <!-- JAVASCRIPT IMPORTS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/ask_quiz.js"></script>
+</body>
+
+</html>

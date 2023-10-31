@@ -1,0 +1,287 @@
+/* Code authors: Masum Hasan, Cengiz Ozel, Sammy Potter
+ROC-HCI Lab, University of Rochester
+Copyright (c) 2023 University of Rochester
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE. */
+
+
+#renameOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999999;
+}
+
+#renameOverlay > div div {
+    width: fit-content;
+    min-width: unset;
+}
+
+#renameOverlay input {
+    width: 20ch;
+}
+
+#renameOpenButton {
+    padding: 0;
+    width: 3em;
+    height: 3em;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    min-width: 30%;
+    text-overflow: ellipsis;
+    background-color: var(--box-background-color);
+    border: var(--box-border);
+    transition: all .3s ease;
+    padding-right: .6rem;
+}
+
+.search-bar-input {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 0;
+    background-color: transparent;
+    text-overflow: ellipsis;
+}
+
+.search-bar-input:focus {
+    outline: 0;
+}
+
+.search-bar-container:focus-within, .search-bar-container:hover {
+    outline: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#searchOutsideButton {
+    margin-left: 1rem;
+}
+
+#recommendedJobsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-content: center;
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 6rem;
+    padding: 20px;
+    border: var(--box-border);
+    background-color: var(--box-background-color);
+    color: var(--text-color-dark);
+    overflow: hidden;
+}
+
+.job-card.selected {
+    border: 1px solid transparent;
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.job-card h1 {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.company-badge {
+    display: flex;
+    margin: 0;
+}
+
+.job-card-img {
+    background-image: url("../img/briefcase-outline.svg");
+    background-color: white;
+    border-radius: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 50px;
+    min-height: 50px;
+    margin-right: 20px;
+}
+
+.job-card-text-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.job-card-text-container p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loading-background {
+    background: no-repeat center/5em url("../img/loading.gif");
+}
+
+#noResultsMessage {
+    position: absolute;
+    margin: auto;
+    left: 30%;
+    top: 50%;
+}
+
+#searchResults {
+    margin: 0 3vw;
+    height: 69vh;
+    display: flex;
+}
+
+#resultsColumn {
+    position: relative;
+    padding-right: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 30vw;
+}
+
+#resultsColumn .job-card {
+    width: auto;
+}
+
+#resultsColumnItems {
+    display: flex;
+    flex-direction: column;
+}
+
+#resultsColumnItems > div + div {
+    margin-top: .5rem;
+}
+
+#fadeOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+#fadeOutOverlayTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(var(--background-color), transparent);
+    pointer-events: none;
+}
+
+#fadeOutOverlayBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(transparent, var(--background-color));
+    pointer-events: none;
+}
+
+#resultBig {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#jobCardBig {
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--box-background-color);
+    color: var(--text-color-dark);
+    border: var(--box-border);
+    overflow-y: scroll;
+}
+
+#jobCardBig h1 {
+    width: 80%;
+    font-size: 2rem;
+    font-family: 'AtkinsBold';
+    margin: 0 0 10px 0;
+}
+
+#jobCardBigContentContainer {
+    margin: 50px;
+}
+
+#jobCardBigTitleContainer {
+    margin-top: px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#jobCardBigTextContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: right;
+}
+#jobCardBigTextContainer p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+#jobCardBigHighlightsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#jobCardBigHighlightsContainer div {
+    min-width: 30%;
+}
+
+#jobCardBigHighlightsContainer ul {
+    padding-left: 3ch;
+}
+
+#jobCardBigHighlightsContainer li {
+    margin: 1em 0;
+}
+
+#smartMatchTipContent {
+    --width: 20ch;
+    --padding: .6em;
+    background-color: var(--box-background-color);
+    border-radius: 1em;
+    font-size: .8em;
+    width: var(--width);
+    height: fit-content;
+    padding: var(--padding);
+    top: -5.5em;
+    left: calc(100% - (var(--width) + (var(--padding) * 7)) / 2);
+    border: var(--box-border);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px;
+}
