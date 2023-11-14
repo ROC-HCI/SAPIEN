@@ -34,6 +34,8 @@ cd start_app
 python app.py
 ```
 
+For the real-time rendering version, please visit `real-time-render` branch.
+
 ## Contributors:
 - [Masum Hasan](https://masumhasan.net/)
 - [Cengiz Ozel](https://www.cengizozel.com/)
