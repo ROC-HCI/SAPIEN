@@ -81,6 +81,20 @@ cd nodejs_page\platform_scripts\cmd & run_1.bat
 Developed at [Roc-HCI lab](https://roc-hci.com/), University of Rochester
 Supervised by, [Prof. Ehsan Hoque](https://hoques.com/)
 
+## Citation
+If you use this work, please cite the following paper,
+
+```
+@misc{hasan2023sapien,
+    title={SAPIEN: Affective Virtual Agents Powered by Large Language Models}, 
+    author={Masum Hasan and Cengiz Ozel and Sammy Potter and Ehsan Hoque},
+    year={2023},
+    eprint={2308.03022},
+    archivePrefix={arXiv},
+    primaryClass={cs.HC}
+}
+```
+
 
 ```
 MIT License
