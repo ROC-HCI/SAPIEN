@@ -1,5 +1,7 @@
 # SAPIEN
 
+An easy-to-use virtual avatar platform driven by Large Language Models.
+
 Official code for the paper:
 
 [SAPIEN: Affective Virtual Agents Powered by Large Language Models](https://arxiv.org/abs/2308.03022) 
@@ -14,8 +16,6 @@ Masum Hasan, Cengiz Ozel, Sammy Potter, Ehsan Hoque (ACIIW 2023)
 
 
 ## How to run
-
-### SAPIEN Light
 
 Works on any OS
 
@@ -33,42 +33,6 @@ pip install -r requirements.txt
 cd start_app
 python app.py
 ```
-
-### SAPIEN Full
-
-**Requirements**
-- Works on Windows 10, 11
-- Recommended to have 8GB or more GPU
-- Capable of running Unreal Engine 5.2 or higher
-
-**Instructions**
-- Download the folder `11111` and `run_1.bat` from https://rochester.app.box.com/v/SAPIEN-public/folder/233052211015
-- Run the following on separate terminals
-- In `keys.py` add your own API keys.
-
-```
-git clone git@github.com:Masum06/SAPIEN.git
-cd SAPIEN
-pip install -r requirements.txt
-cd start_app
-python app.py --light_mode=False
-```
-Run the following on separate terminals,
-
-```
-run_1_UE.bat
-```
-
-```
-cd nodejs_page\platform_scripts\cmd & run_1.bat
-```
-
-## Which version to choose?
-- SAPIEN light works on most OS and systems and takes little resource to run.
-- Both support all use cases and applications and have identical conversation quality.
-- SAPIEN light features a pre-rendered static virtual avatar, where the SAPIEN full renders the avatar in real-time.
-- SAPIEN light does not support lip animation or facial expressions.
-
 
 ## Contributors:
 - [Masum Hasan](https://masumhasan.net/)
