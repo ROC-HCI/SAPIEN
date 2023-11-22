@@ -84,4 +84,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
-`SAPIEN:tm: is a trademark owned by SAPIEN Coach LLC. which is being soft licensed to the University of Rochester. Using the name outside this project is prohibited.`
+SAPIEN:tm: is a trademark owned by SAPIEN Coach LLC. which is being soft licensed to the University of Rochester. Using the name outside this project is prohibited.
