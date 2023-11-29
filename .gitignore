@@ -27,3 +27,4 @@ start_app/files/db/access_code.sqlite3
 start_app/files/db/access_code.sqlite3
 start_app/sapien.wsgi
 community_engagement_qa.csv
+keys.py
