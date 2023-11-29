@@ -685,7 +685,7 @@ def community():
 @app.route('/chat', methods=['GET', 'POST'], endpoint='chat')
 @login_required
 def chat():
-    global iframe_url, active_meetings, light_mode
+    global iframe_url, active_meetings, prerendered
 
     if not is_permitted(request.referrer):
         return redirect(url_for('index'))
@@ -713,7 +713,7 @@ def chat():
     iframe_port = active_meetings[session["meeting_id"]].instance.iframe_port
 
     session['have_feedback'] = False
-    return render_template('chat.html', iframe_url=iframe_url + str(iframe_port), user_name=session["name"], user_image=session["user_image"], light_mode=light_mode)
+    return render_template('chat.html', iframe_url=iframe_url + str(iframe_port), user_name=session["name"], user_image=session["user_image"], prerendered=prerendered)
 
 @app.route('/ask_feedback', endpoint='ask_feedback')
 @login_required
@@ -1104,11 +1104,12 @@ def get_audio():
     bot_path_g = active_meetings[session["meeting_id"]].audiodir
     bot_speech = active_meetings[session["meeting_id"]].audiofile
 
-    max_wait = 5000
-    while not audio_ready_to_send[0] and max_wait > 0:
-        print(f"speaking_flag: {speaking_flag} {max_wait}", end="\r")
-        time.sleep(0.01)
-        max_wait -= 1
+    max_wait = 500
+    if not prerendered:
+        while not audio_ready_to_send[0] and max_wait > 0:
+            print(f"speaking_flag: {speaking_flag} {max_wait}", end="\r")
+            time.sleep(0.01)
+            max_wait -= 1
 
     print(f"Audio found at {bot_speech}")
     time.sleep(0.01)
@@ -1179,13 +1180,13 @@ app.logger.debug(f"entering main, set working dir to {os.getcwd()}")
 if __name__ == '__main__':
     port = 80
     try:
-        global light_mode
+        global prerendered
         parser = argparse.ArgumentParser()
-        parser.add_argument('--light-mode', dest='light_mode', default=True, type=lambda x: (str(x).lower() == 'true'))
+        parser.add_argument('--prerendered', dest='prerendered', default=True, type=lambda x: (str(x).lower() == 'true'))
         args = parser.parse_args()
-        light_mode = args.light_mode
+        prerendered = args.prerendered
 
-        print("Light mode: ", light_mode)
+        print("Light mode: ", prerendered)
 
         # app.run(debug=True, host='0.0.0.0', port=port, use_reloader=False) ## Local testing
         with app.app_context():

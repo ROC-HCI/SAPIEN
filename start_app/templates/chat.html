@@ -44,8 +44,9 @@ THE SOFTWARE. -->
                     <span id="botName"></span>
                 </div>
                 
-                {% if light_mode %}
-                    <div id="light" style="display: none;"></div>
+                {% if prerendered %}
+                    <div id="prerendered" style="display: none;"></div>
+                    <video id="remotePlayerFrameSpeaking" class="t-0 not-selectable" allowFullScreen="true" title="SAPIEN" loop></video>
                     <video id="remotePlayerFrame" class="t-0 not-selectable" allowFullScreen="true" title="SAPIEN" loop></video>
                 {% else %}
                     <iframe id="remotePlayerFrame" class="not-selectable" allowFullScreen="true" src="{{iframe_url}}" title="SAPIEN">
@@ -83,7 +84,7 @@ THE SOFTWARE. -->
                         </div>
                         <center>
                             <div id="message" class="hidden"></div>
-                    </center>
+                        </center>
                     </div>
 
                     <div class="cameraDropdown" onmouseleave="hideMenu(event)">

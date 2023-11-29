@@ -19,15 +19,20 @@
 
 
 import openai
+from openai import AzureOpenAI
+
+client = AzureOpenAI(api_version=os.environ["api_version"],
+api_key=os.environ["azure_openai_key"])
 import random
 import os
 # from .keys import *
 # openai.api_key = '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' # GPT-4 key for Cengiz's account, let's not use it right now.
 # openai.api_key = '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' # GPT-3 key for Masum's account
-openai.api_type = os.environ["api_type"]
-openai.api_base = os.environ["api_base"]
-openai.api_version = os.environ["api_version"]
-openai.api_key = os.environ["azure_openai_key"]
+
+# TODO: The 'openai.api_base' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(api_base=os.environ["api_base"])'
+# openai.api_base = os.environ["api_base"]
+
+
 
 def create_prompt(tags, meeting):
     transcript = meeting.get_transcript()
@@ -53,9 +58,7 @@ def generate_feedback(tags, meeting):
     prompt = [{"role": "user", "content": create_prompt(tags, meeting)}]
 
     try:
-        response = openai.ChatCompletion.create(
-        # model="gpt-3.5-turbo",
-        engine='Azure-ChatGPT',
+        response = client.chat.completions.create(model='Azure-ChatGPT',
         max_tokens=500,
         temperature=0.6,
         messages = prompt)
@@ -69,13 +72,10 @@ def generate_feedback(tags, meeting):
 def ask_gpt(text):
     try:
         prompt = [{"role": "user", "content": text}]
-        response = openai.ChatCompletion.create(
-            # model="gpt-3.5-turbo",
-            engine='Azure-ChatGPT',
-            max_tokens=100,
-            temperature=0.6,
-            messages=prompt
-        )
+        response = client.chat.completions.create(model='Azure-ChatGPT',
+        max_tokens=100,
+        temperature=0.6,
+        messages=prompt)
         response_text = response['choices'][0]['message']['content']
         print(f"response: {response_text}")
     except:

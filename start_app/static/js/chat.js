@@ -23,17 +23,20 @@ if (window.performance && window.performance.navigation.type === window.performa
 }
 
 
-window.onload = function loadLight() {
+window.onload = function loadPrerendered() {
   // check if a video with the id "remotePlayerFrame" exists. it has to be a video tag
-  if (document.getElementById("light")) {
+  if (document.getElementById("prerendered")) {
     var video = document.getElementById("remotePlayerFrame");
+    var videoSpeaking = document.getElementById("remotePlayerFrameSpeaking");
     if (video) {
       console.log("video exists");
 
       const mhName = sessionStorage.getItem('mhFNameCurrent');
       console.log(mhName);
-      video.src = "static/video/Metahumans/"+mhName+".mp4";
+      video.src = "static/video/Metahumans/static/"+mhName+".mp4";
+      videoSpeaking.src = "static/video/Metahumans/speak/"+mhName+".mp4";
       video.play();
+      videoSpeaking.play();
 
       const headerContainer = document.getElementById('header-container');
       const videoElement = document.getElementById("cameraElement");
@@ -174,6 +177,7 @@ async function wait(ms) {
 
 
 const remotePlayerFrame = document.getElementById('remotePlayerFrame');
+const remotePlayerFrameSpeaking = document.getElementById('remotePlayerFrameSpeaking');
 var callStarted = false;
 
 var got_ip = false;
@@ -214,8 +218,11 @@ window.addEventListener('message', async event => {
 
       // Make remotePlayerFrame unclickable
       const remotePlayerFrame = document.getElementById('remotePlayerFrame');
+      const remotePlayerFrameSpeaking = document.getElementById('remotePlayerFrameSpeaking');
       remotePlayerFrame.style.pointerEvents = 'none';
+      remotePlayerFrameSpeaking.style.pointerEvents = 'none';
       remotePlayerFrame.setAttribute('tabindex', '-1');
+      remotePlayerFrameSpeaking.setAttribute('tabindex', '-1');
       window.focus();
       console.log("done setting up MH");
 
@@ -280,6 +287,7 @@ function sendDataMessage(category, item) {
     Item: item
   };
   remotePlayerFrame.contentWindow.postMessage(descriptor, '*');
+  remotePlayerFrameSpeaking.contentWindow.postMessage(descriptor, '*');
 }
 
 // DISPLAY TOGGLES
