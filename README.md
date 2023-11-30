@@ -25,16 +25,16 @@ cd SAPIEN
 pip install -r requirements.txt
 ```
 
-- Download the folder: https://rochester.app.box.com/v/SAPIEN-public/folder/233051989858
-- Place all videos under: `start_app/static/videos/Metahumans`
-- In `keys.py` add your own API keys.
+- Download the folder: [https://rochester.app.box.com/v/SAPIEN-public/folder/233051989858](https://rochester.app.box.com/v/SAPIEN-public/folder/237414507812)
+- Place the folders `static` and `speaking` under: `start_app/static/videos/Metahumans`
+- In `keys.py` add your own API keys for Microsoft Speech SDK, OpenAI, and Google auth.
   
 ```
 cd start_app
 python app.py
 ```
 
-For the real-time rendering version, please visit `real-time-render` branch.
+The `main` branch contains `prerendered` version that runs on a single computer. For real-time rendering using Unreal Engine 5.2, please visit `real-time-render` branch.
 
 ## Contributors:
 - [Masum Hasan](https://masumhasan.net/)
