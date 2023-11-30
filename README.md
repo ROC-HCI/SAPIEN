@@ -34,7 +34,7 @@ cd start_app
 python app.py
 ```
 
-The `main` branch contains `prerendered` version that runs on a single computer. For real-time rendering using Unreal Engine 5.2, please visit `real-time-render` branch.
+The `main` branch contains `prerendered` version that runs on a single computer. For real-time rendering using Unreal Engine 5.2 on a GPU, please visit `real-time-render` branch.
 
 ## Contributors:
 - [Masum Hasan](https://masumhasan.net/)
