@@ -71,7 +71,7 @@ def convert_webm_to_wav(webm_file, wav_file):
     print("Webm file found: "+ str(os.path.isfile(webm_file)))
     # pydub.AudioSegment.ffmpeg = "C:/Users/Administrator/Downloads/ffmpeg-master-latest-win64-gpl/bin/ffmpeg"
     # AudioSegment.converter = "C:/Users/Administrator/Downloads/ffmpeg-master-latest-win64-gpl/bin/ffmpeg.exe"
-    audio = AudioSegment.from_file(webm_file, format="webm")
+    audio = AudioSegment.from_file(webm_file)
     # print("Segmentation done. Before export to wav.")
     audio.export(wav_file, format="wav")
 
