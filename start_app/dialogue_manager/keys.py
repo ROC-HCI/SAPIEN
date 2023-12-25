@@ -30,4 +30,3 @@ os.environ["azure_openai_key"] =  "AZURE_OPENAI_KEY" # Azure key
 os.environ["openai_key"] =  "OPENAI_API_KEY"
 
 os.environ["SERP_API_KEY"] = "SERP_API_KEY"
-
