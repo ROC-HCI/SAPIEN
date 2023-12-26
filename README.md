@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 
 - Download the folder: [https://rochester.app.box.com/v/SAPIEN-public/folder/233051989858](https://rochester.app.box.com/v/SAPIEN-public/folder/237414507812)
-- Place the folders `static` and `speaking` under: `start_app/static/videos/Metahumans`
+- Place the folders `static` and `speak` under: `start_app/static/video/Metahumans`
 - In `keys.py` add your own API keys for Microsoft Speech SDK, OpenAI, and Google auth.
   
 ```
