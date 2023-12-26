@@ -101,11 +101,11 @@ Conversation transcript in {self.language}:
 {transcript}
         """
 
-        print('\033[92m' + "feedback_question: " + '\033[0m' + f"{feedback_question}")
+        # print('\033[92m' + "feedback_question: " + '\033[0m' + f"{feedback_question}")
 
         # self.feedback = llm.ask_gpt4(feedback_question, max_tokens=500).strip()
         self.feedback = llm.ask_chat(feedback_question, max_tokens=500).strip()
-        print('\033[92m' + "self.feedback: " + '\033[0m' + f"{self.feedback}")
+        # print('\033[92m' + "self.feedback: " + '\033[0m' + f"{self.feedback}")
 
         return self.feedback
 
@@ -591,10 +591,10 @@ Speed date conversation transcript:
 Feedback:
 ------------"""
 
-        print('\033[92m' + "feedback_question: " + '\033[0m' + f"{feedback_question}")
+        # print('\033[92m' + "feedback_question: " + '\033[0m' + f"{feedback_question}")
 
         # self.feedback = llm.ask_gpt4(feedback_question, max_tokens=500).strip()
         self.feedback = llm.ask_chat(feedback_question, max_tokens=500).strip()
-        print('\033[92m' + "self.feedback: " + '\033[0m' + f"{self.feedback}")
+        # print('\033[92m' + "self.feedback: " + '\033[0m' + f"{self.feedback}")
 
         return self.feedback
