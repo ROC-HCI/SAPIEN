@@ -68,12 +68,13 @@ def name_to_English(name):
 
 def convert_webm_to_wav(webm_file, wav_file):
     # print whether webm_file exists or not
-    print("Webm file found: "+ str(os.path.isfile(webm_file)))
-    # pydub.AudioSegment.ffmpeg = "C:/Users/Administrator/Downloads/ffmpeg-master-latest-win64-gpl/bin/ffmpeg"
-    # AudioSegment.converter = "C:/Users/Administrator/Downloads/ffmpeg-master-latest-win64-gpl/bin/ffmpeg.exe"
-    audio = AudioSegment.from_file(webm_file)
-    # print("Segmentation done. Before export to wav.")
+    print("Webm file found: "+ str(os.path.isfile(webm_file)), webm_file)
+    # AudioSegment.ffmpeg = 'C:\\ffmpeg\\bin\\ffmpeg'
+    # AudioSegment.converter = 'C:\\ffmpeg\\bin\\ffmpeg.exe'
+    audio = AudioSegment.from_file(webm_file, format="webm") # format="webm" might need to be removed for some users
     audio.export(wav_file, format="wav")
+
+
 
 # Permits access to the page if the URL is manually entered rather than using buttons
 def is_permitted(referrer):
