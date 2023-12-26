@@ -28,11 +28,15 @@ pip install -r requirements.txt
 - Download the folder: [https://rochester.app.box.com/v/SAPIEN-public/folder/237414507812](https://rochester.app.box.com/v/SAPIEN-public/folder/237414507812)
 - Place the folders `static` and `speaking` under: `start_app/static/video/Metahumans`
 - Create `keys.py` from `keys_template (rename to keys.py).py` and add your own API keys for Microsoft Speech SDK, OpenAI, and Google auth.
-  
+- Rename `start_app/files/local_mode_dummy.json` to `start_app/files/local_mode.json`.
+
 ```
 cd start_app
 python app.py
 ```
+
+Other useful tips: 
+- [Windows] Add `start_app/files/ffmpeg/bin` to path.
 
 The `main` branch contains `prerendered` version that runs on a single computer. For real-time rendering using Unreal Engine 5.2 on a GPU, please visit `real-time-render` branch.
 
@@ -40,6 +44,7 @@ The `main` branch contains `prerendered` version that runs on a single computer.
 - [Masum Hasan](https://masumhasan.net/)
 - [Cengiz Ozel](https://www.cengizozel.com/)
 - [Sammy Potter](https://sammypotter.com/)
+- Sara Jeiter-Johnson
 - Kate Giugno
 - Erman Ural
 - Richard Chuong

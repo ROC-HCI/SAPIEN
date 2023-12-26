@@ -30,3 +30,4 @@ community_engagement_qa.csv
 keys.py
 start_app/dialogue_manager/keys.py
 start_app/static/video/Metahumans
+start_app/files/local_mode_dummy.json
