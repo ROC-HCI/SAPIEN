@@ -45,7 +45,7 @@ The `main` branch contains `prerendered` version that runs on a single computer.
 - [Masum Hasan](https://masumhasan.net/)
 - [Cengiz Ozel](https://www.cengizozel.com/)
 - [Sammy Potter](https://sammypotter.com/)
-- Sara Jeiter-Johnson
+- [Sara Jeiter-Johnson](https://github.com/josuni)
 - Kate Giugno
 - Erman Ural
 - Richard Chuong
