@@ -1,0 +1,287 @@
+{
+    "en-US": {
+      "name": "English",
+      "self-name": "English",
+      "flag": "https://flagsapi.com/US/flat/32.png",
+      "female": [
+        "en-US-JennyNeural",
+        "en-US-CoraNeural",
+        "en-US-AriaNeural",
+        "en-US-SaraNeural",
+        "en-US-NancyNeural",
+        "en-US-JaneNeural"
+      ],
+      "male": [
+        "en-US-ChristopherNeural",
+        "en-US-DavisNeural",
+        "en-US-GuyNeural",
+        "en-US-JasonNeural",
+        "en-US-TonyNeural"
+      ],
+      "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+      "timeout": 2,
+      "char/token": 4.111,
+      "punctuation": [".","!","?"]
+    },
+    "ar-SA": {
+      "name": "Arabic",
+      "self-name": "عربي",
+      "flag": "https://flagsapi.com/SA/flat/32.png",
+      "female": [
+        "ar-SA-ZariyahNeural"
+      ],
+      "male": [
+        "ar-SA-HamedNeural"
+      ],
+      "connection_interruption": "أنا آسف ، أعتقد أن هناك مشكلة في الاتصال. هل بإمكانك قول ذلك مجددا؟",
+      "timeout": 3,
+      "char/token": 0.893,
+      "punctuation": [".","!","?"]
+    },
+    "bn-IN": {
+      "name": "Bengali",
+      "self-name": "বাংলা",
+      "flag": "https://flagsapi.com/BD/flat/32.png",
+      "female": [
+        "bn-BD-NabanitaNeural"
+      ],
+      "male": [
+        "bn-BD-PradeepNeural"
+      ],
+      "connection_interruption": "আমি দুঃখিত, আমি মনে করি একটি সংযোগ সমস্যা আছে. আপনি আবার যে বলতে পারে?",
+      "timeout": 5,
+      "char/token": 0.53,
+      "punctuation": [".","!","?"]
+    },
+    "zh-CN": {
+      "name": "Chinese",
+      "self-name": "中文",
+      "flag": "https://flagsapi.com/CN/flat/32.png",
+      "female": [
+        "zh-CN-XiaochenNeural",
+        "zh-CN-XiaohanNeural",
+        "zh-CN-XiaomengNeural",
+        "zh-CN-XiaomoNeural",
+        "zh-CN-XiaoqiuNeural",
+        "zh-CN-XiaoruiNeural",
+        "zh-CN-XiaoshuangNeural",
+        "zh-CN-XiaoxiaoNeural",
+        "zh-CN-XiaoxuanNeural",
+        "zh-CN-XiaoyanNeural",
+        "zh-CN-XiaoyiNeural",
+        "zh-CN-XiaoyouNeural",
+        "zh-CN-XiaozhenNeural"
+      ],
+      "male": [
+        "zh-CN-YunfengNeural",
+        "zh-CN-YunhaoNeural",
+        "zh-CN-YunjianNeural",
+        "zh-CN-YunxiaNeural",
+        "zh-CN-YunxiNeural",
+        "zh-CN-YunyangNeural",
+        "zh-CN-YunyeNeural",
+        "zh-CN-YunzeNeural"
+      ],
+      "connection_interruption": "抱歉，我认为存在连接问题。你能再说一遍吗？",
+      "timeout": 3,
+      "char/token": 1,
+      "punctuation": [".","!","?"]
+    },
+    "fr-FR": {
+      "name": "French",
+      "self-name": "Français",
+      "flag": "https://flagsapi.com/FR/flat/32.png",
+      "female": [
+        "fr-FR-BrigitteNeural",
+        "fr-FR-CelesteNeural",
+        "fr-FR-CoralieNeural",
+        "fr-FR-DeniseNeural1",
+        "fr-FR-JacquelineNeural",
+        "fr-FR-JosephineNeural",
+        "fr-FR-YvetteNeural"
+      ],
+      "male": [
+        "fr-FR-AlainNeural",
+        "fr-FR-ClaudeNeural",
+        "fr-FR-HenriNeural",
+        "fr-FR-JeromeNeural",
+        "fr-FR-MauriceNeural",
+        "fr-FR-YvesNeural"
+      ],
+      "connection_interruption": "Je suis désolé, je pense qu'il y a un problème de connexion. Pourrais-tu répéter ça?",
+      "timeout": 3,
+      "char/token": 2.125,
+      "punctuation": [".","!","?"]
+    },
+    "de-DE": {
+      "name": "German",
+      "self-name": "Deutsch",
+      "flag": "https://flagsapi.com/DE/flat/32.png",
+      "female": [
+        "de-DE-AmalaNeural",
+        "de-DE-ElkeNeural",
+        "de-DE-GiselaNeural",
+        "de-DE-KatjaNeural",
+        "de-DE-KlarissaNeural",
+        "de-DE-LouisaNeural",
+        "de-DE-MajaNeural",
+        "de-DE-TanjaNeural"
+      ],
+      "male": [
+        "de-DE-BerndNeural",
+        "de-DE-ChristophNeural",
+        "de-DE-ConradNeural",
+        "de-DE-KasperNeural",
+        "de-DE-KillianNeural",
+        "de-DE-KlausNeural",
+        "de-DE-RalfNeural"
+      ],
+      "connection_interruption": "Es tut mir leid, ich glaube, es liegt ein Verbindungsproblem vor. Könnten Sie das noch einmal sagen?",
+      "timeout": 3,
+      "char/token": 2.5,
+      "punctuation": [".","!","?"]
+    },
+    "hi-IN": {
+      "name": "Hindi",
+      "self-name": "हिंदी",
+      "flag": "https://flagsapi.com/IN/flat/32.png",
+      "female": [
+        "hi-IN-SwaraNeural"
+      ],
+      "male": [
+        "hi-IN-MadhurNeural"
+      ],
+      "connection_interruption": "मुझे खेद है, मुझे लगता है कि कोई कनेक्शन समस्या है। क्या तुम फिर से यह बोल सकते हो?",
+      "timeout": 5,
+      "char/token": 0.664,
+      "punctuation": [".","!","?"]
+    },
+    "ja-JP": {
+      "name": "Japanese",
+      "self-name": "日本語",
+      "flag": "https://flagsapi.com/JP/flat/32.png",
+      "female": [
+        "ja-JP-AoiNeural",
+        "ja-JP-MayuNeural",
+        "ja-JP-NanamiNeural",
+        "ja-JP-ShioriNeural"
+      ],
+      "male": [
+        "ja-JP-DaichiNeural",
+        "ja-JP-KeitaNeural",
+        "ja-JP-NaokiNeural"
+      ],
+      "connection_interruption": "申し訳ありませんが、接続に問題があると思います。もう一度言っていただけますか？",
+      "timeout": 3,
+      "char/token": 0.6724,
+      "punctuation": [".","!","?"]
+    },
+    "ko-KR": {
+      "name": "Korean",
+      "self-name": "한국어",
+      "flag": "https://flagsapi.com/KR/flat/32.png",
+      "female": [
+        "ko-KR-JiMinNeural1",
+        "ko-KR-SeoHyeonNeural1",
+        "ko-KR-SoonBokNeural1",
+        "ko-KR-SunHiNeural",
+        "ko-KR-YuJinNeural1"
+      ],
+      "male": [
+        "ko-KR-BongJinNeural1",
+        "ko-KR-GookMinNeural1",
+        "ko-KR-InJoonNeural"
+      ],
+      "connection_interruption": "죄송합니다. 연결 문제가 있는 것 같습니다. 다시 말해보세요?",
+      "timeout": 3,
+      "char/token": 0.4789,
+      "punctuation": [".","!","?"]
+    },    
+    "ru-RU": {
+      "name": "Russian",
+      "self-name": "русский",
+      "flag": "https://flagsapi.com/RU/flat/32.png",
+      "female": [
+        "ru-RU-DariyaNeural",
+        "ru-RU-SvetlanaNeural"
+      ],
+      "male": [
+        "ru-RU-DmitryNeural"
+      ],
+      "connection_interruption": "Извините, я думаю, что проблема с соединением. Можешь повторить?",
+      "timeout": 3,
+      "char/token": 0.928,
+      "punctuation": [".","!","?"]
+    },
+    "es-ES": {
+      "name": "Spanish",
+      "self-name": "Español",
+      "flag": "https://flagsapi.com/ES/flat/32.png",
+      "female": [
+        "es-ES-AbrilNeural",
+        "es-ES-ElviraNeural",
+        "es-ES-EstrellaNeural",
+        "es-ES-IreneNeural",
+        "es-ES-LaiaNeural",
+        "es-ES-LiaNeural",
+        "es-ES-TrianaNeural",
+        "es-ES-VeraNeural"
+      ],
+      "male": [
+        "es-ES-AlvaroNeural",
+        "es-ES-ArnauNeural",
+        "es-ES-DarioNeural",
+        "es-ES-EliasNeural",
+        "es-ES-NilNeural",
+        "es-ES-SaulNeural",
+        "es-ES-TeoNeural"
+      ],
+      "connection_interruption": "Lo siento, creo que hay un problema de conexión. ¿Podrías repetir lo que dijiste?",
+      "timeout": 3,
+      "char/token": 2.531,
+      "punctuation": [".","!","?"]
+    },
+    "es-MX": {
+      "name": "Spanish",
+      "self-name": "Español",
+      "flag": "https://flagsapi.com/MX/flat/32.png",
+      "female": [
+        "es-MX-BeatrizNeural",
+        "es-MX-CandelaNeural",
+        "es-MX-CarlotaNeural",
+        "es-MX-DaliaNeural",
+        "es-MX-LarissaNeural",
+        "es-MX-MarinaNeural",
+        "es-MX-NuriaNeural",
+        "es-MX-RenataNeural"
+      ],
+      "male": [
+        "es-MX-CecilioNeural",
+        "es-MX-GerardoNeural",
+        "es-MX-JorgeNeural",
+        "es-MX-LibertoNeural",
+        "es-MX-LucianoNeural",
+        "es-MX-PelayoNeural",
+        "es-MX-YagoNeural"
+      ],
+      "connection_interruption": "Lo siento, creo que hay un problema de conexión. ¿Podrías repetir lo que dijiste?",
+      "timeout": 3,
+      "char/token": 2.531,
+      "punctuation": [".","!","?"]
+    },
+    "tr-TR": {
+      "name": "Turkish",
+      "self-name": "Türkçe",
+      "flag": "https://flagsapi.com/TR/flat/32.png",
+      "female": [
+        "tr-TR-EmelNeural"
+      ],
+      "male": [
+        "tr-TR-AhmetNeural"
+      ],
+      "connection_interruption": "Üzgünüm, sanırım bir bağlantı sorunu var. Tekrar söyler misin?",
+      "timeout": 3,
+      "char/token": 1.824,
+      "punctuation": [".","!","?"]
+    }
+}

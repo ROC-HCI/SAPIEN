@@ -1,287 +1,2793 @@
 {
-    "en-US": {
-      "name": "English",
-      "self-name": "English",
-      "flag": "https://flagsapi.com/US/flat/32.png",
-      "female": [
-        "en-US-JennyNeural",
-        "en-US-CoraNeural",
-        "en-US-AriaNeural",
-        "en-US-SaraNeural",
-        "en-US-NancyNeural",
-        "en-US-JaneNeural"
-      ],
-      "male": [
-        "en-US-ChristopherNeural",
-        "en-US-DavisNeural",
-        "en-US-GuyNeural",
-        "en-US-JasonNeural",
-        "en-US-TonyNeural"
-      ],
-      "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
-      "timeout": 2,
-      "char/token": 4.111,
-      "punctuation": [".","!","?"]
+    "mr-IN": {
+        "name": "Marathi",
+        "self-name": "\u092e\u0930\u093e\u0920\u0940",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "mr-IN-AarohiNeural"
+        ],
+        "male": [
+            "mr-IN-ManoharNeural"
+        ],
+        "connection_interruption": "\u092e\u0932\u093e \u092e\u093e\u092b \u0915\u0930\u093e, \u092e\u0932\u093e \u0935\u093e\u091f\u0924\u0947 \u0915\u0940 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0938\u092e\u0938\u094d\u092f\u093e \u0906\u0939\u0947. \u0924\u0941\u092e\u094d\u0939\u0940 \u092a\u0941\u0928\u094d\u0939\u093e \u0905\u0938\u0947 \u092e\u094d\u0939\u0923\u0942 \u0936\u0915\u093e\u0932 \u0915\u093e?",
+        "timeout": 3,
+        "char/token": 1.0985915492957747,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
-    "ar-SA": {
-      "name": "Arabic",
-      "self-name": "عربي",
-      "flag": "https://flagsapi.com/SA/flat/32.png",
-      "female": [
-        "ar-SA-ZariyahNeural"
-      ],
-      "male": [
-        "ar-SA-HamedNeural"
-      ],
-      "connection_interruption": "أنا آسف ، أعتقد أن هناك مشكلة في الاتصال. هل بإمكانك قول ذلك مجددا؟",
-      "timeout": 3,
-      "char/token": 0.893,
-      "punctuation": [".","!","?"]
+    "en-IE": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/IE/flat/32.png",
+        "female": [
+            "en-IE-EmilyNeural"
+        ],
+        "male": [
+            "en-IE-ConnorNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
-    "bn-IN": {
-      "name": "Bengali",
-      "self-name": "বাংলা",
-      "flag": "https://flagsapi.com/BD/flat/32.png",
-      "female": [
-        "bn-BD-NabanitaNeural"
-      ],
-      "male": [
-        "bn-BD-PradeepNeural"
-      ],
-      "connection_interruption": "আমি দুঃখিত, আমি মনে করি একটি সংযোগ সমস্যা আছে. আপনি আবার যে বলতে পারে?",
-      "timeout": 5,
-      "char/token": 0.53,
-      "punctuation": [".","!","?"]
+    "ar-LY": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/LY/flat/32.png",
+        "female": [
+            "ar-LY-ImanNeural"
+        ],
+        "male": [
+            "ar-LY-OmarNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-AE": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/AE/flat/32.png",
+        "female": [
+            "ar-AE-FatimaNeural"
+        ],
+        "male": [
+            "ar-AE-HamdanNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-BO": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/BO/flat/32.png",
+        "female": [
+            "es-BO-SofiaNeural"
+        ],
+        "male": [
+            "es-BO-MarceloNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-GB": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/GB/flat/32.png",
+        "female": [
+            "en-GB-SoniaNeural",
+            "en-GB-LibbyNeural",
+            "en-GB-AbbiNeural",
+            "en-GB-BellaNeural",
+            "en-GB-HollieNeural",
+            "en-GB-MaisieNeural",
+            "en-GB-OliviaNeural"
+        ],
+        "male": [
+            "en-GB-RyanNeural",
+            "en-GB-AlfieNeural",
+            "en-GB-ElliotNeural",
+            "en-GB-EthanNeural",
+            "en-GB-NoahNeural",
+            "en-GB-OliverNeural",
+            "en-GB-ThomasNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-LB": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/LB/flat/32.png",
+        "female": [
+            "ar-LB-LaylaNeural"
+        ],
+        "male": [
+            "ar-LB-RamiNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "da-DK": {
+        "name": "Danish",
+        "self-name": "dansk",
+        "flag": "https://flagsapi.com/DK/flat/32.png",
+        "female": [
+            "da-DK-ChristelNeural"
+        ],
+        "male": [
+            "da-DK-JeppeNeural"
+        ],
+        "connection_interruption": "Jeg beklager, jeg tror, \u200b\u200bder er et forbindelsesproblem. Kan du sige det igen?",
+        "timeout": 3,
+        "char/token": 2.888888888888889,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-YE": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/YE/flat/32.png",
+        "female": [
+            "ar-YE-MaryamNeural"
+        ],
+        "male": [
+            "ar-YE-SalehNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-PH": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/PH/flat/32.png",
+        "female": [
+            "en-PH-RosaNeural"
+        ],
+        "male": [
+            "en-PH-JamesNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ka-GE": {
+        "name": "Georgian",
+        "self-name": "\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8",
+        "flag": "https://flagsapi.com/GE/flat/32.png",
+        "female": [
+            "ka-GE-EkaNeural"
+        ],
+        "male": [
+            "ka-GE-GiorgiNeural"
+        ],
+        "connection_interruption": "\u10d1\u10dd\u10d3\u10d8\u10e8\u10e1 \u10d2\u10d8\u10ee\u10d3\u10d8\u10d7, \u10d5\u10e4\u10d8\u10e5\u10e0\u10dd\u10d1, \u10d9\u10d0\u10d5\u10e8\u10d8\u10e0\u10d8\u10e1 \u10de\u10e0\u10dd\u10d1\u10da\u10d4\u10db\u10d0\u10d0. \u10e8\u10d4\u10d2\u10d8\u10eb\u10da\u10d8\u10d0 \u10d9\u10d8\u10d3\u10d4\u10d5 \u10d4\u10e0\u10d7\u10ee\u10d4\u10da \u10d7\u10e5\u10d5\u10d0?",
+        "timeout": 3,
+        "char/token": 0.5461538461538461,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ru-RU": {
+        "name": "Russian",
+        "self-name": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439",
+        "flag": "https://flagsapi.com/RU/flat/32.png",
+        "female": [
+            "ru-RU-SvetlanaNeural",
+            "ru-RU-DariyaNeural"
+        ],
+        "male": [
+            "ru-RU-DmitryNeural"
+        ],
+        "connection_interruption": "\u0418\u0437\u0432\u0438\u043d\u0438\u0442\u0435, \u044f \u0434\u0443\u043c\u0430\u044e, \u0447\u0442\u043e \u0432\u043e\u0437\u043d\u0438\u043a\u043b\u0430 \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u0441 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435\u043c. \u041c\u043e\u0436\u0435\u0448\u044c \u043f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u044c?",
+        "timeout": 3,
+        "char/token": 2.176470588235294,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "pt-PT": {
+        "name": "Portuguese",
+        "self-name": "portugu\u00eas",
+        "flag": "https://flagsapi.com/PT/flat/32.png",
+        "female": [
+            "pt-PT-RaquelNeural",
+            "pt-PT-FernandaNeural"
+        ],
+        "male": [
+            "pt-PT-DuarteNeural"
+        ],
+        "connection_interruption": "Sinto muito, acho que h\u00e1 um problema de conex\u00e3o. Pode dizer aquilo de novo?",
+        "timeout": 3,
+        "char/token": 3.260869565217391,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-TZ": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/TZ/flat/32.png",
+        "female": [
+            "en-TZ-ImaniNeural"
+        ],
+        "male": [
+            "en-TZ-ElimuNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "sq-AL": {
+        "name": "Albanian",
+        "self-name": "shqip",
+        "flag": "https://flagsapi.com/AL/flat/32.png",
+        "female": [
+            "sq-AL-AnilaNeural"
+        ],
+        "male": [
+            "sq-AL-IlirNeural"
+        ],
+        "connection_interruption": "M\u00eb vjen keq, mendoj se ka nj\u00eb problem lidhjeje. A mund ta thoni k\u00ebt\u00eb p\u00ebrs\u00ebri?",
+        "timeout": 3,
+        "char/token": 2.2,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "sw-TZ": {
+        "name": "Swahili",
+        "self-name": "Kiswahili",
+        "flag": "https://flagsapi.com/TZ/flat/32.png",
+        "female": [
+            "sw-TZ-RehemaNeural"
+        ],
+        "male": [
+            "sw-TZ-DaudiNeural"
+        ],
+        "connection_interruption": "Samahani, nadhani kuna suala la muunganisho. Unaweza kusema hivyo tena?",
+        "timeout": 3,
+        "char/token": 2.5357142857142856,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "th-TH": {
+        "name": "Thai",
+        "self-name": "\u0e44\u0e17\u0e22",
+        "flag": "https://flagsapi.com/TH/flat/32.png",
+        "female": [
+            "th-TH-PremwadeeNeural",
+            "th-TH-AcharaNeural"
+        ],
+        "male": [
+            "th-TH-NiwatNeural"
+        ],
+        "connection_interruption": "\u0e09\u0e31\u0e19\u0e02\u0e2d\u0e42\u0e17\u0e29 \u0e09\u0e31\u0e19\u0e04\u0e34\u0e14\u0e27\u0e48\u0e32\u0e21\u0e35\u0e1b\u0e31\u0e0d\u0e2b\u0e32\u0e01\u0e32\u0e23\u0e40\u0e0a\u0e37\u0e48\u0e2d\u0e21\u0e15\u0e48\u0e2d \u0e04\u0e38\u0e13\u0e0a\u0e48\u0e27\u0e22\u0e1e\u0e39\u0e14\u0e2d\u0e35\u0e01\u0e04\u0e23\u0e31\u0e49\u0e07\u0e44\u0e14\u0e49\u0e44\u0e2b\u0e21?",
+        "timeout": 3,
+        "char/token": 1.0161290322580645,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-SV": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/SV/flat/32.png",
+        "female": [
+            "es-SV-LorenaNeural"
+        ],
+        "male": [
+            "es-SV-RodrigoNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ml-IN": {
+        "name": "Malayalam",
+        "self-name": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "ml-IN-SobhanaNeural"
+        ],
+        "male": [
+            "ml-IN-MidhunNeural"
+        ],
+        "connection_interruption": "\u0d0e\u0d28\u0d4d\u0d28\u0d4b\u0d1f\u0d4d \u0d15\u0d4d\u0d37\u0d2e\u0d3f\u0d15\u0d4d\u0d15\u0d42, \u0d12\u0d30\u0d41 \u0d15\u0d23\u0d15\u0d4d\u0d37\u0d7b \u0d2a\u0d4d\u0d30\u0d36\u0d4d\u0d28\u0d2e\u0d41\u0d23\u0d4d\u0d1f\u0d46\u0d28\u0d4d\u0d28\u0d4d \u0d1e\u0d3e\u0d7b \u0d15\u0d30\u0d41\u0d24\u0d41\u0d28\u0d4d\u0d28\u0d41. \u0d28\u0d3f\u0d19\u0d4d\u0d19\u0d7e\u0d15\u0d4d\u0d15\u0d4d \u0d05\u0d24\u0d4d \u0d35\u0d40\u0d23\u0d4d\u0d1f\u0d41\u0d02 \u0d2a\u0d31\u0d2f\u0d3e\u0d2e\u0d4b?",
+        "timeout": 3,
+        "char/token": 0.6433566433566433,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ms-MY": {
+        "name": "Malay",
+        "self-name": "Melayu",
+        "flag": "https://flagsapi.com/MY/flat/32.png",
+        "female": [
+            "ms-MY-YasminNeural"
+        ],
+        "male": [
+            "ms-MY-OsmanNeural"
+        ],
+        "connection_interruption": "Saya minta maaf, saya rasa ada masalah sambungan. Bolehkah anda mengatakan itu sekali lagi?",
+        "timeout": 3,
+        "char/token": 3.033333333333333,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "sl-SI": {
+        "name": "Slovenian",
+        "self-name": "sloven\u0161\u010dina",
+        "flag": "https://flagsapi.com/SI/flat/32.png",
+        "female": [
+            "sl-SI-PetraNeural"
+        ],
+        "male": [
+            "sl-SI-RokNeural"
+        ],
+        "connection_interruption": "Oprostite, mislim, da je pri\u0161lo do te\u017eave s povezavo. Lahko to ponovi\u0161?",
+        "timeout": 3,
+        "char/token": 2.3666666666666667,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "az-AZ": {
+        "name": "Azerbaijani",
+        "self-name": "az\u0259rbaycan",
+        "flag": "https://flagsapi.com/AZ/flat/32.png",
+        "female": [
+            "az-AZ-BanuNeural"
+        ],
+        "male": [
+            "az-AZ-BabekNeural"
+        ],
+        "connection_interruption": "Ba\u011f\u0131\u015flay\u0131n, m\u0259nc\u0259 \u0259laq\u0259 problemi var. Bunu bir daha dey\u0259 bil\u0259rs\u0259n?",
+        "timeout": 3,
+        "char/token": 2.0625,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "fa-IR": {
+        "name": "Persian",
+        "self-name": "\u0641\u0627\u0631\u0633\u06cc",
+        "flag": "https://flagsapi.com/IR/flat/32.png",
+        "female": [
+            "fa-IR-DilaraNeural"
+        ],
+        "male": [
+            "fa-IR-FaridNeural"
+        ],
+        "connection_interruption": "\u0645\u062a\u0627\u0633\u0641\u0645\u060c \u0641\u06a9\u0631 \u0645\u06cc \u06a9\u0646\u0645 \u0645\u0634\u06a9\u0644 \u0627\u062a\u0635\u0627\u0644 \u0648\u062c\u0648\u062f \u062f\u0627\u0631\u062f. \u0645\u06cc\u0634\u0647 \u062f\u0648\u0628\u0627\u0631\u0647 \u0628\u06af\u06cc\u061f",
+        "timeout": 3,
+        "char/token": 1.3255813953488371,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "eu-ES": {
+        "name": "Basque",
+        "self-name": "euskara",
+        "flag": "https://flagsapi.com/ES/flat/32.png",
+        "female": [
+            "eu-ES-AinhoaNeural"
+        ],
+        "male": [
+            "eu-ES-AnderNeural"
+        ],
+        "connection_interruption": "Sentitzen dut, uste dut konexio arazo bat dagoela. Berriro esango al zenuke hori?",
+        "timeout": 3,
+        "char/token": 2.7,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ta-IN": {
+        "name": "Tamil",
+        "self-name": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "ta-IN-PallaviNeural"
+        ],
+        "male": [
+            "ta-IN-ValluvarNeural"
+        ],
+        "connection_interruption": "\u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd, \u0b87\u0ba3\u0bc8\u0baa\u0bcd\u0baa\u0bbf\u0bb2\u0bcd \u0b9a\u0bbf\u0b95\u0bcd\u0b95\u0bb2\u0bcd \u0b87\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0ba4\u0bbe\u0b95 \u0ba8\u0bbf\u0ba9\u0bc8\u0b95\u0bcd\u0b95\u0bbf\u0bb1\u0bc7\u0ba9\u0bcd. \u0b85\u0ba4\u0bc8 \u0bae\u0bc0\u0ba3\u0bcd\u0b9f\u0bc1\u0bae\u0bcd \u0b9a\u0bca\u0bb2\u0bcd\u0bb2 \u0bae\u0bc1\u0b9f\u0bbf\u0baf\u0bc1\u0bae\u0bbe?",
+        "timeout": 3,
+        "char/token": 0.7567567567567568,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "my-MM": {
+        "name": "Burmese ",
+        "self-name": "\u1019\u103c\u1014\u103a\u1019\u102c",
+        "flag": "https://flagsapi.com/MM/flat/32.png",
+        "female": [
+            "my-MM-NilarNeural"
+        ],
+        "male": [
+            "my-MM-ThihaNeural"
+        ],
+        "connection_interruption": "\u101d\u1019\u103a\u1038\u1014\u100a\u103a\u1038\u1015\u102b\u1010\u101a\u103a\u104a \u1001\u103b\u102d\u1010\u103a\u1006\u1000\u103a\u1019\u103e\u102f\u1015\u103c\u103f\u1014\u102c\u101b\u103e\u102d\u1014\u1031\u1010\u101a\u103a\u101c\u102d\u102f\u1037 \u1000\u103b\u103d\u1014\u103a\u1010\u1031\u102c\u103a\u1011\u1004\u103a\u1015\u102b\u1010\u101a\u103a\u104b \u1011\u1015\u103a\u1015\u103c\u1031\u102c\u101c\u102d\u102f\u1037\u101b\u1019\u101c\u102c\u1038",
+        "timeout": 3,
+        "char/token": 0.5031847133757962,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-CA": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/CA/flat/32.png",
+        "female": [
+            "en-CA-ClaraNeural"
+        ],
+        "male": [
+            "en-CA-LiamNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "bg-BG": {
+        "name": "Bulgarian",
+        "self-name": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438",
+        "flag": "https://flagsapi.com/BG/flat/32.png",
+        "female": [
+            "bg-BG-KalinaNeural"
+        ],
+        "male": [
+            "bg-BG-BorislavNeural"
+        ],
+        "connection_interruption": "\u0421\u044a\u0436\u0430\u043b\u044f\u0432\u0430\u043c, \u043c\u0438\u0441\u043b\u044f, \u0447\u0435 \u0438\u043c\u0430 \u043f\u0440\u043e\u0431\u043b\u0435\u043c \u0441 \u0432\u0440\u044a\u0437\u043a\u0430\u0442\u0430. \u041c\u043e\u0436\u0435\u0448 \u043b\u0438 \u0434\u0430 \u043a\u0430\u0436\u0435\u0448 \u0442\u043e\u0432\u0430 \u043e\u0442\u043d\u043e\u0432\u043e?",
+        "timeout": 3,
+        "char/token": 1.7857142857142858,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "zh-CN-shandong": {
+        "name": "Chinese",
+        "self-name": "\u4e2d\u6587",
+        "flag": "https://flagsapi.com/CN/flat/32.png",
+        "female": [],
+        "male": [
+            "zh-CN-shandong-YunxiangNeural"
+        ],
+        "connection_interruption": "\u62b1\u6b49\uff0c\u6211\u8ba4\u4e3a\u5b58\u5728\u8fde\u63a5\u95ee\u9898\u3002\u4f60\u80fd\u518d\u8bf4\u4e00\u904d\u5417\uff1f",
+        "timeout": 3,
+        "char/token": 0.9545454545454546,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "mn-MN": {
+        "name": "Mongolian",
+        "self-name": "\u043c\u043e\u043d\u0433\u043e\u043b",
+        "flag": "https://flagsapi.com/MN/flat/32.png",
+        "female": [
+            "mn-MN-YesuiNeural"
+        ],
+        "male": [
+            "mn-MN-BataaNeural"
+        ],
+        "connection_interruption": "\u0423\u0443\u0447\u043b\u0430\u0430\u0440\u0430\u0439, \u0445\u043e\u043b\u0431\u043e\u043b\u0442\u044b\u043d \u0430\u0441\u0443\u0443\u0434\u0430\u043b \u0431\u0430\u0439\u043d\u0430 \u0433\u044d\u0436 \u0431\u043e\u0434\u043e\u0436 \u0431\u0430\u0439\u043d\u0430. \u0422\u0430 \u04af\u04af\u043d\u0438\u0439\u0433 \u0434\u0430\u0445\u0438\u043d \u0445\u044d\u043b\u0436 \u0447\u0430\u0434\u0430\u0445 \u0443\u0443?",
+        "timeout": 3,
+        "char/token": 1.490909090909091,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-EC": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/EC/flat/32.png",
+        "female": [
+            "es-EC-AndreaNeural"
+        ],
+        "male": [
+            "es-EC-LuisNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-VE": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/VE/flat/32.png",
+        "female": [
+            "es-VE-PaolaNeural"
+        ],
+        "male": [
+            "es-VE-SebastianNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-NI": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/NI/flat/32.png",
+        "female": [
+            "es-NI-YolandaNeural"
+        ],
+        "male": [
+            "es-NI-FedericoNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "lo-LA": {
+        "name": "Lao",
+        "self-name": "\u0ea5\u0eb2\u0ea7",
+        "flag": "https://flagsapi.com/LA/flat/32.png",
+        "female": [
+            "lo-LA-KeomanyNeural"
+        ],
+        "male": [
+            "lo-LA-ChanthavongNeural"
+        ],
+        "connection_interruption": "\u0e82\u0ec9\u0ead\u0e8d\u0e82\u0ecd\u0ead\u0eb0\u0ec4\u0e9e, \u0e82\u0ec9\u0ead\u0e8d\u0e84\u0eb4\u0e94\u0ea7\u0ec8\u0eb2\u0ea1\u0eb5\u0e9a\u0eb1\u0e99\u0eab\u0eb2\u0e81\u0eb2\u0e99\u0ec0\u0e8a\u0eb7\u0ec8\u0ead\u0ea1\u0e95\u0ecd\u0ec8. \u0ec0\u0e88\u0ebb\u0ec9\u0eb2\u0eaa\u0eb2\u0ea1\u0eb2\u0e94\u0ec0\u0ea7\u0ebb\u0ec9\u0eb2\u0ec1\u0e99\u0ea7\u0e99\u0eb1\u0ec9\u0e99\u0ead\u0eb5\u0e81\u0e9a\u0ecd?",
+        "timeout": 3,
+        "char/token": 0.46710526315789475,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "et-EE": {
+        "name": "Estonian",
+        "self-name": "eesti",
+        "flag": "https://flagsapi.com/EE/flat/32.png",
+        "female": [
+            "et-EE-AnuNeural"
+        ],
+        "male": [
+            "et-EE-KertNeural"
+        ],
+        "connection_interruption": "Vabandust, minu arvates on \u00fchenduse probleem. Kas sa saaksid seda uuesti \u00f6elda?",
+        "timeout": 3,
+        "char/token": 2.5483870967741935,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
     "zh-CN": {
-      "name": "Chinese",
-      "self-name": "中文",
-      "flag": "https://flagsapi.com/CN/flat/32.png",
-      "female": [
-        "zh-CN-XiaochenNeural",
-        "zh-CN-XiaohanNeural",
-        "zh-CN-XiaomengNeural",
-        "zh-CN-XiaomoNeural",
-        "zh-CN-XiaoqiuNeural",
-        "zh-CN-XiaoruiNeural",
-        "zh-CN-XiaoshuangNeural",
-        "zh-CN-XiaoxiaoNeural",
-        "zh-CN-XiaoxuanNeural",
-        "zh-CN-XiaoyanNeural",
-        "zh-CN-XiaoyiNeural",
-        "zh-CN-XiaoyouNeural",
-        "zh-CN-XiaozhenNeural"
-      ],
-      "male": [
-        "zh-CN-YunfengNeural",
-        "zh-CN-YunhaoNeural",
-        "zh-CN-YunjianNeural",
-        "zh-CN-YunxiaNeural",
-        "zh-CN-YunxiNeural",
-        "zh-CN-YunyangNeural",
-        "zh-CN-YunyeNeural",
-        "zh-CN-YunzeNeural"
-      ],
-      "connection_interruption": "抱歉，我认为存在连接问题。你能再说一遍吗？",
-      "timeout": 3,
-      "char/token": 1,
-      "punctuation": [".","!","?"]
+        "name": "Chinese",
+        "self-name": "\u4e2d\u6587",
+        "flag": "https://flagsapi.com/CN/flat/32.png",
+        "female": [
+            "zh-CN-XiaoxiaoNeural",
+            "zh-CN-XiaoyiNeural",
+            "zh-CN-XiaochenNeural",
+            "zh-CN-XiaohanNeural",
+            "zh-CN-XiaomengNeural",
+            "zh-CN-XiaomoNeural",
+            "zh-CN-XiaoqiuNeural",
+            "zh-CN-XiaoruiNeural",
+            "zh-CN-XiaoshuangNeural",
+            "zh-CN-XiaoxuanNeural",
+            "zh-CN-XiaoyanNeural",
+            "zh-CN-XiaoyouNeural",
+            "zh-CN-XiaozhenNeural",
+            "zh-CN-XiaochenMultilingualNeural",
+            "zh-CN-XiaorouNeural",
+            "zh-CN-XiaoxiaoDialectsNeural"
+        ],
+        "male": [
+            "zh-CN-YunxiNeural",
+            "zh-CN-YunjianNeural",
+            "zh-CN-YunyangNeural",
+            "zh-CN-YunfengNeural",
+            "zh-CN-YunhaoNeural",
+            "zh-CN-YunxiaNeural",
+            "zh-CN-YunyeNeural",
+            "zh-CN-YunzeNeural",
+            "zh-CN-YunjieNeural",
+            "zh-CN-YunyiMultilingualNeural"
+        ],
+        "connection_interruption": "\u62b1\u6b49\uff0c\u6211\u8ba4\u4e3a\u5b58\u5728\u8fde\u63a5\u95ee\u9898\u3002\u4f60\u80fd\u518d\u8bf4\u4e00\u904d\u5417\uff1f",
+        "timeout": 3,
+        "char/token": 0.9545454545454546,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
-    "fr-FR": {
-      "name": "French",
-      "self-name": "Français",
-      "flag": "https://flagsapi.com/FR/flat/32.png",
-      "female": [
-        "fr-FR-BrigitteNeural",
-        "fr-FR-CelesteNeural",
-        "fr-FR-CoralieNeural",
-        "fr-FR-DeniseNeural1",
-        "fr-FR-JacquelineNeural",
-        "fr-FR-JosephineNeural",
-        "fr-FR-YvetteNeural"
-      ],
-      "male": [
-        "fr-FR-AlainNeural",
-        "fr-FR-ClaudeNeural",
-        "fr-FR-HenriNeural",
-        "fr-FR-JeromeNeural",
-        "fr-FR-MauriceNeural",
-        "fr-FR-YvesNeural"
-      ],
-      "connection_interruption": "Je suis désolé, je pense qu'il y a un problème de connexion. Pourrais-tu répéter ça?",
-      "timeout": 3,
-      "char/token": 2.125,
-      "punctuation": [".","!","?"]
+    "es-CL": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/CL/flat/32.png",
+        "female": [
+            "es-CL-CatalinaNeural"
+        ],
+        "male": [
+            "es-CL-LorenzoNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
-    "de-DE": {
-      "name": "German",
-      "self-name": "Deutsch",
-      "flag": "https://flagsapi.com/DE/flat/32.png",
-      "female": [
-        "de-DE-AmalaNeural",
-        "de-DE-ElkeNeural",
-        "de-DE-GiselaNeural",
-        "de-DE-KatjaNeural",
-        "de-DE-KlarissaNeural",
-        "de-DE-LouisaNeural",
-        "de-DE-MajaNeural",
-        "de-DE-TanjaNeural"
-      ],
-      "male": [
-        "de-DE-BerndNeural",
-        "de-DE-ChristophNeural",
-        "de-DE-ConradNeural",
-        "de-DE-KasperNeural",
-        "de-DE-KillianNeural",
-        "de-DE-KlausNeural",
-        "de-DE-RalfNeural"
-      ],
-      "connection_interruption": "Es tut mir leid, ich glaube, es liegt ein Verbindungsproblem vor. Könnten Sie das noch einmal sagen?",
-      "timeout": 3,
-      "char/token": 2.5,
-      "punctuation": [".","!","?"]
+    "fr-CA": {
+        "name": "French",
+        "self-name": "fran\u00e7ais",
+        "flag": "https://flagsapi.com/CA/flat/32.png",
+        "female": [
+            "fr-CA-SylvieNeural"
+        ],
+        "male": [
+            "fr-CA-JeanNeural",
+            "fr-CA-AntoineNeural",
+            "fr-CA-ThierryNeural"
+        ],
+        "connection_interruption": "Je suis d\u00e9sol\u00e9, je pense qu'il y a un probl\u00e8me de connexion. Pourrais-tu r\u00e9p\u00e9ter \u00e7a?",
+        "timeout": 3,
+        "char/token": 3.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
-    "hi-IN": {
-      "name": "Hindi",
-      "self-name": "हिंदी",
-      "flag": "https://flagsapi.com/IN/flat/32.png",
-      "female": [
-        "hi-IN-SwaraNeural"
-      ],
-      "male": [
-        "hi-IN-MadhurNeural"
-      ],
-      "connection_interruption": "मुझे खेद है, मुझे लगता है कि कोई कनेक्शन समस्या है। क्या तुम फिर से यह बोल सकते हो?",
-      "timeout": 5,
-      "char/token": 0.664,
-      "punctuation": [".","!","?"]
+    "ar-MA": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/MA/flat/32.png",
+        "female": [
+            "ar-MA-MounaNeural"
+        ],
+        "male": [
+            "ar-MA-JamalNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
-    "ja-JP": {
-      "name": "Japanese",
-      "self-name": "日本語",
-      "flag": "https://flagsapi.com/JP/flat/32.png",
-      "female": [
-        "ja-JP-AoiNeural",
-        "ja-JP-MayuNeural",
-        "ja-JP-NanamiNeural",
-        "ja-JP-ShioriNeural"
-      ],
-      "male": [
-        "ja-JP-DaichiNeural",
-        "ja-JP-KeitaNeural",
-        "ja-JP-NaokiNeural"
-      ],
-      "connection_interruption": "申し訳ありませんが、接続に問題があると思います。もう一度言っていただけますか？",
-      "timeout": 3,
-      "char/token": 0.6724,
-      "punctuation": [".","!","?"]
+    "ps-AF": {
+        "name": "Pashto",
+        "self-name": "\u067e\u069a\u062a\u0648",
+        "flag": "https://flagsapi.com/AF/flat/32.png",
+        "female": [
+            "ps-AF-LatifaNeural"
+        ],
+        "male": [
+            "ps-AF-GulNawazNeural"
+        ],
+        "connection_interruption": "\u0632\u0647 \u0628\u062e\u069a\u0646\u0647 \u063a\u0648\u0627\u0693\u0645\u060c \u0632\u0647 \u0641\u06a9\u0631 \u06a9\u0648\u0645 \u0686\u06d0 \u062f \u0627\u0631\u062a\u0628\u0627\u0637 \u0633\u062a\u0648\u0646\u0632\u0647 \u0634\u062a\u0648\u0646 \u0644\u0631\u064a. \u0627\u06cc\u0627 \u062a\u0627\u0633\u0648 \u06a9\u0648\u0644\u06cc \u0634\u0626 \u062f\u0627 \u0628\u06cc\u0627 \u0648\u0648\u0627\u06cc\u0627\u0633\u062a\u061f",
+        "timeout": 3,
+        "char/token": 1.1733333333333333,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
-    "ko-KR": {
-      "name": "Korean",
-      "self-name": "한국어",
-      "flag": "https://flagsapi.com/KR/flat/32.png",
-      "female": [
-        "ko-KR-JiMinNeural1",
-        "ko-KR-SeoHyeonNeural1",
-        "ko-KR-SoonBokNeural1",
-        "ko-KR-SunHiNeural",
-        "ko-KR-YuJinNeural1"
-      ],
-      "male": [
-        "ko-KR-BongJinNeural1",
-        "ko-KR-GookMinNeural1",
-        "ko-KR-InJoonNeural"
-      ],
-      "connection_interruption": "죄송합니다. 연결 문제가 있는 것 같습니다. 다시 말해보세요?",
-      "timeout": 3,
-      "char/token": 0.4789,
-      "punctuation": [".","!","?"]
-    },    
-    "ru-RU": {
-      "name": "Russian",
-      "self-name": "русский",
-      "flag": "https://flagsapi.com/RU/flat/32.png",
-      "female": [
-        "ru-RU-DariyaNeural",
-        "ru-RU-SvetlanaNeural"
-      ],
-      "male": [
-        "ru-RU-DmitryNeural"
-      ],
-      "connection_interruption": "Извините, я думаю, что проблема с соединением. Можешь повторить?",
-      "timeout": 3,
-      "char/token": 0.928,
-      "punctuation": [".","!","?"]
+    "gl-ES": {
+        "name": "Galician",
+        "self-name": "galego",
+        "flag": "https://flagsapi.com/ES/flat/32.png",
+        "female": [
+            "gl-ES-SabelaNeural"
+        ],
+        "male": [
+            "gl-ES-RoiNeural"
+        ],
+        "connection_interruption": "S\u00edntoo, creo que hai un problema de conexi\u00f3n. Poder\u00edas dicir iso de novo?",
+        "timeout": 3,
+        "char/token": 3.3181818181818183,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-SG": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/SG/flat/32.png",
+        "female": [
+            "en-SG-LunaNeural"
+        ],
+        "male": [
+            "en-SG-WayneNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "mk-MK": {
+        "name": "Macedonian",
+        "self-name": "\u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438",
+        "flag": "https://flagsapi.com/MK/flat/32.png",
+        "female": [
+            "mk-MK-MarijaNeural"
+        ],
+        "male": [
+            "mk-MK-AleksandarNeural"
+        ],
+        "connection_interruption": "\u0416\u0430\u043b \u043c\u0438 \u0435, \u043c\u0438\u0441\u043b\u0430\u043c \u0434\u0435\u043a\u0430 \u0438\u043c\u0430 \u043f\u0440\u043e\u0431\u043b\u0435\u043c \u0441\u043e \u0432\u0440\u0441\u043a\u0430\u0442\u0430. \u041c\u043e\u0436\u0435\u0442\u0435 \u043b\u0438 \u0434\u0430 \u0433\u043e \u043a\u0430\u0436\u0435\u0442\u0435 \u0442\u043e\u0430 \u043f\u043e\u0432\u0442\u043e\u0440\u043d\u043e?",
+        "timeout": 3,
+        "char/token": 1.9069767441860466,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-QA": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/QA/flat/32.png",
+        "female": [
+            "ar-QA-AmalNeural"
+        ],
+        "male": [
+            "ar-QA-MoazNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "pt-BR": {
+        "name": "Portuguese",
+        "self-name": "portugu\u00eas",
+        "flag": "https://flagsapi.com/BR/flat/32.png",
+        "female": [
+            "pt-BR-FranciscaNeural",
+            "pt-BR-BrendaNeural",
+            "pt-BR-ElzaNeural",
+            "pt-BR-GiovannaNeural",
+            "pt-BR-LeilaNeural",
+            "pt-BR-LeticiaNeural",
+            "pt-BR-ManuelaNeural",
+            "pt-BR-ThalitaNeural",
+            "pt-BR-YaraNeural"
+        ],
+        "male": [
+            "pt-BR-AntonioNeural",
+            "pt-BR-DonatoNeural",
+            "pt-BR-FabioNeural",
+            "pt-BR-HumbertoNeural",
+            "pt-BR-JulioNeural",
+            "pt-BR-NicolauNeural",
+            "pt-BR-ValerioNeural"
+        ],
+        "connection_interruption": "Sinto muito, acho que h\u00e1 um problema de conex\u00e3o. Pode dizer aquilo de novo?",
+        "timeout": 3,
+        "char/token": 3.260869565217391,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
     "es-ES": {
-      "name": "Spanish",
-      "self-name": "Español",
-      "flag": "https://flagsapi.com/ES/flat/32.png",
-      "female": [
-        "es-ES-AbrilNeural",
-        "es-ES-ElviraNeural",
-        "es-ES-EstrellaNeural",
-        "es-ES-IreneNeural",
-        "es-ES-LaiaNeural",
-        "es-ES-LiaNeural",
-        "es-ES-TrianaNeural",
-        "es-ES-VeraNeural"
-      ],
-      "male": [
-        "es-ES-AlvaroNeural",
-        "es-ES-ArnauNeural",
-        "es-ES-DarioNeural",
-        "es-ES-EliasNeural",
-        "es-ES-NilNeural",
-        "es-ES-SaulNeural",
-        "es-ES-TeoNeural"
-      ],
-      "connection_interruption": "Lo siento, creo que hay un problema de conexión. ¿Podrías repetir lo que dijiste?",
-      "timeout": 3,
-      "char/token": 2.531,
-      "punctuation": [".","!","?"]
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/ES/flat/32.png",
+        "female": [
+            "es-ES-ElviraNeural",
+            "es-ES-AbrilNeural",
+            "es-ES-EstrellaNeural",
+            "es-ES-IreneNeural",
+            "es-ES-LaiaNeural",
+            "es-ES-LiaNeural",
+            "es-ES-TrianaNeural",
+            "es-ES-VeraNeural",
+            "es-ES-XimenaNeural"
+        ],
+        "male": [
+            "es-ES-AlvaroNeural",
+            "es-ES-ArnauNeural",
+            "es-ES-DarioNeural",
+            "es-ES-EliasNeural",
+            "es-ES-NilNeural",
+            "es-ES-SaulNeural",
+            "es-ES-TeoNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "hi-IN": {
+        "name": "Hindi",
+        "self-name": "\u0939\u093f\u0928\u094d\u0926\u0940",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "hi-IN-SwaraNeural"
+        ],
+        "male": [
+            "hi-IN-MadhurNeural"
+        ],
+        "connection_interruption": "\u092e\u0941\u091d\u0947 \u0916\u0947\u0926 \u0939\u0948, \u092e\u0941\u091d\u0947 \u0932\u0917\u0924\u093e \u0939\u0948 \u0915\u093f \u0915\u094b\u0908 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0938\u092e\u0938\u094d\u092f\u093e \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0924\u0941\u092e \u092b\u093f\u0930 \u0938\u0947 \u092f\u0939 \u092c\u094b\u0932 \u0938\u0915\u0924\u0947 \u0939\u094b?",
+        "timeout": 3,
+        "char/token": 1.0506329113924051,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-BH": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/BH/flat/32.png",
+        "female": [
+            "ar-BH-LailaNeural"
+        ],
+        "male": [
+            "ar-BH-AliNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-CR": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/CR/flat/32.png",
+        "female": [
+            "es-CR-MariaNeural"
+        ],
+        "male": [
+            "es-CR-JuanNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "km-KH": {
+        "name": "Khmer",
+        "self-name": "\u1781\u17d2\u1798\u17c2\u179a",
+        "flag": "https://flagsapi.com/KH/flat/32.png",
+        "female": [
+            "km-KH-SreymomNeural"
+        ],
+        "male": [
+            "km-KH-PisethNeural"
+        ],
+        "connection_interruption": "\u1781\u17d2\u1789\u17bb\u17c6\u179f\u17bb\u17c6\u1791\u17c4\u179f \u1781\u17d2\u1789\u17bb\u17c6\u1782\u17b7\u178f\u1790\u17b6\u1798\u17b6\u1793\u1794\u1789\u17d2\u17a0\u17b6\u1780\u17b6\u179a\u178f\u1797\u17d2\u1787\u17b6\u1794\u17cb\u17d4 \u178f\u17be\u17a2\u17d2\u1793\u1780\u17a2\u17b6\u1785\u1793\u17b7\u1799\u17b6\u1799\u1798\u17d2\u178f\u1784\u1791\u17c0\u178f\u1794\u17b6\u1793\u1791\u17c1?",
+        "timeout": 3,
+        "char/token": 0.6448598130841121,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-UY": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/UY/flat/32.png",
+        "female": [
+            "es-UY-ValentinaNeural"
+        ],
+        "male": [
+            "es-UY-MateoNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "fr-BE": {
+        "name": "French",
+        "self-name": "fran\u00e7ais",
+        "flag": "https://flagsapi.com/BE/flat/32.png",
+        "female": [
+            "fr-BE-CharlineNeural"
+        ],
+        "male": [
+            "fr-BE-GerardNeural"
+        ],
+        "connection_interruption": "Je suis d\u00e9sol\u00e9, je pense qu'il y a un probl\u00e8me de connexion. Pourrais-tu r\u00e9p\u00e9ter \u00e7a?",
+        "timeout": 3,
+        "char/token": 3.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "uz-UZ": {
+        "name": "Uzbek",
+        "self-name": "o\u2018zbek",
+        "flag": "https://flagsapi.com/UZ/flat/32.png",
+        "female": [
+            "uz-UZ-MadinaNeural"
+        ],
+        "male": [
+            "uz-UZ-SardorNeural"
+        ],
+        "connection_interruption": "Kechirasiz, ulanish muammosi bor deb o'ylayman. Yana shuni ayta olasizmi?",
+        "timeout": 3,
+        "char/token": 2.3548387096774195,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "yue-CN": {
+        "name": "Cantonese",
+        "self-name": "\u7ca4\u8bed",
+        "flag": "https://flagsapi.com/CN/flat/32.png",
+        "female": [
+            "yue-CN-XiaoMinNeural"
+        ],
+        "male": [
+            "yue-CN-YunSongNeural"
+        ],
+        "connection_interruption": "\u62b1\u6b49\uff0c\u6211\u8ba4\u4e3a\u5b58\u5728\u8fde\u63a5\u95ee\u9898\u3002\u4f60\u80fd\u518d\u8bf4\u4e00\u904d\u5417\uff1f",
+        "timeout": 3,
+        "char/token": 0.9545454545454546,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-GQ": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/GQ/flat/32.png",
+        "female": [
+            "es-GQ-TeresaNeural"
+        ],
+        "male": [
+            "es-GQ-JavierNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-GT": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/GT/flat/32.png",
+        "female": [
+            "es-GT-MartaNeural"
+        ],
+        "male": [
+            "es-GT-AndresNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "vi-VN": {
+        "name": "Vietnamese",
+        "self-name": "Ti\u1ebfng Vi\u1ec7t",
+        "flag": "https://flagsapi.com/VN/flat/32.png",
+        "female": [
+            "vi-VN-HoaiMyNeural"
+        ],
+        "male": [
+            "vi-VN-NamMinhNeural"
+        ],
+        "connection_interruption": "T\u00f4i xin l\u1ed7i, t\u00f4i ngh\u0129 c\u00f3 v\u1ea5n \u0111\u1ec1 v\u1ec1 k\u1ebft n\u1ed1i. B\u1ea1n c\u00f3 th\u1ec3 n\u00f3i l\u1ea1i \u0111i\u1ec1u \u0111\u00f3 \u0111\u01b0\u1ee3c kh\u00f4ng?",
+        "timeout": 3,
+        "char/token": 1.8222222222222222,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "zu-ZA": {
+        "name": "Zulu",
+        "self-name": "isiZulu",
+        "flag": "https://flagsapi.com/ZA/flat/32.png",
+        "female": [
+            "zu-ZA-ThandoNeural"
+        ],
+        "male": [
+            "zu-ZA-ThembaNeural"
+        ],
+        "connection_interruption": "Ngiyaxolisa, ngicabanga ukuthi kunenkinga yokuxhumana. Ungakusho lokho futhi?",
+        "timeout": 3,
+        "char/token": 2.3333333333333335,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "jv-ID": {
+        "name": "Javanese",
+        "self-name": "Jawa",
+        "flag": "https://flagsapi.com/ID/flat/32.png",
+        "female": [
+            "jv-ID-SitiNeural"
+        ],
+        "male": [
+            "jv-ID-DimasNeural"
+        ],
+        "connection_interruption": "Nyuwun pangapunten, aku mikir ana masalah sambungan. Apa sampeyan bisa ngomong maneh?",
+        "timeout": 3,
+        "char/token": 2.7419354838709675,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "am-ET": {
+        "name": "Amharic",
+        "self-name": "\u12a0\u121b\u122d\u129b",
+        "flag": "https://flagsapi.com/ET/flat/32.png",
+        "female": [
+            "am-ET-MekdesNeural"
+        ],
+        "male": [
+            "am-ET-AmehaNeural"
+        ],
+        "connection_interruption": "\u12ed\u1245\u122d\u1273\u1363 \u12e8\u130d\u1295\u1299\u1290\u1275 \u127d\u130d\u122d \u12eb\u1208 \u12ed\u1218\u1235\u1208\u129b\u120d\u1362 \u12a5\u1295\u12f0\u1308\u1293 \u12a5\u1295\u12f2\u1205 \u121b\u1208\u1275 \u1275\u127d\u120b\u1208\u1205?",
+        "timeout": 3,
+        "char/token": 0.4083333333333333,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "cy-GB": {
+        "name": "Welsh",
+        "self-name": "Cymraeg",
+        "flag": "https://flagsapi.com/GB/flat/32.png",
+        "female": [
+            "cy-GB-NiaNeural"
+        ],
+        "male": [
+            "cy-GB-AledNeural"
+        ],
+        "connection_interruption": "Mae\u2019n ddrwg gennyf, rwy\u2019n meddwl bod yna fater cysylltiad. A allech chi ddweud hynny eto?",
+        "timeout": 3,
+        "char/token": 2.225,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "mt-MT": {
+        "name": "Maltese",
+        "self-name": "Malti",
+        "flag": "https://flagsapi.com/MT/flat/32.png",
+        "female": [
+            "mt-MT-GraceNeural"
+        ],
+        "male": [
+            "mt-MT-JosephNeural"
+        ],
+        "connection_interruption": "Jiddispja\u010bini, na\u0127seb li hemm kwistjoni ta' konnessjoni. Tista\u2019 ter\u0121a\u2019 tg\u0127id hekk?",
+        "timeout": 3,
+        "char/token": 1.9523809523809523,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "zh-CN-sichuan": {
+        "name": "Chinese",
+        "self-name": "\u4e2d\u6587",
+        "flag": "https://flagsapi.com/CN/flat/32.png",
+        "female": [],
+        "male": [
+            "zh-CN-sichuan-YunxiNeural"
+        ],
+        "connection_interruption": "\u62b1\u6b49\uff0c\u6211\u8ba4\u4e3a\u5b58\u5728\u8fde\u63a5\u95ee\u9898\u3002\u4f60\u80fd\u518d\u8bf4\u4e00\u904d\u5417\uff1f",
+        "timeout": 3,
+        "char/token": 0.9545454545454546,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "fr-CH": {
+        "name": "French",
+        "self-name": "fran\u00e7ais",
+        "flag": "https://flagsapi.com/CH/flat/32.png",
+        "female": [
+            "fr-CH-ArianeNeural"
+        ],
+        "male": [
+            "fr-CH-FabriceNeural"
+        ],
+        "connection_interruption": "Je suis d\u00e9sol\u00e9, je pense qu'il y a un probl\u00e8me de connexion. Pourrais-tu r\u00e9p\u00e9ter \u00e7a?",
+        "timeout": 3,
+        "char/token": 3.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "de-AT": {
+        "name": "German",
+        "self-name": "Deutsch",
+        "flag": "https://flagsapi.com/AT/flat/32.png",
+        "female": [
+            "de-AT-IngridNeural"
+        ],
+        "male": [
+            "de-AT-JonasNeural"
+        ],
+        "connection_interruption": "Es tut mir leid, ich glaube, es liegt ein Verbindungsproblem vor. K\u00f6nnten Sie das noch einmal sagen?",
+        "timeout": 3,
+        "char/token": 3.4482758620689653,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ja-JP": {
+        "name": "Japanese",
+        "self-name": "\u65e5\u672c\u8a9e",
+        "flag": "https://flagsapi.com/JP/flat/32.png",
+        "female": [
+            "ja-JP-NanamiNeural",
+            "ja-JP-AoiNeural",
+            "ja-JP-MayuNeural",
+            "ja-JP-ShioriNeural"
+        ],
+        "male": [
+            "ja-JP-KeitaNeural",
+            "ja-JP-DaichiNeural",
+            "ja-JP-NaokiNeural"
+        ],
+        "connection_interruption": "\u7533\u3057\u8a33\u3042\u308a\u307e\u305b\u3093\u304c\u3001\u63a5\u7d9a\u306b\u554f\u984c\u304c\u3042\u308b\u3068\u601d\u3044\u307e\u3059\u3002\u3082\u3046\u4e00\u5ea6\u8a00\u3063\u3066\u3044\u305f\u3060\u3051\u307e\u3059\u304b\uff1f",
+        "timeout": 3,
+        "char/token": 1.054054054054054,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-CU": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/CU/flat/32.png",
+        "female": [
+            "es-CU-BelkysNeural"
+        ],
+        "male": [
+            "es-CU-ManuelNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "lt-LT": {
+        "name": "Lithuanian",
+        "self-name": "lietuvi\u0173",
+        "flag": "https://flagsapi.com/LT/flat/32.png",
+        "female": [
+            "lt-LT-OnaNeural"
+        ],
+        "male": [
+            "lt-LT-LeonasNeural"
+        ],
+        "connection_interruption": "Atsipra\u0161au, manau, kad yra ry\u0161io problema. Ar gal\u0117tum pasakyti tai dar kart\u0105?",
+        "timeout": 3,
+        "char/token": 2.4838709677419355,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "si-LK": {
+        "name": "Sinhala",
+        "self-name": "\u0dc3\u0dd2\u0d82\u0dc4\u0dbd",
+        "flag": "https://flagsapi.com/LK/flat/32.png",
+        "female": [
+            "si-LK-ThiliniNeural"
+        ],
+        "male": [
+            "si-LK-SameeraNeural"
+        ],
+        "connection_interruption": "\u0db8\u0da7 \u0dc3\u0db8\u0dcf\u0dc0\u0dd9\u0db1\u0dca\u0db1, \u0db8\u0db8 \u0dc4\u0dd2\u0dad\u0db1\u0dca\u0db1\u0dda \u0dc3\u0db8\u0dca\u0db6\u0db1\u0dca\u0db0\u0dad\u0dcf \u0d9c\u0dd0\u0da7\u0dbd\u0dd4\u0dc0\u0d9a\u0dca \u0dad\u0dd2\u0dba\u0dd9\u0db1\u0dc0\u0dcf. \u0d94\u0db6\u0da7 \u0d91\u0dba \u0db1\u0dd0\u0dc0\u0dad \u0db4\u0dd0\u0dc0\u0dc3\u0dd2\u0dba \u0dc4\u0dd0\u0d9a\u0dd2\u0daf?",
+        "timeout": 3,
+        "char/token": 0.55,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "zh-HK": {
+        "name": "Chinese",
+        "self-name": "\u4e2d\u6587",
+        "flag": "https://flagsapi.com/HK/flat/32.png",
+        "female": [
+            "zh-HK-HiuMaanNeural",
+            "zh-HK-HiuGaaiNeural"
+        ],
+        "male": [
+            "zh-HK-WanLungNeural"
+        ],
+        "connection_interruption": "\u62b1\u6b49\uff0c\u6211\u8ba4\u4e3a\u5b58\u5728\u8fde\u63a5\u95ee\u9898\u3002\u4f60\u80fd\u518d\u8bf4\u4e00\u904d\u5417\uff1f",
+        "timeout": 3,
+        "char/token": 0.9545454545454546,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-ZA": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/ZA/flat/32.png",
+        "female": [
+            "en-ZA-LeahNeural"
+        ],
+        "male": [
+            "en-ZA-LukeNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ur-IN": {
+        "name": "Urdu",
+        "self-name": "\u0627\u0631\u062f\u0648",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "ur-IN-GulNeural"
+        ],
+        "male": [
+            "ur-IN-SalmanNeural"
+        ],
+        "connection_interruption": "\u0645\u062c\u06be\u06d2 \u0627\u0641\u0633\u0648\u0633 \u06c1\u06d2\u060c \u0645\u06cc\u0631\u06d2 \u062e\u06cc\u0627\u0644 \u0645\u06cc\u06ba \u06a9\u0646\u06a9\u0634\u0646 \u06a9\u0627 \u0645\u0633\u0626\u0644\u06c1 \u06c1\u06d2\u06d4 \u06a9\u06cc\u0627 \u0627\u067e \u062f\u0648\u0628\u0627\u0631\u06c1 \u06a9\u06c1\u06c1 \u0633\u06a9\u062a\u06d2 \u06c1\u06cc\u06ba\u061f",
+        "timeout": 3,
+        "char/token": 0.9615384615384616,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-TN": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/TN/flat/32.png",
+        "female": [
+            "ar-TN-ReemNeural"
+        ],
+        "male": [
+            "ar-TN-HediNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "hy-AM": {
+        "name": "Armenian",
+        "self-name": "\u0570\u0561\u0575\u0565\u0580\u0565\u0576",
+        "flag": "https://flagsapi.com/AM/flat/32.png",
+        "female": [
+            "hy-AM-AnahitNeural"
+        ],
+        "male": [
+            "hy-AM-HaykNeural"
+        ],
+        "connection_interruption": "\u053f\u0576\u0565\u0580\u0565\u0584, \u056f\u0561\u0580\u056e\u0578\u0582\u0574 \u0565\u0574 \u056f\u0561\u057a\u056b \u056d\u0576\u0564\u056b\u0580 \u056f\u0561\u0589 \u053f\u0561\u0580\u0578\u055e\u0572 \u0565\u0584 \u0564\u0561 \u0576\u0578\u0580\u056b\u0581 \u0561\u057d\u0565\u056c:",
+        "timeout": 3,
+        "char/token": 0.5576923076923077,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "he-IL": {
+        "name": "Hebrew",
+        "self-name": "\u05e2\u05d1\u05e8\u05d9\u05ea",
+        "flag": "https://flagsapi.com/IL/flat/32.png",
+        "female": [
+            "he-IL-HilaNeural"
+        ],
+        "male": [
+            "he-IL-AvriNeural"
+        ],
+        "connection_interruption": "\u05d0\u05e0\u05d9 \u05de\u05e6\u05d8\u05e2\u05e8, \u05d0\u05e0\u05d9 \u05d7\u05d5\u05e9\u05d1 \u05e9\u05d9\u05e9 \u05d1\u05e2\u05d9\u05d9\u05ea \u05d7\u05d9\u05d1\u05d5\u05e8. \u05d0\u05ea\u05d4 \u05d9\u05db\u05d5\u05dc \u05dc\u05d4\u05d2\u05d9\u05d3 \u05d0\u05ea \u05d6\u05d4 \u05e9\u05d5\u05d1?",
+        "timeout": 3,
+        "char/token": 1.0689655172413792,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "cs-CZ": {
+        "name": "Czech",
+        "self-name": "\u010de\u0161tina",
+        "flag": "https://flagsapi.com/CZ/flat/32.png",
+        "female": [
+            "cs-CZ-VlastaNeural"
+        ],
+        "male": [
+            "cs-CZ-AntoninNeural"
+        ],
+        "connection_interruption": "Je mi l\u00edto, mysl\u00edm, \u017ee do\u0161lo k probl\u00e9mu s p\u0159ipojen\u00edm. Mohl bys to \u0159\u00edct znovu?",
+        "timeout": 3,
+        "char/token": 2.138888888888889,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "nl-BE": {
+        "name": "Dutch",
+        "self-name": "Nederlands",
+        "flag": "https://flagsapi.com/BE/flat/32.png",
+        "female": [
+            "nl-BE-DenaNeural"
+        ],
+        "male": [
+            "nl-BE-ArnaudNeural"
+        ],
+        "connection_interruption": "Het spijt me, ik denk dat er een verbindingsprobleem is. Zou je dat nog eens kunnen zeggen?",
+        "timeout": 3,
+        "char/token": 3.033333333333333,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-OM": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/OM/flat/32.png",
+        "female": [
+            "ar-OM-AyshaNeural"
+        ],
+        "male": [
+            "ar-OM-AbdullahNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "fil-PH": {
+        "name": "Filipino",
+        "self-name": "Filipino",
+        "flag": "https://flagsapi.com/PH/flat/32.png",
+        "female": [
+            "fil-PH-BlessicaNeural"
+        ],
+        "male": [
+            "fil-PH-AngeloNeural"
+        ],
+        "connection_interruption": "Olen pahoillani, mielest\u00e4ni yhteysongelma. Sanoisitko sen uudelleen?",
+        "timeout": 3,
+        "char/token": 2.2666666666666666,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "sr-RS": {
+        "name": "Serbian",
+        "self-name": "\u0441\u0440\u043f\u0441\u043a\u0438",
+        "flag": "https://flagsapi.com/RS/flat/32.png",
+        "female": [
+            "sr-RS-SophieNeural"
+        ],
+        "male": [
+            "sr-RS-NicholasNeural"
+        ],
+        "connection_interruption": "\u0416\u0430\u043e \u043c\u0438 \u0458\u0435, \u043c\u0438\u0441\u043b\u0438\u043c \u0434\u0430 \u043f\u043e\u0441\u0442\u043e\u0458\u0438 \u043f\u0440\u043e\u0431\u043b\u0435\u043c \u0441\u0430 \u0432\u0435\u0437\u043e\u043c. \u041c\u043e\u0436\u0435\u0442\u0435 \u043b\u0438 \u0442\u043e \u043f\u043e\u043d\u043e\u0432\u0438\u0442\u0438?",
+        "timeout": 3,
+        "char/token": 1.6428571428571428,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "zh-TW": {
+        "name": "Chinese",
+        "self-name": "\u4e2d\u6587",
+        "flag": "https://flagsapi.com/TW/flat/32.png",
+        "female": [
+            "zh-TW-HsiaoChenNeural",
+            "zh-TW-HsiaoYuNeural"
+        ],
+        "male": [
+            "zh-TW-YunJheNeural"
+        ],
+        "connection_interruption": "\u62b1\u6b49\uff0c\u6211\u8a8d\u70ba\u6709\u9023\u7dda\u554f\u984c\u3002\u4f60\u80fd\u518d\u8aaa\u4e00\u6b21\u55ce\uff1f",
+        "timeout": 3,
+        "char/token": 0.6451612903225806,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-PY": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/PY/flat/32.png",
+        "female": [
+            "es-PY-TaniaNeural"
+        ],
+        "male": [
+            "es-PY-MarioNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "so-SO": {
+        "name": "Somali",
+        "self-name": "Soomaali",
+        "flag": "https://flagsapi.com/SO/flat/32.png",
+        "female": [
+            "so-SO-UbaxNeural"
+        ],
+        "male": [
+            "so-SO-MuuseNeural"
+        ],
+        "connection_interruption": "Waan ka xumahay, waxaan filayaa inay jirto arrin xiriir ah. Ma dhihi kartaa mar kale?",
+        "timeout": 3,
+        "char/token": 2.5,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "nl-NL": {
+        "name": "Dutch",
+        "self-name": "Nederlands",
+        "flag": "https://flagsapi.com/NL/flat/32.png",
+        "female": [
+            "nl-NL-FennaNeural",
+            "nl-NL-ColetteNeural"
+        ],
+        "male": [
+            "nl-NL-MaartenNeural"
+        ],
+        "connection_interruption": "Het spijt me, ik denk dat er een verbindingsprobleem is. Zou je dat nog eens kunnen zeggen?",
+        "timeout": 3,
+        "char/token": 3.033333333333333,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "nb-NO": {
+        "name": "Norwegian Bokm\u00e5l",
+        "self-name": "norsk bokm\u00e5l",
+        "flag": "https://flagsapi.com/NO/flat/32.png",
+        "female": [
+            "nb-NO-PernilleNeural",
+            "nb-NO-IselinNeural"
+        ],
+        "male": [
+            "nb-NO-FinnNeural"
+        ],
+        "connection_interruption": "Beklager, jeg tror det er et tilkoblingsproblem. Kan du si det igjen?",
+        "timeout": 3,
+        "char/token": 2.875,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-JO": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/JO/flat/32.png",
+        "female": [
+            "ar-JO-SanaNeural"
+        ],
+        "male": [
+            "ar-JO-TaimNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "de-CH": {
+        "name": "German",
+        "self-name": "Deutsch",
+        "flag": "https://flagsapi.com/CH/flat/32.png",
+        "female": [
+            "de-CH-LeniNeural"
+        ],
+        "male": [
+            "de-CH-JanNeural"
+        ],
+        "connection_interruption": "Es tut mir leid, ich glaube, es liegt ein Verbindungsproblem vor. K\u00f6nnten Sie das noch einmal sagen?",
+        "timeout": 3,
+        "char/token": 3.4482758620689653,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "sk-SK": {
+        "name": "Slovak",
+        "self-name": "sloven\u010dina",
+        "flag": "https://flagsapi.com/SK/flat/32.png",
+        "female": [
+            "sk-SK-ViktoriaNeural"
+        ],
+        "male": [
+            "sk-SK-LukasNeural"
+        ],
+        "connection_interruption": "Ospravedl\u0148ujem sa, mysl\u00edm, \u017ee sa vyskytol probl\u00e9m s pripojen\u00edm. Mohol by si to zopakova\u0165?",
+        "timeout": 3,
+        "char/token": 2.225,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ro-RO": {
+        "name": "Romanian",
+        "self-name": "rom\u00e2n\u0103",
+        "flag": "https://flagsapi.com/RO/flat/32.png",
+        "female": [
+            "ro-RO-AlinaNeural"
+        ],
+        "male": [
+            "ro-RO-EmilNeural"
+        ],
+        "connection_interruption": "\u00cemi pare r\u0103u, cred c\u0103 exist\u0103 o problem\u0103 de conexiune. Poti sa spui asta din nou?",
+        "timeout": 3,
+        "char/token": 2.7586206896551726,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-SY": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/SY/flat/32.png",
+        "female": [
+            "ar-SY-AmanyNeural"
+        ],
+        "male": [
+            "ar-SY-LaithNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-PA": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/PA/flat/32.png",
+        "female": [
+            "es-PA-MargaritaNeural"
+        ],
+        "male": [
+            "es-PA-RobertoNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-KW": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/KW/flat/32.png",
+        "female": [
+            "ar-KW-NouraNeural"
+        ],
+        "male": [
+            "ar-KW-FahedNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-KE": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/KE/flat/32.png",
+        "female": [
+            "en-KE-AsiliaNeural"
+        ],
+        "male": [
+            "en-KE-ChilembaNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "uk-UA": {
+        "name": "Ukrainian",
+        "self-name": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+        "flag": "https://flagsapi.com/UA/flat/32.png",
+        "female": [
+            "uk-UA-PolinaNeural"
+        ],
+        "male": [
+            "uk-UA-OstapNeural"
+        ],
+        "connection_interruption": "\u0412\u0438\u0431\u0430\u0447\u0442\u0435, \u044f \u0434\u0443\u043c\u0430\u044e, \u0432\u0438\u043d\u0438\u043a\u043b\u0430 \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u0437 \u043f\u0456\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044f\u043c. \u0427\u0438 \u043c\u043e\u0436\u0435\u0442\u0435 \u0432\u0438 \u043f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u0438 \u0446\u0435?",
+        "timeout": 3,
+        "char/token": 1.7906976744186047,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-SA": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/SA/flat/32.png",
+        "female": [
+            "ar-SA-ZariyahNeural"
+        ],
+        "male": [
+            "ar-SA-HamedNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "hr-HR": {
+        "name": "Croatian",
+        "self-name": "hrvatski",
+        "flag": "https://flagsapi.com/HR/flat/32.png",
+        "female": [
+            "hr-HR-GabrijelaNeural"
+        ],
+        "male": [
+            "hr-HR-SreckoNeural"
+        ],
+        "connection_interruption": "\u017dao mi je, mislim da postoji problem s vezom. Mo\u017ee\u0161 li to ponoviti?",
+        "timeout": 3,
+        "char/token": 2.68,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-AR": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/AR/flat/32.png",
+        "female": [
+            "es-AR-ElenaNeural"
+        ],
+        "male": [
+            "es-AR-TomasNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "fr-FR": {
+        "name": "French",
+        "self-name": "fran\u00e7ais",
+        "flag": "https://flagsapi.com/FR/flat/32.png",
+        "female": [
+            "fr-FR-DeniseNeural",
+            "fr-FR-BrigitteNeural",
+            "fr-FR-CelesteNeural",
+            "fr-FR-CoralieNeural",
+            "fr-FR-EloiseNeural",
+            "fr-FR-JacquelineNeural",
+            "fr-FR-JosephineNeural",
+            "fr-FR-VivienneNeural",
+            "fr-FR-YvetteNeural",
+            "fr-FR-VivienneMultilingualNeural"
+        ],
+        "male": [
+            "fr-FR-HenriNeural",
+            "fr-FR-AlainNeural",
+            "fr-FR-ClaudeNeural",
+            "fr-FR-JeromeNeural",
+            "fr-FR-MauriceNeural",
+            "fr-FR-YvesNeural",
+            "fr-FR-RemyMultilingualNeural"
+        ],
+        "connection_interruption": "Je suis d\u00e9sol\u00e9, je pense qu'il y a un probl\u00e8me de connexion. Pourrais-tu r\u00e9p\u00e9ter \u00e7a?",
+        "timeout": 3,
+        "char/token": 3.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "bs-BA": {
+        "name": "Bosnian",
+        "self-name": "bosanski",
+        "flag": "https://flagsapi.com/BA/flat/32.png",
+        "female": [
+            "bs-BA-VesnaNeural"
+        ],
+        "male": [
+            "bs-BA-GoranNeural"
+        ],
+        "connection_interruption": "\u017dao mi je, mislim da postoji problem sa vezom. Mo\u017eete li to ponoviti?",
+        "timeout": 3,
+        "char/token": 2.76,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ga-IE": {
+        "name": "Irish",
+        "self-name": "Gaeilge",
+        "flag": "https://flagsapi.com/IE/flat/32.png",
+        "female": [
+            "ga-IE-OrlaNeural"
+        ],
+        "male": [
+            "ga-IE-ColmNeural"
+        ],
+        "connection_interruption": "T\u00e1 br\u00f3n orm, s\u00edlim go bhfuil ceist ceangail ann. An bhf\u00e9adf\u00e1 \u00e9 sin a r\u00e1 ar\u00eds?",
+        "timeout": 3,
+        "char/token": 2.4838709677419355,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-HK": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/HK/flat/32.png",
+        "female": [
+            "en-HK-YanNeural"
+        ],
+        "male": [
+            "en-HK-SamNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-EG": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/EG/flat/32.png",
+        "female": [
+            "ar-EG-SalmaNeural"
+        ],
+        "male": [
+            "ar-EG-ShakirNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
     "es-MX": {
-      "name": "Spanish",
-      "self-name": "Español",
-      "flag": "https://flagsapi.com/MX/flat/32.png",
-      "female": [
-        "es-MX-BeatrizNeural",
-        "es-MX-CandelaNeural",
-        "es-MX-CarlotaNeural",
-        "es-MX-DaliaNeural",
-        "es-MX-LarissaNeural",
-        "es-MX-MarinaNeural",
-        "es-MX-NuriaNeural",
-        "es-MX-RenataNeural"
-      ],
-      "male": [
-        "es-MX-CecilioNeural",
-        "es-MX-GerardoNeural",
-        "es-MX-JorgeNeural",
-        "es-MX-LibertoNeural",
-        "es-MX-LucianoNeural",
-        "es-MX-PelayoNeural",
-        "es-MX-YagoNeural"
-      ],
-      "connection_interruption": "Lo siento, creo que hay un problema de conexión. ¿Podrías repetir lo que dijiste?",
-      "timeout": 3,
-      "char/token": 2.531,
-      "punctuation": [".","!","?"]
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/MX/flat/32.png",
+        "female": [
+            "es-MX-DaliaNeural",
+            "es-MX-BeatrizNeural",
+            "es-MX-CandelaNeural",
+            "es-MX-CarlotaNeural",
+            "es-MX-LarissaNeural",
+            "es-MX-MarinaNeural",
+            "es-MX-NuriaNeural",
+            "es-MX-RenataNeural"
+        ],
+        "male": [
+            "es-MX-JorgeNeural",
+            "es-MX-CecilioNeural",
+            "es-MX-GerardoNeural",
+            "es-MX-LibertoNeural",
+            "es-MX-LucianoNeural",
+            "es-MX-PelayoNeural",
+            "es-MX-YagoNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-DZ": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/DZ/flat/32.png",
+        "female": [
+            "ar-DZ-AminaNeural"
+        ],
+        "male": [
+            "ar-DZ-IsmaelNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-HN": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/HN/flat/32.png",
+        "female": [
+            "es-HN-KarlaNeural"
+        ],
+        "male": [
+            "es-HN-CarlosNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ca-ES": {
+        "name": "Catalan",
+        "self-name": "catal\u00e0",
+        "flag": "https://flagsapi.com/ES/flat/32.png",
+        "female": [
+            "ca-ES-JoanaNeural",
+            "ca-ES-AlbaNeural"
+        ],
+        "male": [
+            "ca-ES-EnricNeural"
+        ],
+        "connection_interruption": "Ho sento, crec que hi ha un problema de connexi\u00f3. Podries tornar-ho a dir?",
+        "timeout": 3,
+        "char/token": 2.96,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "id-ID": {
+        "name": "Indonesian",
+        "self-name": "Indonesia",
+        "flag": "https://flagsapi.com/ID/flat/32.png",
+        "female": [
+            "id-ID-GadisNeural"
+        ],
+        "male": [
+            "id-ID-ArdiNeural"
+        ],
+        "connection_interruption": "Maaf, menurut saya ada masalah koneksi. Bisakah kamu mengatakan itu lagi?",
+        "timeout": 3,
+        "char/token": 3.3181818181818183,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "sw-KE": {
+        "name": "Swahili",
+        "self-name": "Kiswahili",
+        "flag": "https://flagsapi.com/KE/flat/32.png",
+        "female": [
+            "sw-KE-ZuriNeural"
+        ],
+        "male": [
+            "sw-KE-RafikiNeural"
+        ],
+        "connection_interruption": "Samahani, nadhani kuna suala la muunganisho. Unaweza kusema hivyo tena?",
+        "timeout": 3,
+        "char/token": 2.5357142857142856,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "pl-PL": {
+        "name": "Polish",
+        "self-name": "polski",
+        "flag": "https://flagsapi.com/PL/flat/32.png",
+        "female": [
+            "pl-PL-AgnieszkaNeural",
+            "pl-PL-ZofiaNeural"
+        ],
+        "male": [
+            "pl-PL-MarekNeural"
+        ],
+        "connection_interruption": "Przepraszam, my\u015bl\u0119, \u017ce wyst\u0105pi\u0142 problem z po\u0142\u0105czeniem. Czy mo\u017cesz powiedzie\u0107 to jeszcze raz?",
+        "timeout": 3,
+        "char/token": 2.5555555555555554,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "is-IS": {
+        "name": "Icelandic",
+        "self-name": "\u00edslenska",
+        "flag": "https://flagsapi.com/IS/flat/32.png",
+        "female": [
+            "is-IS-GudrunNeural"
+        ],
+        "male": [
+            "is-IS-GunnarNeural"
+        ],
+        "connection_interruption": "Fyrirgef\u00f0u, \u00e9g held a\u00f0 \u00fea\u00f0 s\u00e9 tengingarvandam\u00e1l. G\u00e6tir\u00f0u sagt \u00fea\u00f0 aftur?",
+        "timeout": 3,
+        "char/token": 1.894736842105263,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "af-ZA": {
+        "name": "Afrikaans",
+        "self-name": "Afrikaans",
+        "flag": "https://flagsapi.com/ZA/flat/32.png",
+        "female": [
+            "af-ZA-AdriNeural"
+        ],
+        "male": [
+            "af-ZA-WillemNeural"
+        ],
+        "connection_interruption": "Ek is jammer, ek dink daar is 'n verbindingsprobleem. Kan jy dit weer s\u00ea?",
+        "timeout": 3,
+        "char/token": 2.8076923076923075,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-PR": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/PR/flat/32.png",
+        "female": [
+            "es-PR-KarinaNeural"
+        ],
+        "male": [
+            "es-PR-VictorNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "it-IT": {
+        "name": "Italian",
+        "self-name": "italiano",
+        "flag": "https://flagsapi.com/IT/flat/32.png",
+        "female": [
+            "it-IT-ElsaNeural",
+            "it-IT-IsabellaNeural",
+            "it-IT-FabiolaNeural",
+            "it-IT-FiammaNeural",
+            "it-IT-ImeldaNeural",
+            "it-IT-IrmaNeural",
+            "it-IT-PalmiraNeural",
+            "it-IT-PierinaNeural"
+        ],
+        "male": [
+            "it-IT-DiegoNeural",
+            "it-IT-BenignoNeural",
+            "it-IT-CalimeroNeural",
+            "it-IT-CataldoNeural",
+            "it-IT-GianniNeural",
+            "it-IT-GiuseppeNeural",
+            "it-IT-LisandroNeural",
+            "it-IT-RinaldoNeural"
+        ],
+        "connection_interruption": "Mi dispiace, penso che ci sia un problema di connessione. Potresti ripeterlo?",
+        "timeout": 3,
+        "char/token": 3.2083333333333335,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-US": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/US/flat/32.png",
+        "female": [
+            "es-US-PalomaNeural"
+        ],
+        "male": [
+            "es-US-AlonsoNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "kk-KZ": {
+        "name": "Kazakh",
+        "self-name": "\u049b\u0430\u0437\u0430\u049b \u0442\u0456\u043b\u0456",
+        "flag": "https://flagsapi.com/KZ/flat/32.png",
+        "female": [
+            "kk-KZ-AigulNeural"
+        ],
+        "male": [
+            "kk-KZ-DauletNeural"
+        ],
+        "connection_interruption": "\u041a\u0435\u0448\u0456\u0440\u0456\u04a3\u0456\u0437, \u043c\u0435\u043d\u0456\u04a3 \u043e\u0439\u044b\u043c\u0448\u0430, \u0431\u0430\u0439\u043b\u0430\u043d\u044b\u0441 \u043c\u04d9\u0441\u0435\u043b\u0435\u0441\u0456 \u0431\u0430\u0440. \u0421\u0456\u0437 \u043c\u04b1\u043d\u044b \u0442\u0430\u0493\u044b \u0430\u0439\u0442\u0430 \u0430\u043b\u0430\u0441\u044b\u0437 \u0431\u0430?",
+        "timeout": 3,
+        "char/token": 1.2833333333333334,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "hu-HU": {
+        "name": "Hungarian",
+        "self-name": "magyar",
+        "flag": "https://flagsapi.com/HU/flat/32.png",
+        "female": [
+            "hu-HU-NoemiNeural"
+        ],
+        "male": [
+            "hu-HU-TamasNeural"
+        ],
+        "connection_interruption": "Sajn\u00e1lom, de azt hiszem, kapcsolati probl\u00e9ma van. Elmondan\u00e1d m\u00e9g egyszer?",
+        "timeout": 3,
+        "char/token": 2.433333333333333,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-NZ": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/NZ/flat/32.png",
+        "female": [
+            "en-NZ-MollyNeural"
+        ],
+        "male": [
+            "en-NZ-MitchellNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "te-IN": {
+        "name": "Telugu",
+        "self-name": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "te-IN-ShrutiNeural"
+        ],
+        "male": [
+            "te-IN-MohanNeural"
+        ],
+        "connection_interruption": "\u0c28\u0c28\u0c4d\u0c28\u0c41 \u0c15\u0c4d\u0c37\u0c2e\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f, \u0c15\u0c28\u0c46\u0c15\u0c4d\u0c37\u0c28\u0c4d \u0c38\u0c2e\u0c38\u0c4d\u0c2f \u0c09\u0c02\u0c26\u0c28\u0c3f \u0c28\u0c47\u0c28\u0c41 \u0c2d\u0c3e\u0c35\u0c3f\u0c38\u0c4d\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c28\u0c41. \u0c2e\u0c33\u0c4d\u0c33\u0c40 \u0c1a\u0c46\u0c2a\u0c4d\u0c2a\u0c17\u0c32\u0c30\u0c3e?",
+        "timeout": 3,
+        "char/token": 0.5714285714285714,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-NG": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/NG/flat/32.png",
+        "female": [
+            "en-NG-EzinneNeural"
+        ],
+        "male": [
+            "en-NG-AbeoNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-DO": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/DO/flat/32.png",
+        "female": [
+            "es-DO-RamonaNeural"
+        ],
+        "male": [
+            "es-DO-EmilioNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "kn-IN": {
+        "name": "Kannada",
+        "self-name": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "kn-IN-SapnaNeural"
+        ],
+        "male": [
+            "kn-IN-GaganNeural"
+        ],
+        "connection_interruption": "\u0ca8\u0ca8\u0ccd\u0ca8\u0ca8\u0ccd\u0ca8\u0cc1 \u0c95\u0ccd\u0cb7\u0cae\u0cbf\u0cb8\u0cbf, \u0cb8\u0c82\u0caa\u0cb0\u0ccd\u0c95\u0ca6 \u0cb8\u0cae\u0cb8\u0ccd\u0caf\u0cc6 \u0c87\u0ca6\u0cc6 \u0c8e\u0c82\u0ca6\u0cc1 \u0ca8\u0cbe\u0ca8\u0cc1 \u0cad\u0cbe\u0cb5\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cc7\u0ca8\u0cc6. \u0ca8\u0cc0\u0cb5\u0cc1 \u0c85\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc6 \u0cb9\u0cc7\u0cb3\u0cac\u0cb9\u0cc1\u0ca6\u0cc7?",
+        "timeout": 3,
+        "char/token": 0.5827814569536424,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-IN": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "en-IN-NeerjaNeural"
+        ],
+        "male": [
+            "en-IN-PrabhatNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "gu-IN": {
+        "name": "Gujarati",
+        "self-name": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "gu-IN-DhwaniNeural"
+        ],
+        "male": [
+            "gu-IN-NiranjanNeural"
+        ],
+        "connection_interruption": "\u0aae\u0abe\u0aab \u0a95\u0ab0\u0ab6\u0acb, \u0aae\u0aa8\u0ac7 \u0ab2\u0abe\u0a97\u0ac7 \u0a9b\u0ac7 \u0a95\u0ac7 \u0a95\u0aa8\u0ac7\u0a95\u0acd\u0ab6\u0aa8 \u0ab8\u0aae\u0ab8\u0acd\u0aaf\u0abe \u0a9b\u0ac7. \u0ab6\u0ac1\u0a82 \u0aa4\u0aae\u0ac7 \u0aa4\u0ac7 \u0aab\u0ab0\u0ac0\u0aa5\u0ac0 \u0a95\u0ab9\u0ac0 \u0ab6\u0a95\u0acb \u0a9b\u0acb?",
+        "timeout": 3,
+        "char/token": 0.6486486486486487,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-US": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/US/flat/32.png",
+        "female": [
+            "en-US-JennyMultilingualNeural",
+            "en-US-JennyMultilingualV2Neural",
+            "en-US-JennyNeural",
+            "en-US-AriaNeural",
+            "en-US-AmberNeural",
+            "en-US-AnaNeural",
+            "en-US-AshleyNeural",
+            "en-US-CoraNeural",
+            "en-US-ElizabethNeural",
+            "en-US-EmmaNeural",
+            "en-US-JaneNeural",
+            "en-US-MichelleNeural",
+            "en-US-MonicaNeural",
+            "en-US-NancyNeural",
+            "en-US-SaraNeural",
+            "en-US-AIGenerate2Neural",
+            "en-US-AvaMultilingualNeural",
+            "en-US-AvaNeural",
+            "en-US-EmmaMultilingualNeural"
+        ],
+        "male": [
+            "en-US-RyanMultilingualNeural",
+            "en-US-GuyNeural",
+            "en-US-DavisNeural",
+            "en-US-AndrewNeural",
+            "en-US-BrandonNeural",
+            "en-US-BrianNeural",
+            "en-US-ChristopherNeural",
+            "en-US-EricNeural",
+            "en-US-JacobNeural",
+            "en-US-JasonNeural",
+            "en-US-RogerNeural",
+            "en-US-SteffanNeural",
+            "en-US-TonyNeural",
+            "en-US-AIGenerate1Neural",
+            "en-US-AndrewMultilingualNeural",
+            "en-US-BrianMultilingualNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "fi-FI": {
+        "name": "Finnish",
+        "self-name": "suomi",
+        "flag": "https://flagsapi.com/FI/flat/32.png",
+        "female": [
+            "fi-FI-SelmaNeural",
+            "fi-FI-NooraNeural"
+        ],
+        "male": [
+            "fi-FI-HarriNeural"
+        ],
+        "connection_interruption": "Olen pahoillani, mielest\u00e4ni yhteysongelma. Sanoisitko sen uudelleen?",
+        "timeout": 3,
+        "char/token": 2.2666666666666666,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "sv-SE": {
+        "name": "Swedish",
+        "self-name": "svenska",
+        "flag": "https://flagsapi.com/SE/flat/32.png",
+        "female": [
+            "sv-SE-SofieNeural",
+            "sv-SE-HilleviNeural"
+        ],
+        "male": [
+            "sv-SE-MattiasNeural"
+        ],
+        "connection_interruption": "Jag \u00e4r ledsen, jag tror att det finns ett anslutningsproblem. Kan du s\u00e4ga det igen?",
+        "timeout": 3,
+        "char/token": 3.1923076923076925,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-PE": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/PE/flat/32.png",
+        "female": [
+            "es-PE-CamilaNeural"
+        ],
+        "male": [
+            "es-PE-AlexNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     },
     "tr-TR": {
-      "name": "Turkish",
-      "self-name": "Türkçe",
-      "flag": "https://flagsapi.com/TR/flat/32.png",
-      "female": [
-        "tr-TR-EmelNeural"
-      ],
-      "male": [
-        "tr-TR-AhmetNeural"
-      ],
-      "connection_interruption": "Üzgünüm, sanırım bir bağlantı sorunu var. Tekrar söyler misin?",
-      "timeout": 3,
-      "char/token": 1.824,
-      "punctuation": [".","!","?"]
+        "name": "Turkish",
+        "self-name": "T\u00fcrk\u00e7e",
+        "flag": "https://flagsapi.com/TR/flat/32.png",
+        "female": [
+            "tr-TR-EmelNeural"
+        ],
+        "male": [
+            "tr-TR-AhmetNeural"
+        ],
+        "connection_interruption": "Kusura bakmay\u0131n, san\u0131r\u0131m bir ba\u011flant\u0131 sorunu var. Tekrar s\u00f6yler misin?",
+        "timeout": 3,
+        "char/token": 2.5,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "el-GR": {
+        "name": "Greek",
+        "self-name": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
+        "flag": "https://flagsapi.com/GR/flat/32.png",
+        "female": [
+            "el-GR-AthinaNeural"
+        ],
+        "male": [
+            "el-GR-NestorasNeural"
+        ],
+        "connection_interruption": "\u039b\u03c5\u03c0\u03ac\u03bc\u03b1\u03b9, \u03bd\u03bf\u03bc\u03af\u03b6\u03c9 \u03cc\u03c4\u03b9 \u03c5\u03c0\u03ac\u03c1\u03c7\u03b5\u03b9 \u03c0\u03c1\u03cc\u03b2\u03bb\u03b7\u03bc\u03b1 \u03c3\u03cd\u03bd\u03b4\u03b5\u03c3\u03b7\u03c2. \u039c\u03c0\u03bf\u03c1\u03b5\u03af\u03c2 \u03bd\u03b1 \u03c4\u03bf \u03b5\u03c0\u03b1\u03bd\u03b1\u03bb\u03ac\u03b2\u03b5\u03b9\u03c2?",
+        "timeout": 3,
+        "char/token": 1.0579710144927537,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ko-KR": {
+        "name": "Korean",
+        "self-name": "\ud55c\uad6d\uc5b4",
+        "flag": "https://flagsapi.com/KR/flat/32.png",
+        "female": [
+            "ko-KR-SunHiNeural",
+            "ko-KR-JiMinNeural",
+            "ko-KR-SeoHyeonNeural",
+            "ko-KR-SoonBokNeural",
+            "ko-KR-YuJinNeural"
+        ],
+        "male": [
+            "ko-KR-InJoonNeural",
+            "ko-KR-BongJinNeural",
+            "ko-KR-GookMinNeural",
+            "ko-KR-HyunsuNeural"
+        ],
+        "connection_interruption": "\uc8c4\uc1a1\ud569\ub2c8\ub2e4. \uc5f0\uacb0 \ubb38\uc81c\uac00 \uc788\ub294 \uac83 \uac19\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \ub9d0\ud574\ubcf4\uc138\uc694?",
+        "timeout": 3,
+        "char/token": 1.36,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "lv-LV": {
+        "name": "Latvian",
+        "self-name": "latvie\u0161u",
+        "flag": "https://flagsapi.com/LV/flat/32.png",
+        "female": [
+            "lv-LV-EveritaNeural"
+        ],
+        "male": [
+            "lv-LV-NilsNeural"
+        ],
+        "connection_interruption": "Atvainojiet, man \u0161\u0137iet, ka ir savienojuma probl\u0113ma. Vai j\u016bs var\u0113tu to pateikt v\u0113lreiz?",
+        "timeout": 3,
+        "char/token": 2.15,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "en-AU": {
+        "name": "English",
+        "self-name": "English",
+        "flag": "https://flagsapi.com/AU/flat/32.png",
+        "female": [
+            "en-AU-NatashaNeural",
+            "en-AU-AnnetteNeural",
+            "en-AU-CarlyNeural",
+            "en-AU-ElsieNeural",
+            "en-AU-FreyaNeural",
+            "en-AU-JoanneNeural",
+            "en-AU-KimNeural",
+            "en-AU-TinaNeural"
+        ],
+        "male": [
+            "en-AU-WilliamNeural",
+            "en-AU-DarrenNeural",
+            "en-AU-DuncanNeural",
+            "en-AU-KenNeural",
+            "en-AU-NeilNeural",
+            "en-AU-TimNeural"
+        ],
+        "connection_interruption": "I am sorry, I think there is a connection issue. Could you say that again?",
+        "timeout": 3,
+        "char/token": 4.111111111111111,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "bn-IN": {
+        "name": "Bangla",
+        "self-name": "\u09ac\u09be\u0982\u09b2\u09be",
+        "flag": "https://flagsapi.com/IN/flat/32.png",
+        "female": [
+            "bn-IN-TanishaaNeural"
+        ],
+        "male": [
+            "bn-IN-BashkarNeural"
+        ],
+        "connection_interruption": "\u0986\u09ae\u09bf \u09a6\u09c1\u0983\u0996\u09bf\u09a4, \u0986\u09ae\u09bf \u09ae\u09a8\u09c7 \u0995\u09b0\u09bf \u098f\u0995\u099f\u09bf \u09b8\u0982\u09af\u09cb\u0997 \u09b8\u09ae\u09b8\u09cd\u09af\u09be \u0986\u099b\u09c7. \u0986\u09aa\u09a8\u09bf \u0986\u09ac\u09be\u09b0 \u09af\u09c7 \u09ac\u09b2\u09a4\u09c7 \u09aa\u09be\u09b0\u09c7?",
+        "timeout": 3,
+        "char/token": 0.7865168539325843,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "es-CO": {
+        "name": "Spanish",
+        "self-name": "espa\u00f1ol",
+        "flag": "https://flagsapi.com/CO/flat/32.png",
+        "female": [
+            "es-CO-SalomeNeural"
+        ],
+        "male": [
+            "es-CO-GonzaloNeural"
+        ],
+        "connection_interruption": "Lo siento, creo que hay un problema de conexi\u00f3n. \u00bfPodr\u00edas repetir lo que dijiste?",
+        "timeout": 3,
+        "char/token": 3.375,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ne-NP": {
+        "name": "Nepali",
+        "self-name": "\u0928\u0947\u092a\u093e\u0932\u0940",
+        "flag": "https://flagsapi.com/NP/flat/32.png",
+        "female": [
+            "ne-NP-HemkalaNeural"
+        ],
+        "male": [
+            "ne-NP-SagarNeural"
+        ],
+        "connection_interruption": "\u092e\u0932\u093e\u0908 \u092e\u093e\u092b \u0917\u0930\u094d\u0928\u0941\u0939\u094b\u0938\u094d, \u092e\u0932\u093e\u0908 \u0932\u093e\u0917\u094d\u091b \u0915\u093f \u0924\u094d\u092f\u0939\u093e\u0901 \u091c\u0921\u093e\u0928 \u0938\u092e\u0938\u094d\u092f\u093e \u091b\u0964 \u0915\u0947 \u0924\u092a\u093e\u0907\u0901 \u092b\u0947\u0930\u093f \u092d\u0928\u094d\u0928 \u0938\u0915\u094d\u0928\u0941\u0939\u0941\u0928\u094d\u091b?",
+        "timeout": 3,
+        "char/token": 1.036144578313253,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "ar-IQ": {
+        "name": "Arabic",
+        "self-name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "flag": "https://flagsapi.com/IQ/flat/32.png",
+        "female": [
+            "ar-IQ-RanaNeural"
+        ],
+        "male": [
+            "ar-IQ-BasselNeural"
+        ],
+        "connection_interruption": "\u0623\u0646\u0627 \u0622\u0633\u0641\u060c \u0623\u0639\u062a\u0642\u062f \u0623\u0646 \u0647\u0646\u0627\u0643 \u0645\u0634\u0643\u0644\u0629 \u0641\u064a \u0627\u0644\u0627\u062a\u0635\u0627\u0644. \u0647\u0644 \u0628\u0625\u0645\u0643\u0627\u0646\u0643 \u0642\u0648\u0644 \u0630\u0644\u0643 \u0645\u062c\u062f\u062f\u0627\u061f",
+        "timeout": 3,
+        "char/token": 1.2941176470588236,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
+    },
+    "de-DE": {
+        "name": "German",
+        "self-name": "Deutsch",
+        "flag": "https://flagsapi.com/DE/flat/32.png",
+        "female": [
+            "de-DE-KatjaNeural",
+            "de-DE-AmalaNeural",
+            "de-DE-ElkeNeural",
+            "de-DE-GiselaNeural",
+            "de-DE-KlarissaNeural",
+            "de-DE-LouisaNeural",
+            "de-DE-MajaNeural",
+            "de-DE-SeraphinaNeural",
+            "de-DE-TanjaNeural",
+            "de-DE-SeraphinaMultilingualNeural"
+        ],
+        "male": [
+            "de-DE-ConradNeural",
+            "de-DE-BerndNeural",
+            "de-DE-ChristophNeural",
+            "de-DE-KasperNeural",
+            "de-DE-KillianNeural",
+            "de-DE-KlausNeural",
+            "de-DE-RalfNeural",
+            "de-DE-FlorianMultilingualNeural"
+        ],
+        "connection_interruption": "Es tut mir leid, ich glaube, es liegt ein Verbindungsproblem vor. K\u00f6nnten Sie das noch einmal sagen?",
+        "timeout": 3,
+        "char/token": 3.4482758620689653,
+        "punctuation": [
+            ".",
+            "!",
+            "?"
+        ]
     }
 }
