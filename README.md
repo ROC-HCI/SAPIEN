@@ -35,8 +35,9 @@ cd start_app
 python app.py
 ```
 
-Other useful tips: 
-- [Windows] Add `start_app/files/ffmpeg/bin` to path.
+Other useful tips:
+- Install `ffmpeg` and add it to Path.
+    - [Windows] Add `start_app/files/ffmpeg/bin` to path.
 
 The `main` branch contains `prerendered` version that runs on a single computer. For real-time rendering using Unreal Engine 5.2 on a GPU, please visit `real-time-render` branch.
 
