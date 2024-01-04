@@ -311,6 +311,7 @@ class Learning(Meeting):
             age_string = ""
         super().add_system_message(f"You are {self.bot.firstname} {self.bot.lastname} (Pronoun: {self.bot.pronoun}{age_string}) and you are having a conversation with {self.user.firstname} {self.user.lastname}.")
         super().add_system_message(f"You are an expert in {self.topic}. You are teaching {self.user.firstname} {self.user.lastname} about {self.topic}. Start with a greeting and introduce the topic of learning.")
+        super().add_system_message(f"Codeblocks should be enclosed in triple backticks ``````.")
 
     def get_quiz(self):
         llm = LLM()

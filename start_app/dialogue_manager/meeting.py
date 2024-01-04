@@ -406,13 +406,15 @@ class Meeting:
 
 
     def separate_markdown(self, input_string):
-        single_backtick_pattern = r'`([^`]+)`'
+        # single_backtick_pattern = r'`([^`]+)`'
         triple_backtick_pattern = r'```([\s\S]*?)```'
-        pattern = '|'.join([triple_backtick_pattern, single_backtick_pattern])
+        # pattern = '|'.join([triple_backtick_pattern, single_backtick_pattern])
+        pattern = triple_backtick_pattern
         markdowns = re.findall(pattern, input_string)
         string_without_markdowns = re.sub(pattern, '', input_string)
-        flattened_markdowns = [item for sublist in markdowns for item in sublist if item]
-        return string_without_markdowns, flattened_markdowns
+        # print("## Markdowns", markdowns)
+        # flattened_markdowns = [item for sublist in markdowns for item in sublist if item]
+        return string_without_markdowns, markdowns
 
     def respond(self, speaker_statement, is_emo=True, api="chat"):
         if not speaker_statement:
