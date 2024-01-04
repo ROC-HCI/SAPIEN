@@ -54,15 +54,22 @@ class Text2Speech:
     self.language = None
     self.pronoun = None
 
-  def set_audio(self, pronoun, language='en-US', audiodir=None, audiofile=None):
+  def set_audio(self, bot_name, pronoun, language='en-US', audiodir=None, audiofile=None):
     global all_voices, vocal_mapping
     self.language = language
     self.pronoun = pronoun
+
+    bot_voice_key = sum(ord(char) for char in bot_name)
+    
     if pronoun in vocal_mapping:
-      self.voice = random.choice(vocal_mapping[pronoun.lower()][language])
+      num_voices = len(vocal_mapping[pronoun.lower()][language])
+      bot_voice_id = bot_voice_key % num_voices
+      self.voice = vocal_mapping[pronoun.lower()][language][bot_voice_id]
       print(f"Selected Voice is {self.voice}")
     else:
-      self.voice = random.choice(all_voices[language])
+      num_voices = len(all_voices[language])
+      bot_voice_id = bot_voice_key % num_voices
+      self.voice = all_voices[language][bot_voice_id]
     self.audiodir = audiodir
     self.audiofile = audiofile
 

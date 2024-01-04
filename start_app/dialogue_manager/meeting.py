@@ -138,6 +138,7 @@ class Meeting:
         self.audiodir = ""
         self.audiofile = ""
         self.user_speech_dir = ""
+        self.metadata_dir = ""
         self.speech2text = Speech2Text()
         self.text2speech = Text2Speech()
         self.first_response = True
@@ -157,7 +158,7 @@ class Meeting:
         self.max_time_minutes = 10
         self.time_warning_done = False
         self.language = language
-        self.text2speech.set_audio(self.bot.pronoun, self.language, self.audiodir, self.audiofile)
+        self.text2speech.set_audio(self.bot.firstname, self.bot.pronoun, self.language, self.audiodir, self.audiofile)
         self.chat_system_messages = self.initial_system_messages.copy()
         self.clean_audiodir()
         lang_name = languages[self.language]["name"]
@@ -195,9 +196,9 @@ class Meeting:
             # audio_root_path = root_path / Path("audio/{}/".format(self.meeting_id))
             self.audiodir = str(root_path / Path("audio/{}/generated_speech/".format(self.meeting_id)))
             self.user_speech_dir = root_path / Path("audio/{}/user_speech/".format(self.meeting_id))
-            
+            self.metadata_dir = root_path / Path("audio/{}/metadata/".format(self.meeting_id))
             self.audiofile = Path(self.audiodir) / "bot_speech.wav"
-            self.text2speech.set_audio(self.bot.pronoun.lower(), self.language, self.audiodir, self.audiofile)
+            self.text2speech.set_audio(self.bot.firstname, self.bot.pronoun.lower(), self.language, self.audiodir, self.audiofile)
             
             # print("Creating audio directory: ", str(audio_root_path))
             print("Creating audio directory: ", str(self.audiodir))
@@ -208,6 +209,8 @@ class Meeting:
                 os.makedirs(str(self.audiodir))
             if not os.path.exists(str(self.user_speech_dir)):
                 os.makedirs(str(self.user_speech_dir))
+            if not os.path.exists(str(self.metadata_dir)):
+                os.makedirs(str(self.metadata_dir))
         except Exception as e:
             print("Error in setting audio: ", e)
 
@@ -402,6 +405,15 @@ class Meeting:
         return bot_response
 
 
+    def separate_markdown(self, input_string):
+        single_backtick_pattern = r'`([^`]+)`'
+        triple_backtick_pattern = r'```([\s\S]*?)```'
+        pattern = '|'.join([triple_backtick_pattern, single_backtick_pattern])
+        markdowns = re.findall(pattern, input_string)
+        string_without_markdowns = re.sub(pattern, '', input_string)
+        flattened_markdowns = [item for sublist in markdowns for item in sublist if item]
+        return string_without_markdowns, flattened_markdowns
+
     def respond(self, speaker_statement, is_emo=True, api="chat"):
         if not speaker_statement:
             speaker_statement = "..."
@@ -446,6 +458,10 @@ class Meeting:
         elif "|<endmeeting>|" in bot_response:
             bot_response = bot_response.replace("|<endmeeting>|", "[Ending meeting]")
         
+        ## Separating Markdowns
+        if '`' in bot_response:
+            bot_response, markdowns = self.separate_markdown(bot_response)
+            print("### Whiteboard ###\n", markdowns)
 
         bot_response_text, emotion = self.separate_emotion(bot_response)
         self.history +=  [self.bot.firstname+": "+bot_response_text]
