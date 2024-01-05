@@ -31,6 +31,7 @@ import nltk
 import emoji
 from abc import ABCMeta, abstractmethod
 import uuid
+import json
 
 try:
     nltk.data.find('tokenizers/punkt')
@@ -135,6 +136,9 @@ class Meeting:
         self.instance = None
         self.added_to_waitlist = False
         self.is_premium = False
+        self.metadata = False
+        self.subtitles = False
+        self.markdown = False
         self.audiodir = ""
         self.audiofile = ""
         self.user_speech_dir = ""
@@ -415,6 +419,15 @@ class Meeting:
         # print("## Markdowns", markdowns)
         # flattened_markdowns = [item for sublist in markdowns for item in sublist if item]
         return string_without_markdowns, markdowns
+    
+    def separate_latex(self, input_string):
+        double_dollar_pattern =  r"\$\$([\s\S]+?=.*?\$)\$\$|\$([^$]+?=.*?[^$]+?)\$"
+        pattern = double_dollar_pattern
+        latex = re.findall(pattern, input_string)
+        string_without_latex = re.sub(pattern, '', input_string)
+        string_without_latex = string_without_latex.replace("$", '').replace("  ", ' ')
+        flattened_latex = [item for sublist in latex for item in sublist if item]
+        return string_without_latex, flattened_latex
 
     def respond(self, speaker_statement, is_emo=True, api="chat"):
         if not speaker_statement:
@@ -460,10 +473,28 @@ class Meeting:
         elif "|<endmeeting>|" in bot_response:
             bot_response = bot_response.replace("|<endmeeting>|", "[Ending meeting]")
         
-        ## Separating Markdowns
-        if '`' in bot_response:
-            bot_response, markdowns = self.separate_markdown(bot_response)
-            print("### Whiteboard ###\n", markdowns)
+
+        if self.metadata:
+            metadata_dict = {}
+            if self.markdown:
+                markdowns = []
+                ## Separating Markdowns
+                if '`' in bot_response:
+                    bot_response, markdowns = self.separate_markdown(bot_response)
+                    metadata_dict['whiteboard'] = markdowns
+                    metadata_dict['markdown_type'] = "markdown"
+                    print("### Whiteboard markdown ###\n", markdowns)
+                elif '$$' in bot_response:
+                    bot_response, latex = self.separate_latex(bot_response)
+                    metadata_dict["whiteboard"] = latex
+                    metadata_dict['markdown_type'] = "latex"
+                    print('### Whiteboard LaTeX ###\n', latex)
+            if self.subtitles:
+                metadata_dict['bot_speech'] = bot_response
+
+            metadatafile = Path(self.metadata_dir) / 'metadata.json'
+            with open(metadatafile, 'w') as file:
+                json.dump(metadata_dict, file)
 
         bot_response_text, emotion = self.separate_emotion(bot_response)
         self.history +=  [self.bot.firstname+": "+bot_response_text]

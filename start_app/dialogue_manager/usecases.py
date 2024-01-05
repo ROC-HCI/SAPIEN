@@ -30,6 +30,9 @@ class Custom(Meeting):
         self.premise = ""
         self.relationship = ""
         self.goal = ""
+        self.metadata = True
+        self.subtitles = True
+        self.markdown = True
         super().add_system_message("Be interested and curious about the speaker. Ask questions to learn more about them.")
         super().add_system_message("Show expertise in the topic of conversation. Think analytically. Be confident and assertive. Be spontaneous and creative, also empathetic and supportive.")
         
@@ -151,6 +154,8 @@ class Community(Meeting):
 class Interview(Meeting):
     def __init__(self, user, bot, language='en-US'):
         super().__init__(user, bot, language)
+        self.metadata = True
+        self.subtitles = True
         self.resume = ""
         self.num_questions = 5
         self.job_posting = ""
@@ -300,6 +305,9 @@ Feedback:
 class Learning(Meeting):
     def __init__(self, user, bot, language='en-US'):
         super().__init__(user, bot, language)
+        self.metadata = True
+        self.subtitles = True
+        self.markdown = True
         self.topic = ""
         self.num_questions = 5
         self.quizzes = ""
@@ -312,6 +320,7 @@ class Learning(Meeting):
         super().add_system_message(f"You are {self.bot.firstname} {self.bot.lastname} (Pronoun: {self.bot.pronoun}{age_string}) and you are having a conversation with {self.user.firstname} {self.user.lastname}.")
         super().add_system_message(f"You are an expert in {self.topic}. You are teaching {self.user.firstname} {self.user.lastname} about {self.topic}. Start with a greeting and introduce the topic of learning.")
         super().add_system_message(f"Codeblocks should be enclosed in triple backticks ``````.")
+        super().add_system_message(f"Mathematical formula and equations must be expressed as LaTeX enclosed in $$.")
 
     def get_quiz(self):
         llm = LLM()
@@ -377,6 +386,8 @@ class Languages(Meeting):
         super().__init__(user, bot, language)
         self.topic = ""
         self.proficiency = ""
+        self.metadata = True
+        self.subtitles = True
 
     def ready_prompt(self):
         if self.bot.age:
