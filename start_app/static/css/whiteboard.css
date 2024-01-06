@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Atkins";
+    src: url("../fonts/Atkinson_Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2");
+    font-style: normal;
+}
+@font-face {
+    font-family: "AtkinsBold";
+    src: url("../fonts/Atkinson_Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2");
+    font-weight: bold;
+}
+
+body {
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color: rgb(126, 126, 126);
+    background-position: 0 0;
+}
+
+:root {
+    --whiteboardLargeInset: 3rem;
+    --whiteboardSmallWidth: 35vw;
+    --whiteboardSmallHeight: 40vh;
+}
+
+#whiteboard {
+    position: absolute;
+    /* border: 2px solid white; */
+
+    transition: all .5s ease-in-out;
+
+    width: 0;
+    height: 0;
+
+    left: var(--whiteboardLargeInset);
+
+    bottom: var(--whiteboardLargeInset);
+    
+    background-color: white;
+    border-radius: 25px;
+
+    overflow: hidden;
+}
+
+#whiteboard.minimized {
+    width: 4rem;
+    height: 4rem;
+
+    left: 0;
+    bottom: var(--whiteboardSmallHeight);
+}
+
+#whiteboard.small {
+    width: 35vw;
+    height: 40vh;
+}
+
+#whiteboard.large {
+    width: calc(100vw - (2 * var(--whiteboardLargeInset)));
+    height: calc(100vh - (2 * var(--whiteboardLargeInset)));
+}
+
+#whiteboard button {
+    display: none;
+
+    aspect-ratio: 1;
+    padding: 0;
+
+    background-color: transparent;
+    border: 0;
+}
+
+#whiteboard.minimized button.small {
+    display: block;
+}
+
+#whiteboard.small button.minimize, #whiteboard.small button.large {
+    display: block;
+}
+
+#whiteboard.large button.small {
+    display: block;
+}
+
+#whiteboardControls {
+    display: flex;
+    margin: 0.5rem;
+}
+
+#whiteboardContent {
+    padding: 1em;
+}
+
+.markdownBlock {
+    font-family: 'Atkins';
+}

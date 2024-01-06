@@ -143,6 +143,7 @@ class Meeting:
         self.audiofile = ""
         self.user_speech_dir = ""
         self.metadata_dir = ""
+        self.metadatafile = ""
         self.speech2text = Speech2Text()
         self.text2speech = Text2Speech()
         self.first_response = True
@@ -202,6 +203,7 @@ class Meeting:
             self.user_speech_dir = root_path / Path("audio/{}/user_speech/".format(self.meeting_id))
             self.metadata_dir = root_path / Path("audio/{}/metadata/".format(self.meeting_id))
             self.audiofile = Path(self.audiodir) / "bot_speech.wav"
+            self.metadatafile = Path(self.metadata_dir) / 'metadata.json'
             self.text2speech.set_audio(self.bot.firstname, self.bot.pronoun.lower(), self.language, self.audiodir, self.audiofile)
             
             # print("Creating audio directory: ", str(audio_root_path))
@@ -483,18 +485,18 @@ class Meeting:
                 if '`' in bot_response:
                     bot_response, markdowns = self.separate_markdown(bot_response)
                     metadata_dict['whiteboard'] = markdowns
-                    metadata_dict['markdown_type'] = "markdown"
+                    metadata_dict['media_type'] = "markdown"
                     print("### Whiteboard markdown ###\n", markdowns)
                 elif '$$' in bot_response:
                     bot_response, latex = self.separate_latex(bot_response)
                     metadata_dict["whiteboard"] = latex
-                    metadata_dict['markdown_type'] = "latex"
+                    metadata_dict['media_type'] = "latex"
                     print('### Whiteboard LaTeX ###\n', latex)
             if self.subtitles:
-                metadata_dict['bot_speech'] = bot_response
+                metadata_dict['caption'] = bot_response
 
-            metadatafile = Path(self.metadata_dir) / 'metadata.json'
-            with open(metadatafile, 'w') as file:
+            
+            with open(self.metadatafile, 'w') as file:
                 json.dump(metadata_dict, file)
 
         bot_response_text, emotion = self.separate_emotion(bot_response)

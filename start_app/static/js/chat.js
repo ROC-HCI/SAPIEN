@@ -25,6 +25,7 @@ if (window.performance && window.performance.navigation.type === window.performa
 
 window.onload = function loadPrerendered() {
   // check if a video with the id "remotePlayerFrame" exists. it has to be a video tag
+  whiteboard_ready();
   if (document.getElementById("prerendered")) {
     var video = document.getElementById("remotePlayerFrame");
     var videoSpeaking = document.getElementById("remotePlayerFrameSpeaking");
