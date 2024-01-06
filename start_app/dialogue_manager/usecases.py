@@ -22,6 +22,8 @@ from .meeting import *
 from .llm import LLM
 from .globals import root_path
 import json
+from sentence_transformers import SentenceTransformer, util
+import faiss
 
 
 class Custom(Meeting):
@@ -112,8 +114,7 @@ Conversation transcript in {self.language}:
 
         return self.feedback
 
-from sentence_transformers import SentenceTransformer, util
-import faiss
+
 
 class Community(Meeting):
     def __init__(self, user, bot, language='en-US'):
@@ -378,6 +379,94 @@ The quiz to convert to JSON:
             return
 
         return parsed_generated
+
+
+class Course(Meeting):
+    def __init__(self, user, bot, language='en-US'):
+        super().__init__(user, bot, language)
+        self.metadata = True
+        self.subtitles = True
+        self.markdown = True
+        self.topic = ""
+        self.num_questions = 5
+        self.quizzes = ""
+        self.vector_db = True
+        ## crreate the vector DB
+        self.sentence_encoder = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
+        csv_path = root_path / Path('files/course_content/course_data.csv')
+        self.vector_db_data = pd.read_csv(csv_path)
+        self.sentence_vectors = self.sentence_encoder.encode(self.vector_db_data['question'])
+        self.vector_db_index = faiss.IndexFlatL2(len(self.sentence_vectors[0]))   # build the index
+        self.vector_db_index.add(self.sentence_vectors)                  # add vectors to the index
+        # print("sentence_vectors: ", self.sentence_vectors.shape)
+
+    def ready_prompt(self):
+        if self.bot.age:
+            age_string = ", Age: " + str(self.bot.age)
+        else:
+            age_string = ""
+        super().add_system_message(f"You are {self.bot.firstname} {self.bot.lastname} (Pronoun: {self.bot.pronoun}{age_string}) and you are having a conversation with {self.user.firstname} {self.user.lastname}.")
+        super().add_system_message(f"You are an expert in {self.topic}. You are teaching {self.user.firstname} {self.user.lastname} about {self.topic}. Start with a greeting and introduce the topic of learning.")
+        super().add_system_message(f"Codeblocks should be enclosed in triple backticks ``````.")
+        super().add_system_message(f"Mathematical formula and equations must be expressed as LaTeX enclosed in $$.")
+
+    def get_quiz(self):
+        llm = LLM()
+        transcript = self.get_transcript()
+        quiz_question = f"""Based on the following conversation, create a {self.num_questions} question multiple choice quiz for the learner on {self.topic} in the following format:
+1. Question
+a. Ans 1
+b. Ans 2
+c. Ans 3
+d. Ans 4
+Correct answer: Ans. 
+
+...
+
+Lecture transcript: 
+{transcript}
+...
+
+
+Quiz:
+------------"""
+        # quizzes = llm.ask_gpt4(quiz_question, max_tokens=500).strip()
+        quizzes = llm.ask_chat(quiz_question, max_tokens=500).strip()
+
+        quiz_format_question = """Turn the Quizzes into a JSON dictionary format. Use the following format.
+{
+    "topic": "Lesson Name",
+    "questions": [
+        {
+            "question": "Question?",
+            "answers": {
+                "A":"Answer",
+                "B":"Answer",
+                "C":"Answer",
+                "D":"Answer"
+            },
+            "correct": "C"
+        },
+    ...
+    ]
+}
+
+The quiz to convert to JSON:
+""" + quizzes + "\n\n"
+        self.quizzes = llm.ask_chat(quiz_format_question, max_tokens=500).strip()
+
+        print('\033[92m' + "quiz_format_question: " + '\033[0m' + f"{quiz_format_question}")
+        print('\033[92m' + "self.quizzes: " + '\033[0m' + f"{self.quizzes}")
+        
+        # convert quiz_format to JSON
+        try:
+            parsed_generated = json.loads(self.quizzes)
+        except:
+            print("Error parsing generated JSON. Please try again.")
+            return
+
+        return parsed_generated
+
 
 
 

@@ -419,7 +419,8 @@ class Meeting:
         # print("## Markdowns", markdowns)
         # flattened_markdowns = [item for sublist in markdowns for item in sublist if item]
         return string_without_markdowns, markdowns
-    
+
+
     def separate_latex(self, input_string):
         double_dollar_pattern =  r"\$\$([\s\S]+?=.*?\$)\$\$|\$([^$]+?=.*?[^$]+?)\$"
         pattern = double_dollar_pattern
@@ -472,7 +473,7 @@ class Meeting:
             bot_response = "Ending meeting."
         elif "|<endmeeting>|" in bot_response:
             bot_response = bot_response.replace("|<endmeeting>|", "[Ending meeting]")
-        
+
 
         if self.metadata:
             metadata_dict = {}
