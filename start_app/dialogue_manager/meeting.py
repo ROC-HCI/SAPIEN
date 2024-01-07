@@ -338,7 +338,7 @@ class Meeting:
             response = response.lower().replace("as an ai language model", "as a SAPIEN Digital Human")
         elif "am an ai language model" in response.lower():
             response = response.lower().replace("am an ai language model", "am a SAPIEN Digital Human")
-        response = response.strip().replace("\n", " ")
+        # response = response.strip().replace("\n", " ") ## Removed to handle code
         response = response.replace("Masum", "Masoom")
         if response[-1] not in [".", "?", "!"]:
             sentences = sent_tokenize(response)
@@ -366,7 +366,7 @@ class Meeting:
     def askGPT(self, api="chat", db_prompt = None):
         bot_response = ""
         num_max_tries = 3
-        apis = ["chat", "davinci"]  # define the sequence of APIs
+        apis = ["chat", "davinci-002"]  # define the sequence of APIs
         max_tokens = int(150 * languages["en-US"]["char/token"]/languages[self.language]["char/token"])
         
         if db_prompt:
@@ -413,6 +413,7 @@ class Meeting:
 
     def separate_markdown(self, input_string):
         # single_backtick_pattern = r'`([^`]+)`'
+        input_string = input_string.replace("```python\n", '```')
         triple_backtick_pattern = r'```([\s\S]*?)```'
         # pattern = '|'.join([triple_backtick_pattern, single_backtick_pattern])
         pattern = triple_backtick_pattern
@@ -420,6 +421,8 @@ class Meeting:
         string_without_markdowns = re.sub(pattern, '', input_string)
         # print("## Markdowns", markdowns)
         # flattened_markdowns = [item for sublist in markdowns for item in sublist if item]
+        for i in range(len(markdowns)):
+            markdowns[i] = "```py\n" + markdowns[i] + "\n```"
         return string_without_markdowns, markdowns
 
 
@@ -429,7 +432,7 @@ class Meeting:
         latex = re.findall(pattern, input_string)
         string_without_latex = re.sub(pattern, '', input_string)
         string_without_latex = string_without_latex.replace("$", '').replace("  ", ' ')
-        flattened_latex = [item for sublist in latex for item in sublist if item]
+        flattened_latex = ["$$"+item+"$$" for sublist in latex for item in sublist if item]
         return string_without_latex, flattened_latex
 
     def respond(self, speaker_statement, is_emo=True, api="chat"):
@@ -480,17 +483,17 @@ class Meeting:
         if self.metadata:
             metadata_dict = {}
             if self.markdown:
-                markdowns = []
+                metadata_dict['whiteboard'] = []
                 ## Separating Markdowns
                 if '`' in bot_response:
                     bot_response, markdowns = self.separate_markdown(bot_response)
-                    metadata_dict['whiteboard'] = markdowns
-                    metadata_dict['media_type'] = "markdown"
+                    for markdown in markdowns:
+                        metadata_dict['whiteboard'].append({"content": markdown, "type": "markdown"})
                     print("### Whiteboard markdown ###\n", markdowns)
-                elif '$$' in bot_response:
-                    bot_response, latex = self.separate_latex(bot_response)
-                    metadata_dict["whiteboard"] = latex
-                    metadata_dict['media_type'] = "latex"
+                if '$$' in bot_response:
+                    bot_response, latexs = self.separate_latex(bot_response)
+                    for latex in latexs:
+                        metadata_dict['whiteboard'].append({"content": latex, "type": "latex"})
                     print('### Whiteboard LaTeX ###\n', latex)
             if self.subtitles:
                 metadata_dict['caption'] = bot_response

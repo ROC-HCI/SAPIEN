@@ -1191,10 +1191,15 @@ def whiteboard_test_ping():
         print("### Metadata: ", metadata)
         media_template["has_media"] = True
         media_template["caption"] = metadata['caption']
-        media_template["media"]["type"] = metadata['media_type']
+        if metadata['whiteboard']:
+            media_template["media"] = metadata['whiteboard'][0]
 
-        if media_template["media"]["type"] in ["markdown", "latex"]:
-            media_template["media"]["content"] = metadata["whiteboard"][0]
+        # if media_template["media"]["type"] == "markdown":
+        #     media_template["media"]["content"] = metadata["whiteboard"][0]
+        # elif media_template["media"]["type"] == "latex":
+        #     media_template["media"]["content"] = metadata["whiteboard"][0]
+        # else:
+        #     media_template["media"]["content"] = metadata["whiteboard"][0]
 
         print(f"media json: {media_template}")
     except Exception as e:

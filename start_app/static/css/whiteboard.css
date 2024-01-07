@@ -17,7 +17,8 @@ body {
 }
 
 :root {
-    --whiteboardLargeInset: 3rem;
+    --whiteboardLargeInsetHeight: 6.5rem;
+    --whiteboardLargeInsetWidth: 3rem;
     --whiteboardSmallWidth: 35vw;
     --whiteboardSmallHeight: 40vh;
 }
@@ -31,9 +32,9 @@ body {
     width: 0;
     height: 0;
 
-    left: var(--whiteboardLargeInset);
+    left: var(--whiteboardLargeInsetWidth);
 
-    bottom: var(--whiteboardLargeInset);
+    bottom: var(--whiteboardLargeInsetHeight);
     
     background-color: white;
     border-radius: 25px;
@@ -55,8 +56,8 @@ body {
 }
 
 #whiteboard.large {
-    width: calc(100vw - (2 * var(--whiteboardLargeInset)));
-    height: calc(100vh - (2 * var(--whiteboardLargeInset)));
+    width: calc(100vw - (2 * var(--whiteboardLargeInsetWidth)));
+    height: calc(100vh - (2 * var(--whiteboardLargeInsetHeight)));
 }
 
 #whiteboard button {
