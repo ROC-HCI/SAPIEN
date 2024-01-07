@@ -102,11 +102,11 @@ function stopRecording() {
 
   imageElement.src = '/static/img/mute.png';
   // Add a 2s delay
-  setTimeout(function() {
-      document.getElementById('remotePlayerFrameSpeaking').style.display = 'block';
-      console.log("Line 107");
-  }, 2000); // 2000 milliseconds delay
-  console.log('stopped recording');
+  // setTimeout(function() {
+  //     document.getElementById('remotePlayerFrameSpeaking').style.display = 'block';
+  //     console.log("Line 107");
+  // }, 2000); // 2000 milliseconds delay
+  // console.log('stopped recording');
   // playAudio()
 }
 
@@ -125,6 +125,7 @@ async function handleDataAvailable(event) {
       // console.log("endTime: " + endTime);
       // console.log("Time taken: " + (endTime - startTime) + " miliseconds");
       playAudio();
+      whiteboard_ready();
     }
   } else {
     console.log("No data recorded");
@@ -158,6 +159,7 @@ async function playAudio() {
       audioSource.connect(audioContext.destination);
       audioSource.start();
       isAudioPlaying = true;
+      document.getElementById('remotePlayerFrameSpeaking').style.display = 'block';
       console.log("Audio played successfully.");
 
       audioSource.onended = async function () {
@@ -166,6 +168,7 @@ async function playAudio() {
         imageElement.src = '/static/img/available.png';
         // Add a 2s/1.5s delay
         document.getElementById('remotePlayerFrameSpeaking').style.display = 'none';
+        changeWhiteboardState("minimized");
         console.log("Line 164")
       };
     } else {

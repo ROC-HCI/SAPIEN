@@ -25,17 +25,18 @@ if (window.performance && window.performance.navigation.type === window.performa
 
 window.onload = function loadPrerendered() {
   // check if a video with the id "remotePlayerFrame" exists. it has to be a video tag
+  whiteboard_ready();
   if (document.getElementById("prerendered")) {
-    var video = document.getElementById("remotePlayerFrame");
+    var videoStatic = document.getElementById("remotePlayerFrame");
     var videoSpeaking = document.getElementById("remotePlayerFrameSpeaking");
-    if (video) {
+    if (videoStatic) {
       console.log("video exists");
 
       const mhName = sessionStorage.getItem('mhFNameCurrent');
       console.log(mhName);
-      video.src = "static/video/Metahumans/static/"+mhName+".mp4";
+      videoStatic.src = "static/video/Metahumans/static/"+mhName+".mp4";
       videoSpeaking.src = "static/video/Metahumans/speak/"+mhName+".mp4";
-      video.play();
+      videoStatic.play();
       videoSpeaking.play();
 
       const headerContainer = document.getElementById('header-container');

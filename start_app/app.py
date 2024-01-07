@@ -1159,6 +1159,56 @@ def get_mode():
     return {"local": local}
 
 
+@app.route('/whiteboard_test', methods=['GET', 'POST'], endpoint='whiteboard_test')
+def whiteboard_test():
+    return render_template('whiteboard_test.html')
+
+
+@app.route('/whiteboard_test/ping', methods=['GET'], endpoint='whiteboard_test_ping')
+def whiteboard_test_ping():
+    print("whiteboard was pinged")
+
+    media_template = {
+            "caption": None,
+            "has_media": False,
+            "reveal_delay_seconds": 0,
+            "media": {
+                "type": None,
+                "content": None
+            }
+        }
+
+    ## Grab the directory from meeting_id
+    ## Fetch the json for that specific meeting
+    metadatafile = active_meetings[session["meeting_id"]].metadatafile
+
+    try:
+        ## Read json 
+        metadata = None
+        with open(metadatafile, 'r') as file:
+            metadata = json.load(file)
+        
+        print("### Metadata: ", metadata)
+        media_template["caption"] = metadata['caption']
+        if metadata['whiteboard']:
+            media_template["has_media"] = True
+            media_template["media"] = metadata['whiteboard'][0]
+
+        # if media_template["media"]["type"] == "markdown":
+        #     media_template["media"]["content"] = metadata["whiteboard"][0]
+        # elif media_template["media"]["type"] == "latex":
+        #     media_template["media"]["content"] = metadata["whiteboard"][0]
+        # else:
+        #     media_template["media"]["content"] = metadata["whiteboard"][0]
+
+        print(f"media json: {media_template}")
+    except Exception as e:
+        print(e)
+    return jsonify(media_template)
+
+
+
+
 @app.route('/end_call')
 def end_call():
     global active_meetings
