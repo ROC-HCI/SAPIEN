@@ -31,3 +31,6 @@ keys.py
 start_app/dialogue_manager/keys.py
 start_app/static/video/Metahumans
 start_app/files/local_mode_dummy.json
+start_app/files/db/instances.sqlite3
+start_app/files/db/meeting.sqlite3
+start_app/files/db/waitlist.sqlite3
