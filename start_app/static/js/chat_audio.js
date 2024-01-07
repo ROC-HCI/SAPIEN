@@ -102,11 +102,11 @@ function stopRecording() {
 
   imageElement.src = '/static/img/mute.png';
   // Add a 2s delay
-  setTimeout(function() {
-      document.getElementById('remotePlayerFrameSpeaking').style.display = 'block';
-      console.log("Line 107");
-  }, 2000); // 2000 milliseconds delay
-  console.log('stopped recording');
+  // setTimeout(function() {
+  //     document.getElementById('remotePlayerFrameSpeaking').style.display = 'block';
+  //     console.log("Line 107");
+  // }, 2000); // 2000 milliseconds delay
+  // console.log('stopped recording');
   // playAudio()
 }
 
@@ -159,6 +159,7 @@ async function playAudio() {
       audioSource.connect(audioContext.destination);
       audioSource.start();
       isAudioPlaying = true;
+      document.getElementById('remotePlayerFrameSpeaking').style.display = 'block';
       console.log("Audio played successfully.");
 
       audioSource.onended = async function () {
