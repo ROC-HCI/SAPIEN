@@ -1189,9 +1189,9 @@ def whiteboard_test_ping():
             metadata = json.load(file)
         
         print("### Metadata: ", metadata)
-        media_template["has_media"] = True
         media_template["caption"] = metadata['caption']
         if metadata['whiteboard']:
+            media_template["has_media"] = True
             media_template["media"] = metadata['whiteboard'][0]
 
         # if media_template["media"]["type"] == "markdown":

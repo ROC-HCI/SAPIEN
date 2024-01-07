@@ -125,6 +125,7 @@ async function handleDataAvailable(event) {
       // console.log("endTime: " + endTime);
       // console.log("Time taken: " + (endTime - startTime) + " miliseconds");
       playAudio();
+      whiteboard_ready();
     }
   } else {
     console.log("No data recorded");
@@ -166,6 +167,7 @@ async function playAudio() {
         imageElement.src = '/static/img/available.png';
         // Add a 2s/1.5s delay
         document.getElementById('remotePlayerFrameSpeaking').style.display = 'none';
+        changeWhiteboardState("minimized");
         console.log("Line 164")
       };
     } else {

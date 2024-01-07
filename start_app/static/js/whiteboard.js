@@ -1,5 +1,17 @@
 // $(document).ready(() => {
 
+function changeWhiteboardState(state) {
+    let whiteboard = new Whiteboard();
+    let $whiteboard_item = $("#whiteboard");
+    let $whiteboardContent = $("#whiteboardContent");
+
+    console.log("changing whiteboard state to " + state);
+    $whiteboard_item.removeClass("small large minimized");
+    $whiteboard_item.addClass(state);
+    // whiteboard.refresh($whiteboardContent);
+}
+
+
 function whiteboard_ready(){
     console.log("WHITEBOARD STARTING UP");
 
@@ -7,54 +19,42 @@ function whiteboard_ready(){
     
     let $whiteboard = $("#whiteboard");
     $whiteboard.show();
-    $whiteboard.addClass("small");
+    $whiteboard.addClass("minimized");
     
     let $whiteboardContent = $("#whiteboardContent");
-
-    $('#whiteboardControls button.minimize').click(() => {
-        console.log("going minimized");
-        $whiteboard.removeClass("small large");
-        $whiteboard.addClass("minimized");
-        $whiteboardContent.empty();
-    });
-    $('#whiteboardControls button.small').click(() => {
-        console.log("going small");
-        $whiteboard.removeClass("minimized large");
-        $whiteboard.addClass("small");
-        whiteboard.refresh($whiteboardContent);
-    });
-    $('#whiteboardControls button.large').click(() => {
-        console.log("going large");
-        $whiteboard.removeClass("minimized small");
-        $whiteboard.addClass("large");
-        whiteboard.refresh($whiteboardContent);
-    });
+    
+    // Event listeners using the new changeWhiteboardState function
+    $('#whiteboardControls button.minimize').click(() => changeWhiteboardState("minimized"));
+    $('#whiteboardControls button.small').click(() => changeWhiteboardState("small"));
+    $('#whiteboardControls button.large').click(() => changeWhiteboardState("large"));
 
 
-    $('#testButtons').append($('<button>Ping Flask</button>').click(() => {
+    // $('#testButtons').append($('<button>Ping Flask</button>').click(() => {
         // ping flask
 
-        console.log("pinging flask...");
+    console.log("pinging flask...");
 
-        fetch('/whiteboard_test/ping', {
-            method: 'GET',
+    fetch('/whiteboard_test/ping', {
+        method: 'GET',
+    })
+        .then(response => response.json())
+        // .then(result => console.log(result))
+        .then(data => {
+            console.log(data)
+            if (!data.has_media) {
+                console.log("No media in this ping")
+                changeWhiteboardState("minimized");
+                return;
+            } 
+            whiteboard.addItem(data.media);
+            changeWhiteboardState("small");
+            whiteboard.refresh($whiteboardContent);
         })
-            .then(response => response.json())
-            // .then(result => console.log(result))
-            .then(data => {
-                console.log(data)
-                if (!data.has_media) {
-                    console.log("No media in this ping")
-                    return;
-                } 
-                whiteboard.addItem(data.media);
-                whiteboard.refresh($whiteboardContent);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+        .catch(error => {
+            console.error('Error:', error);
+        });
 
-    }));
+    // }));
 }
 
 class WhiteboardContent {

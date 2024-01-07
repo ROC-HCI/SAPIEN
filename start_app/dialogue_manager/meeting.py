@@ -418,7 +418,8 @@ class Meeting:
         # pattern = '|'.join([triple_backtick_pattern, single_backtick_pattern])
         pattern = triple_backtick_pattern
         markdowns = re.findall(pattern, input_string)
-        string_without_markdowns = re.sub(pattern, '', input_string)
+        sub = random.choice([" as written in the whiteboard ", " as shown here ", " as shown in the whiteboard ", " as written here "])
+        string_without_markdowns = re.sub(pattern, sub, input_string)
         # print("## Markdowns", markdowns)
         # flattened_markdowns = [item for sublist in markdowns for item in sublist if item]
         for i in range(len(markdowns)):
@@ -430,8 +431,9 @@ class Meeting:
         double_dollar_pattern =  r"\$\$([\s\S]+?=.*?\$)\$\$|\$([^$]+?=.*?[^$]+?)\$"
         pattern = double_dollar_pattern
         latex = re.findall(pattern, input_string)
-        string_without_latex = re.sub(pattern, '', input_string)
-        string_without_latex = string_without_latex.replace("$", '').replace("  ", ' ')
+        sub = random.choice([" as written in the whiteboard ", " as shown here ", " as shown in the whiteboard ", " as written here "])
+        string_without_latex = re.sub(pattern, sub, input_string)
+        string_without_latex = string_without_latex.replace("$", '').replace("  ", ' ').replace("\\", '').replace("_", " subscript ").replace("^", " power ")
         flattened_latex = ["$$"+item+"$$" for sublist in latex for item in sublist if item]
         return string_without_latex, flattened_latex
 
