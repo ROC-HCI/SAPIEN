@@ -1225,17 +1225,19 @@ def end_call():
 app.logger.setLevel("DEBUG")
 
 if not local:
-    os.chdir("C:/Users/Administrator/Desktop/SAPIEN/start_app/") # Change this to __file__
+    os.chdir("D:/SAPIEN-dev/start_app/") # Change this to __file__
 app.logger.debug(f"entering main, set working dir to {os.getcwd()}")
 
 if __name__ == '__main__':
     port = 80
+    # global prerendered
     try:
-        global prerendered
-        parser = argparse.ArgumentParser()
-        parser.add_argument('--prerendered', dest='prerendered', default=True, type=lambda x: (str(x).lower() == 'true'))
-        args = parser.parse_args()
-        prerendered = args.prerendered
+        # parser = argparse.ArgumentParser()
+        # parser.add_argument('--prerendered', dest='prerendered', default=True, type=lambda x: (str(x).lower() == 'true'))
+        # args = parser.parse_args()
+        # prerendered = args.prerendered
+
+        prerendered = False
 
         print("Light mode: ", prerendered)
 
