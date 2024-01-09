@@ -166,7 +166,8 @@ def admin_required(function):
 def login_required(function):
     def wrapper(*args, **kwargs):
         if "google_id" not in session:
-            return abort(401)  # Authorization required
+            # return abort(401)  # Authorization required
+            return redirect(url_for('index'))
         else:
             return function()
     
