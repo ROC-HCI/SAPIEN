@@ -60,8 +60,11 @@ document.addEventListener("keyup", function (event) {
   }
 });
 
+// const remotePlayerFrameSpeaking = document.getElementById('remotePlayerFrameSpeaking');
+// console.log("remotePlayerFrameSpeaking: ", remotePlayerFrameSpeaking);
 const recordButton = document.getElementById('recordButton');
 const imageElement = recordButton.getElementsByTagName('img')[0];
+
 // const audioPlayer = document.getElementById('audioPlayer');
 
 let mediaRecorder;
@@ -86,7 +89,8 @@ async function startRecording() {
   mediaRecorder.start();
 
   imageElement.src = '/static/img/speak.png';
-  // document.body.style.backgroundColor = "red";
+  document.getElementById('remotePlayerFrameSpeaking').style.display = 'none';
+  console.log("Line 93")
 }
 
 function stopRecording() {
@@ -97,8 +101,12 @@ function stopRecording() {
   mediaRecorder.stream.getTracks().forEach(track => track.stop());
 
   imageElement.src = '/static/img/mute.png';
-  // document.body.style.backgroundColor = "";
-  console.log('stopped recording');
+  // Add a 2s delay
+  // setTimeout(function() {
+  //     document.getElementById('remotePlayerFrameSpeaking').style.display = 'block';
+  //     console.log("Line 107");
+  // }, 2000); // 2000 milliseconds delay
+  // console.log('stopped recording');
   // playAudio()
 }
 
@@ -117,12 +125,15 @@ async function handleDataAvailable(event) {
       // console.log("endTime: " + endTime);
       // console.log("Time taken: " + (endTime - startTime) + " miliseconds");
       playAudio();
+      whiteboard_ready();
     }
   } else {
     console.log("No data recorded");
     isAudioPlaying = false;
     isAvailable = true;
     imageElement.src = '/static/img/available.png';
+    document.getElementById('remotePlayerFrameSpeaking').style.display = 'none';
+    console.log("Line 131")
   }
 }
 
@@ -148,25 +159,33 @@ async function playAudio() {
       audioSource.connect(audioContext.destination);
       audioSource.start();
       isAudioPlaying = true;
+      document.getElementById('remotePlayerFrameSpeaking').style.display = 'block';
       console.log("Audio played successfully.");
 
       audioSource.onended = async function () {
         isAudioPlaying = false;
         isAvailable = true;
         imageElement.src = '/static/img/available.png';
-        // await deleteAudio();
+        // Add a 2s/1.5s delay
+        document.getElementById('remotePlayerFrameSpeaking').style.display = 'none';
+        changeWhiteboardState("minimized");
+        console.log("Line 164")
       };
     } else {
       console.error("Error fetching audio. Releasing microphone.");
       isAudioPlaying = false;
       isAvailable = true;
       imageElement.src = '/static/img/available.png';
+      document.getElementById('remotePlayerFrameSpeaking').style.display = 'none';
+      console.log("Line 172")
     }
   } catch (error) {
     console.error("Error occurred:", error, ". Releasing microphone.");
     isAudioPlaying = false;
     isAvailable = true;
     imageElement.src = '/static/img/available.png';
+    document.getElementById('remotePlayerFrameSpeaking').style.display = 'none';
+    console.log("Line 180")
   }
 }
 
@@ -191,6 +210,8 @@ async function uploadAudio() {
     isAudioPlaying = false;
     isAvailable = true;
     imageElement.src = '/static/img/available.png';
+    document.getElementById('remotePlayerFrameSpeaking').style.display = 'none';
+    console.log("Line 206")
   }
   recordedChunks = [];
   return response.ok;

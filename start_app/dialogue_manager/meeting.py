@@ -31,6 +31,7 @@ import nltk
 import emoji
 from abc import ABCMeta, abstractmethod
 import uuid
+import json
 
 try:
     nltk.data.find('tokenizers/punkt')
@@ -135,9 +136,14 @@ class Meeting:
         self.instance = None
         self.added_to_waitlist = False
         self.is_premium = False
+        self.metadata = False
+        self.subtitles = False
+        self.markdown = False
         self.audiodir = ""
         self.audiofile = ""
         self.user_speech_dir = ""
+        self.metadata_dir = ""
+        self.metadatafile = ""
         self.speech2text = Speech2Text()
         self.text2speech = Text2Speech()
         self.first_response = True
@@ -157,7 +163,7 @@ class Meeting:
         self.max_time_minutes = 10
         self.time_warning_done = False
         self.language = language
-        self.text2speech.set_audio(self.bot.pronoun, self.language, self.audiodir, self.audiofile)
+        self.text2speech.set_audio(self.bot.firstname, self.bot.pronoun, self.language, self.audiodir, self.audiofile)
         self.chat_system_messages = self.initial_system_messages.copy()
         self.clean_audiodir()
         lang_name = languages[self.language]["name"]
@@ -195,9 +201,10 @@ class Meeting:
             # audio_root_path = root_path / Path("audio/{}/".format(self.meeting_id))
             self.audiodir = str(root_path / Path("audio/{}/generated_speech/".format(self.meeting_id)))
             self.user_speech_dir = root_path / Path("audio/{}/user_speech/".format(self.meeting_id))
-            
+            self.metadata_dir = root_path / Path("audio/{}/metadata/".format(self.meeting_id))
             self.audiofile = Path(self.audiodir) / "bot_speech.wav"
-            self.text2speech.set_audio(self.bot.pronoun.lower(), self.language, self.audiodir, self.audiofile)
+            self.metadatafile = Path(self.metadata_dir) / 'metadata.json'
+            self.text2speech.set_audio(self.bot.firstname, self.bot.pronoun.lower(), self.language, self.audiodir, self.audiofile)
             
             # print("Creating audio directory: ", str(audio_root_path))
             print("Creating audio directory: ", str(self.audiodir))
@@ -208,6 +215,8 @@ class Meeting:
                 os.makedirs(str(self.audiodir))
             if not os.path.exists(str(self.user_speech_dir)):
                 os.makedirs(str(self.user_speech_dir))
+            if not os.path.exists(str(self.metadata_dir)):
+                os.makedirs(str(self.metadata_dir))
         except Exception as e:
             print("Error in setting audio: ", e)
 
@@ -329,7 +338,7 @@ class Meeting:
             response = response.lower().replace("as an ai language model", "as a SAPIEN Digital Human")
         elif "am an ai language model" in response.lower():
             response = response.lower().replace("am an ai language model", "am a SAPIEN Digital Human")
-        response = response.strip().replace("\n", " ")
+        # response = response.strip().replace("\n", " ") ## Removed to handle code
         response = response.replace("Masum", "Masoom")
         if response[-1] not in [".", "?", "!"]:
             sentences = sent_tokenize(response)
@@ -357,7 +366,7 @@ class Meeting:
     def askGPT(self, api="chat", db_prompt = None):
         bot_response = ""
         num_max_tries = 3
-        apis = ["chat", "davinci"]  # define the sequence of APIs
+        apis = ["chat", "davinci-002"]  # define the sequence of APIs
         max_tokens = int(150 * languages["en-US"]["char/token"]/languages[self.language]["char/token"])
         
         if db_prompt:
@@ -402,6 +411,32 @@ class Meeting:
         return bot_response
 
 
+    def separate_markdown(self, input_string):
+        # single_backtick_pattern = r'`([^`]+)`'
+        input_string = input_string.replace("```python\n", '```')
+        triple_backtick_pattern = r'```([\s\S]*?)```'
+        # pattern = '|'.join([triple_backtick_pattern, single_backtick_pattern])
+        pattern = triple_backtick_pattern
+        markdowns = re.findall(pattern, input_string)
+        sub = random.choice([" as written in the whiteboard ", " as shown here ", " as shown in the whiteboard ", " as written here "])
+        string_without_markdowns = re.sub(pattern, sub, input_string)
+        # print("## Markdowns", markdowns)
+        # flattened_markdowns = [item for sublist in markdowns for item in sublist if item]
+        for i in range(len(markdowns)):
+            markdowns[i] = "```py\n" + markdowns[i] + "\n```"
+        return string_without_markdowns, markdowns
+
+
+    def separate_latex(self, input_string):
+        double_dollar_pattern =  r"\$\$([\s\S]+?=.*?\$)\$\$|\$([^$]+?=.*?[^$]+?)\$"
+        pattern = double_dollar_pattern
+        latex = re.findall(pattern, input_string)
+        sub = random.choice([" as written in the whiteboard ", " as shown here ", " as shown in the whiteboard ", " as written here "])
+        string_without_latex = re.sub(pattern, sub, input_string)
+        string_without_latex = string_without_latex.replace("$", '').replace("  ", ' ').replace("\\", '').replace("_", " subscript ").replace("^", " power ")
+        flattened_latex = ["$$"+item+"$$" for sublist in latex for item in sublist if item]
+        return string_without_latex, flattened_latex
+
     def respond(self, speaker_statement, is_emo=True, api="chat"):
         if not speaker_statement:
             speaker_statement = "..."
@@ -445,7 +480,29 @@ class Meeting:
             bot_response = "Ending meeting."
         elif "|<endmeeting>|" in bot_response:
             bot_response = bot_response.replace("|<endmeeting>|", "[Ending meeting]")
-        
+
+
+        if self.metadata:
+            metadata_dict = {}
+            if self.markdown:
+                metadata_dict['whiteboard'] = []
+                ## Separating Markdowns
+                if '`' in bot_response:
+                    bot_response, markdowns = self.separate_markdown(bot_response)
+                    for markdown in markdowns:
+                        metadata_dict['whiteboard'].append({"content": markdown, "type": "markdown"})
+                    print("### Whiteboard markdown ###\n", markdowns)
+                if '$$' in bot_response:
+                    bot_response, latexs = self.separate_latex(bot_response)
+                    for latex in latexs:
+                        metadata_dict['whiteboard'].append({"content": latex, "type": "latex"})
+                    print('### Whiteboard LaTeX ###\n', latex)
+            if self.subtitles:
+                metadata_dict['caption'] = bot_response
+
+            
+            with open(self.metadatafile, 'w') as file:
+                json.dump(metadata_dict, file)
 
         bot_response_text, emotion = self.separate_emotion(bot_response)
         self.history +=  [self.bot.firstname+": "+bot_response_text]

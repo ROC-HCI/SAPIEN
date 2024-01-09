@@ -78,7 +78,7 @@ class LLM:
             prompt = [
                 {"role": "user", "content": question}
                 ]
-        else:                
+        else:
             prompt = []
         response = openai.ChatCompletion.create(
             engine='Azure-ChatGPT',

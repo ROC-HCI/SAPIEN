@@ -17,7 +17,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
 # THE SOFTWARE.
 
-
 import os
 
 os.environ["azure_subscription"], os.environ["azure_region"] = "AZURE_API_KEY", "eastus"

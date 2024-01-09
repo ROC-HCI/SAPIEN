@@ -19,6 +19,7 @@
 
 
 const modePageMap = {
+    "community": "community",
     "interview": "resume_upload",
     "learning": "enter_topic",
     "language": "enter_language",

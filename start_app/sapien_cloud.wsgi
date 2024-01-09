@@ -26,7 +26,7 @@ with open(local_mode_path) as json_file:
         f.write(f"Local: {local}, Local mode: {local_mode}\n")
 
 if not local:
-    path = 'C:/Users/Administrator/Desktop/SAPIEN/'
+    path = 'D:/SAPIEN-dev'
 
 logging.basicConfig(filename=f'{path}start_app/wsgi.log', level=logging.DEBUG)
 logging.debug('Starting WSGI script...')

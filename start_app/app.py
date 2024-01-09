@@ -166,7 +166,8 @@ def admin_required(function):
 def login_required(function):
     def wrapper(*args, **kwargs):
         if "google_id" not in session:
-            return abort(401)  # Authorization required
+            # return abort(401)  # Authorization required
+            return redirect(url_for('index'))
         else:
             return function()
     
@@ -685,7 +686,7 @@ def community():
 @app.route('/chat', methods=['GET', 'POST'], endpoint='chat')
 @login_required
 def chat():
-    global iframe_url, active_meetings, light_mode
+    global iframe_url, active_meetings, prerendered
 
     if not is_permitted(request.referrer):
         return redirect(url_for('index'))
@@ -713,7 +714,7 @@ def chat():
     iframe_port = active_meetings[session["meeting_id"]].instance.iframe_port
 
     session['have_feedback'] = False
-    return render_template('chat.html', iframe_url=iframe_url + str(iframe_port), user_name=session["name"], user_image=session["user_image"], light_mode=light_mode)
+    return render_template('chat.html', iframe_url=iframe_url + str(iframe_port), user_name=session["name"], user_image=session["user_image"], prerendered=prerendered)
 
 @app.route('/ask_feedback', endpoint='ask_feedback')
 @login_required
@@ -1104,11 +1105,12 @@ def get_audio():
     bot_path_g = active_meetings[session["meeting_id"]].audiodir
     bot_speech = active_meetings[session["meeting_id"]].audiofile
 
-    max_wait = 5000
-    while not audio_ready_to_send[0] and max_wait > 0:
-        print(f"speaking_flag: {speaking_flag} {max_wait}", end="\r")
-        time.sleep(0.01)
-        max_wait -= 1
+    max_wait = 500
+    if not prerendered:
+        while not audio_ready_to_send[0] and max_wait > 0:
+            print(f"speaking_flag: {speaking_flag} {max_wait}", end="\r")
+            time.sleep(0.01)
+            max_wait -= 1
 
     print(f"Audio found at {bot_speech}")
     time.sleep(0.01)
@@ -1158,6 +1160,56 @@ def get_mode():
     return {"local": local}
 
 
+@app.route('/whiteboard_test', methods=['GET', 'POST'], endpoint='whiteboard_test')
+def whiteboard_test():
+    return render_template('whiteboard_test.html')
+
+
+@app.route('/whiteboard_test/ping', methods=['GET'], endpoint='whiteboard_test_ping')
+def whiteboard_test_ping():
+    print("whiteboard was pinged")
+
+    media_template = {
+            "caption": None,
+            "has_media": False,
+            "reveal_delay_seconds": 0,
+            "media": {
+                "type": None,
+                "content": None
+            }
+        }
+
+    ## Grab the directory from meeting_id
+    ## Fetch the json for that specific meeting
+    metadatafile = active_meetings[session["meeting_id"]].metadatafile
+
+    try:
+        ## Read json 
+        metadata = None
+        with open(metadatafile, 'r') as file:
+            metadata = json.load(file)
+        
+        print("### Metadata: ", metadata)
+        media_template["caption"] = metadata['caption']
+        if metadata['whiteboard']:
+            media_template["has_media"] = True
+            media_template["media"] = metadata['whiteboard'][0]
+
+        # if media_template["media"]["type"] == "markdown":
+        #     media_template["media"]["content"] = metadata["whiteboard"][0]
+        # elif media_template["media"]["type"] == "latex":
+        #     media_template["media"]["content"] = metadata["whiteboard"][0]
+        # else:
+        #     media_template["media"]["content"] = metadata["whiteboard"][0]
+
+        print(f"media json: {media_template}")
+    except Exception as e:
+        print(e)
+    return jsonify(media_template)
+
+
+
+
 @app.route('/end_call')
 def end_call():
     global active_meetings
@@ -1173,19 +1225,21 @@ def end_call():
 app.logger.setLevel("DEBUG")
 
 if not local:
-    os.chdir("C:/Users/Administrator/Desktop/SAPIEN/start_app/") # Change this to __file__
+    os.chdir("D:/SAPIEN-dev/start_app/") # Change this to __file__
 app.logger.debug(f"entering main, set working dir to {os.getcwd()}")
 
 if __name__ == '__main__':
     port = 80
+    # global prerendered
     try:
-        global light_mode
-        parser = argparse.ArgumentParser()
-        parser.add_argument('--light-mode', dest='light_mode', default=True, type=lambda x: (str(x).lower() == 'true'))
-        args = parser.parse_args()
-        light_mode = args.light_mode
+        # parser = argparse.ArgumentParser()
+        # parser.add_argument('--prerendered', dest='prerendered', default=True, type=lambda x: (str(x).lower() == 'true'))
+        # args = parser.parse_args()
+        # prerendered = args.prerendered
 
-        print("Light mode: ", light_mode)
+        prerendered = False
+
+        print("Light mode: ", prerendered)
 
         # app.run(debug=True, host='0.0.0.0', port=port, use_reloader=False) ## Local testing
         with app.app_context():

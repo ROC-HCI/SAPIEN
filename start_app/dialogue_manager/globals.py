@@ -49,6 +49,7 @@ emotion_ready = ["NEUTRAL"]
 audio_ready_to_send = [False]
 
 local = True
+prerendered = True
 
 # local_mode_path = os.path.join(root_path, 'files\\local_mode.json')
 local_mode_path = root_path / Path('files/local_mode.json')

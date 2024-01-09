@@ -47,6 +47,19 @@ body {
 
 
 #remotePlayerFrame {
+    display: block;
+    border: none;
+    width: 100%;
+    /* height: calc(100vh - 50px); */
+    height: 100vh;
+    /* Adjust 60px to the height of your navbar */
+    aspect-ratio: 16/9;
+    max-width: 100%;
+}
+
+
+#remotePlayerFrameSpeaking {
+    display: none;
     border: none;
     width: 100%;
     /* height: calc(100vh - 50px); */
