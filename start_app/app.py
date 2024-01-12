@@ -1237,7 +1237,7 @@ if __name__ == '__main__':
         # args = parser.parse_args()
         # prerendered = args.prerendered
 
-        prerendered = False
+        prerendered = True
 
         print("Light mode: ", prerendered)
 
