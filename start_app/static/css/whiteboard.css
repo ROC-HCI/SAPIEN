@@ -21,33 +21,43 @@ body {
     --whiteboardLargeInsetWidth: 3rem;
     --whiteboardSmallWidth: 35vw;
     --whiteboardSmallHeight: 40vh;
+    
+    --whiteboardBorderRadius: 25px;
 }
 
 #whiteboard {
     position: absolute;
-    /* border: 2px solid white; */
 
     transition: all .5s ease-in-out;
 
     width: 0;
     height: 0;
 
-    left: var(--whiteboardLargeInsetWidth);
+    padding: 0.5rem;
 
+    left: var(--whiteboardLargeInsetWidth);
     bottom: var(--whiteboardLargeInsetHeight);
     
     background-color: white;
-    border-radius: 25px;
+    border-radius: var(--whiteboardBorderRadius);
 
     overflow: hidden;
 }
 
 #whiteboard.minimized {
-    width: 4rem;
-    height: 4rem;
+    width: 60px;
+    height: 60px;
 
     left: 0;
     bottom: var(--whiteboardSmallHeight);
+
+    border-radius: 0 var(--whiteboardBorderRadius) var(--whiteboardBorderRadius) 0;
+
+    overflow: hidden;
+}
+
+#whiteboard.minimized #whiteboardControls {
+    height: 100%;
 }
 
 #whiteboard.small {
@@ -84,13 +94,54 @@ body {
 
 #whiteboardControls {
     display: flex;
-    margin: 0.5rem;
+    height: 10%;
+}
+
+#whiteboard.minimized #whiteboardContent {
+    display: none;
 }
 
 #whiteboardContent {
+    height: 90%;
     padding: 1em;
+    overflow-y: scroll;
 }
 
 .markdownBlock {
     font-family: 'Atkins';
+}
+.markdownBlock code {
+    border-radius: .5em;
+    text-wrap: wrap;
+    padding-top: 0 !important;
+    min-height: 5em;
+    padding-right: 5em !important;
+}
+
+
+.copy-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 2em;
+    height: 2em;
+    margin: 1em;
+    
+    padding: 5px;
+    border-radius: 6px;
+
+    cursor: pointer;
+    
+    transition: background-color .1s ease;
+}
+.copy-button:hover {
+    background-color: rgb(226, 226, 226);
+}
+.copy-button:active {
+    background-color: rgb(220, 220, 220);
+}
+
+.copy-button svg {
+    color: rgb(138, 138, 138);
 }
