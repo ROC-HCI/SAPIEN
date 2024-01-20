@@ -19,27 +19,34 @@ Masum Hasan, Cengiz Ozel, Sammy Potter, Ehsan Hoque (ACIIW 2023)
 
 Works on any OS
 
+This `main` branch contains `prerendered` version that runs on a single computer. For real-time rendering using Unreal Engine 5.2 on a GPU, please visit `real-time-render` branch.
+
+
 ```
-git clone git@github.com:Masum06/SAPIEN.git
+git clone https://github.com/ROC-HCI/SAPIEN.git
 cd SAPIEN
 pip install -r requirements.txt
 ```
 
 - Download the folder: [https://rochester.app.box.com/v/SAPIEN-public/folder/237414507812](https://rochester.app.box.com/v/SAPIEN-public/folder/237414507812)
 - Place the folders `static` and `speaking` under: `start_app/static/video/Metahumans`
-- Create `keys.py` from `keys_template (rename to keys.py).py` and add your own API keys for Microsoft Speech SDK, OpenAI, and Google auth.
+- Create `keys.py` from `keys_template (rename to keys.py).py` and add your own API keys for Microsoft Speech SDK, Azure OpenAI, and SERP (Not required; for enabling google search).
 - Rename `start_app/files/local_mode_dummy.json` to `start_app/files/local_mode.json`.
+- In "start_app/app.py", inside the "admin_required" function, put the email address you would be using to sign in.
+  
 
 ```
 cd start_app
 python app.py
 ```
+- Goto 0.0.0.0:80, and sign-in. Voila!
+
 
 Other useful tips:
 - Install `ffmpeg` and add it to Path.
     - [Windows] Add `start_app/files/ffmpeg/bin` to path.
+- If you get errors to initiate sessions, after you sign in, go to "localhost/init_server" and click "Initialize Server". Run again.
 
-The `main` branch contains `prerendered` version that runs on a single computer. For real-time rendering using Unreal Engine 5.2 on a GPU, please visit `real-time-render` branch.
 
 ## Contributors:
 - [Masum Hasan](https://masumhasan.net/)
