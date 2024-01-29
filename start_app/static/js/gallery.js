@@ -96,8 +96,9 @@ class MetaHuman {
     narrative;
     funFact;
     profession;
+    hasVideo
 
-    constructor(newId, newName, newGender, newAge, newImgSrc, newNarrative, newFunFact, newProfession) {
+    constructor(newId, newName, newGender, newAge, newImgSrc, newNarrative, newFunFact, newProfession, hasVideo) {
         this.id = newId;
         this.name = newName;
         this.gender = newGender;
@@ -106,6 +107,7 @@ class MetaHuman {
         this.narrative = newNarrative;
         this.funFact = newFunFact;
         this.profession = newProfession;
+        this.hasVideo
     }
 
     getId() {
@@ -131,6 +133,9 @@ class MetaHuman {
     }
     getProfession() {
         return this.profession;
+    }
+    getHasVideo() {
+        return this.hasVideo;
     }
 }
 

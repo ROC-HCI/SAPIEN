@@ -10,8 +10,7 @@
             "Narrative-text": "Ada was born in a small village in Nigeria. She grew up in poverty and was forced to drop out of school at a young age. Ada always had a passion for learning and eventually found work as a maid for a wealthy family who allowed her to attend night classes. She worked tirelessly and eventually earned a scholarship to a university in the United States. Now, she is a successful businesswoman who is passionate about helping other young girls in her village achieve their dreams.",
             "Fun-fact": "Passionate salsa dancer, Ada has won several regional dance competitions.",
             "Profession": "Businesswoman",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552439782903808/Ada.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552439782903808/Ada.png"
         },
         {
             "Filename": "static/headshots/Chandra.png",
@@ -23,8 +22,7 @@
             "Narrative-text": "Chandra, born in an Indian village, was fascinated by the night sky. He earned a scholarship to study in the US, becoming an accomplished astrophysicist. Later, he returned to his village to build a school, leaving a lasting impact on his community.",
             "Fun-fact": "Chandra is a dedicated connoisseur of Indian street food and maintains a blog reviewing food stalls around the globe.",
             "Profession": "Astrophysicist",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552440021983242/Chandra.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552440021983242/Chandra.png"
         },
         {
             "Filename": "static/headshots/Cooper.png",
@@ -36,8 +34,7 @@
             "Narrative-text": "Cooper grew up in a small town in the Midwest. He was always fascinated by technology and spent his teenage years teaching himself how to code. After graduating from high school, Cooper moved to Silicon Valley and started his own software company. His company is now worth millions of dollars and he is a respected entrepreneur in the tech industry.",
             "Fun-fact": "A fan of open skies and parachute jumps, Cooper has skydived over seven different countries.",
             "Profession": "Software Engineer",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552440273645689/Cooper.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552440273645689/Cooper.png"
         },
         {
             "Filename": "static/headshots/Danielle.png",
@@ -49,8 +46,7 @@
             "Narrative-text": "Danielle was born in a small town in Louisiana. She always had a love for animals and decided to pursue a career in veterinary medicine. After completing her studies, Danielle moved to Africa to work with endangered wildlife. She is now a renowned veterinarian and works with conservationists around the world to protect endangered species.",
             "Fun-fact": "Danielle has a knack for playing the banjo, enjoying jam sessions during her downtime from saving animals.",
             "Profession": "Veterinarian",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552440508518471/Danielle.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552440508518471/Danielle.png"
         },
         {
             "Filename": "static/headshots/Dhruv.png",
@@ -62,8 +58,7 @@
             "Narrative-text": "Dhruv grew up in a middle-class family in India. He was always interested in science and went on to study physics at university. After completing his studies, Dhruv moved to the United States to work at NASA. He has contributed to several groundbreaking discoveries in the field of astrophysics and is considered one of the leading experts in his field.",
             "Fun-fact": "Dhruv loves to unwind by practicing yoga, and holds a deep admiration for ancient Indian philosophy.",
             "Profession": "Astrophysicist",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552440751792198/Dhruv.png",
-            "has_video": false
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552440751792198/Dhruv.png"
         },
         {
             "Filename": "static/headshots/Erno.png",
@@ -75,8 +70,7 @@
             "Narrative-text": "Erno was born in Hungary and grew up during the communist era. He witnessed firsthand the injustices of the system and decided to become a political activist. After the fall of communism, Erno became a successful businessman and used his wealth to support various political causes.",
             "Fun-fact": "An avid birdwatcher, Erno has recorded sightings of over 1,000 bird species.",
             "Profession": "Businessman",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552441041203210/Erno.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552441041203210/Erno.png"
         },
         {
             "Filename": "static/headshots/Farrukh.png",
@@ -88,8 +82,7 @@
             "Narrative-text": "Farrukh was born in Pakistan and came from a poor family. He was determined to create a better life for himself and his family, so he worked hard and eventually became a successful businessman. Farrukh now uses his wealth to support various charities and is known for his philanthropic work.",
             "Fun-fact": "Farrukh is quite the daredevil and enjoys extreme sports like bungee jumping and white water rafting.",
             "Profession": "Businessman",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552441284464741/Farrukh.png",
-            "has_video": false
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552441284464741/Farrukh.png"
         },
         {
             "Filename": "static/headshots/Glenda.png",
@@ -99,10 +92,9 @@
             "Age": 76,
             "Narrative": "static/sapien-data/narrative/Glenda.txt",
             "Narrative-text": "Glenda was born in a small town in Mississippi. She always had a passion for music and became a singer at a young age. Glenda has since released several albums and is known for her powerful voice and soulful lyrics.",
-            "Fun-fact": "When Glenda isn\u00e2\u20ac\u2122t singing, she tries her hand at organic gardening to stay in touch with nature.",
+            "Fun-fact": "When Glenda isn’t singing, she tries her hand at organic gardening to stay in touch with nature.",
             "Profession": "Singer",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552441540321310/Glenda.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552441540321310/Glenda.png"
         },
         {
             "Filename": "static/headshots/Hadley.png",
@@ -114,8 +106,7 @@
             "Narrative-text": "Hadley was born in New York City and grew up in a wealthy family. She was always interested in fashion and decided to start her own clothing line. Hadley's designs have been worn by celebrities and she is considered one of the most innovative designers in the industry.",
             "Fun-fact": "Hadley is mildly obsessed with crossword puzzles and enjoys starting her day solving one.",
             "Profession": "Fashion Designer",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552441804566658/Hadley.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552441804566658/Hadley.png"
         },
         {
             "Filename": "static/headshots/Hana.png",
@@ -127,8 +118,7 @@
             "Narrative-text": "Hana was born in Japan and moved to the United States when she was a teenager. She was always interested in art and decided to pursue a career as a painter. Hana's work has been featured in galleries around the world and she is considered one of the most talented artists of her generation.",
             "Fun-fact": "Hana is an amateur astronomer who owns her own telescope to observe the night sky.",
             "Profession": "Painter",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552442081382540/Hana.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552442081382540/Hana.png"
         },
         {
             "Filename": "static/headshots/Hudson.png",
@@ -140,8 +130,7 @@
             "Narrative-text": "Hudson was born in Australia and grew up near the ocean. He was always fascinated by marine life and became a marine biologist. Hudson has contributed to several important discoveries about marine ecosystems and is a respected scientist in his field.",
             "Fun-fact": "Hudson is a passionate surfer, often risking the early morning cold for a good wave.",
             "Profession": "Marine Biologist",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552457138946269/Hudson.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552457138946269/Hudson.png"
         },
         {
             "Filename": "static/headshots/Jesse.png",
@@ -153,8 +142,7 @@
             "Narrative-text": "Jesse was born in Texas and grew up in a religious family. He struggled with his identity as a gay man and eventually left his family to pursue his dreams in New York City. Jesse is now a successful actor and has appeared in several Broadway productions.",
             "Fun-fact": "Often seen enjoying New York's thriving underground drag scene, Jesse is also a fantastic cook.",
             "Profession": "Actor",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552457394802688/Jesse.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552457394802688/Jesse.png"
         },
         {
             "Filename": "static/headshots/Keiji.png",
@@ -166,8 +154,7 @@
             "Narrative-text": "Keiji was born in Japan and was interested in the arts from a young age. He studied graphic design in college and eventually started his own design studio. Keiji's work has been featured in magazines and on billboards around the world, and he is known for his bold and innovative designs.",
             "Fun-fact": "Keiji is an accomplished Kendo practitioner and often participates in local tournaments. ",
             "Profession": "Graphic Designer",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552457596113137/Keiji.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552457596113137/Keiji.png"
         },
         {
             "Filename": "static/headshots/Kendra.png",
@@ -179,8 +166,7 @@
             "Narrative-text": "Kendra was born in South Africa and grew up during the apartheid era. She became involved in political activism at a young age and worked tirelessly to fight against the system of segregation. Kendra now works as a human rights lawyer and continues to fight for justice and equality.",
             "Fun-fact": "Kendra can often be found hiking and exploring the South African wilderness. ",
             "Profession": "Human Rights Lawyer",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552457885532210/Kendra.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552457885532210/Kendra.png"
         },
         {
             "Filename": "static/headshots/Koda.png",
@@ -192,8 +178,7 @@
             "Narrative-text": "Koda was born in Canada and grew up in a family of musicians. He learned to play several instruments at a young age and eventually started his own band. Koda's music has been praised for its innovative style and meaningful lyrics.",
             "Fun-fact": "A lover of nature, Koda enjoys camping trips and is a skilled amateur wildlife photographer.",
             "Profession": "Musician",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552458112028712/Koda.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552458112028712/Koda.png"
         },
         {
             "Filename": "static/headshots/Lena.png",
@@ -205,8 +190,7 @@
             "Narrative-text": "Lena was born in Russia and moved to the United States with her family when she was a child. She was always interested in science and went on to become a renowned physicist. Lena has contributed to several important discoveries in the field of quantum mechanics and is considered one of the leading experts in her field.",
             "Fun-fact": "Lena is an experienced rock climber and often volunteers as an instructor for beginners.",
             "Profession": "Physicist",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552458355282030/Lena.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552458355282030/Lena.png"
         },
         {
             "Filename": "static/headshots/Maria.png",
@@ -218,8 +202,7 @@
             "Narrative-text": "Maria was born in Mexico and grew up in a family of farmers. She learned to appreciate the land and its resources from a young age and eventually became an environmental activist. Maria now works to promote sustainable farming practices and protect natural habitats.",
             "Fun-fact": "Maria has run five marathons and uses long distance running to relax and think.",
             "Profession": "Environmental Activist",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552456094552075/Maria.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552456094552075/Maria.png"
         },
         {
             "Filename": "static/headshots/Myles.png",
@@ -231,8 +214,7 @@
             "Narrative-text": "Myles was born in Jamaica and moved to the United States with his family when he was a child. He was always interested in politics and went on to become a successful politician. Myles has worked to promote social justice and economic equality in his community.",
             "Fun-fact": "Aside from his dedication to politics, Myles is a skilled painter specialising in landscapes.",
             "Profession": "Politician",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552456362999939/Myles.png",
-            "has_video": false
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552456362999939/Myles.png"
         },
         {
             "Filename": "static/headshots/Nasim.png",
@@ -244,8 +226,7 @@
             "Narrative-text": "Nasim, born and raised in Al-Jouf region in Saudi Arabia, grew up amidst the vast fields where his parents toiled as farmers. However, the towering beauty of the Kingdom's architectural marvels always captivated his imagination. Determined to make a difference, Nasim pursued his dreams and became a civil engineer, using his passion and expertise to construct magnificent structures that would inspire generations to come. Today, as he stands atop the gleaming skyscrapers of Riyadh, he reflects on his journey, grateful for the opportunity to shape the landscape of his beloved country and bring joy to its people.",
             "Fun-fact": "Nasim is a falconer and participates in the traditional sport of falconry in his free time.",
             "Profession": "Civil Engineer",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552456606273688/Nasim.png",
-            "has_video": false
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552456606273688/Nasim.png"
         },
         {
             "Filename": "static/headshots/Natalia.png",
@@ -257,8 +238,7 @@
             "Narrative-text": "Natalia was born in Brazil and grew up in poverty. She was determined to create a better life for herself and her family, so she worked hard and eventually became a successful businesswoman. Natalia now uses her wealth to support various charities and is known for her philanthropic work.",
             "Fun-fact": "Natalia is a skilled capoeira practitioner and enjoys demonstrating the dance-like martial art at local exhibitions.",
             "Profession": "Businesswoman",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552456874692729/Natalia.pngg",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552456874692729/Natalia.pngg"
         },
         {
             "Filename": "static/headshots/Orla.png",
@@ -270,8 +250,7 @@
             "Narrative-text": "Orla was born in Ireland and was always interested in literature. She went on to become a successful author and has written several bestselling novels. Orla's work has been praised for its vivid descriptions and powerful storytelling.",
             "Fun-fact": "An excellent amateur baker, Orla enjoys trying out recipes from around the world.",
             "Profession": "Author",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552483193946262/Orla.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552483193946262/Orla.png"
         },
         {
             "Filename": "static/headshots/Oskar.png",
@@ -283,8 +262,7 @@
             "Narrative-text": "Oskar was born in Germany and grew up during World War II. He witnessed firsthand the horrors of war and became committed to promoting peace and understanding between nations. Oskar now works as a diplomat and has worked to promote peace in several conflict zones around the world.",
             "Fun-fact": "A fencing enthusiast, Oskar often spends his weekends at a local fencing club.",
             "Profession": "Diplomat",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552483449806909/Oskar.png",
-            "has_video": false
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552483449806909/Oskar.png"
         },
         {
             "Filename": "static/headshots/Pia.png",
@@ -296,8 +274,7 @@
             "Narrative-text": "Pia was born in Italy and grew up in a family of artists. She learned to appreciate the beauty of the world from a young age and eventually became a successful photographer. Pia's work has been featured in galleries around the world and is known for its breathtaking beauty.",
             "Fun-fact": "Pia loves classic films and has a vast collection of vintage movies.",
             "Profession": "Photographer",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552483739218060/Pia.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552483739218060/Pia.png" 
         },
         {
             "Filename": "static/headshots/Sadhil.png",
@@ -309,8 +286,7 @@
             "Narrative-text": "Sadhil was born in India and grew up in poverty. He was determined to create a better life for himself and his family, so he worked hard and eventually became a successful entrepreneur. Sadhil now uses his wealth to support various charities and is known for his philanthropic work.",
             "Fun-fact": "Sadhil is a committed wildlife photographer, often taking long expeditions for the perfect shot.",
             "Profession": "Entrepreneur",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552483990863902/Sadhil.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552483990863902/Sadhil.png"
         },
         {
             "Filename": "static/headshots/Seneca.png",
@@ -322,8 +298,7 @@
             "Narrative-text": "Seneca was born in the United States and grew up in a family of activists. She was always interested in social justice and went on to become a civil rights lawyer. Seneca has worked on several high-profile cases and is known for her tireless dedication to justice and equality.",
             "Fun-fact": "Despite his busy schedule, Seneca is a dedicated beekeeper and maintains three hives.",
             "Profession": "Civil Rights Lawyer",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552484267696270/Seneca.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552484267696270/Seneca.png" 
         },
         {
             "Filename": "static/headshots/Sook-ja.png",
@@ -335,8 +310,7 @@
             "Narrative-text": "Sook-ja was born in South Korea and grew up during a time of political turmoil. She became involved in political activism at a young age and eventually had to flee the country for her safety. Sook-ja now works as a human rights advocate and continues to fight for the rights of marginalized communities around the world. She has traveled to several countries, speaking out against human rights abuses and advocating for systemic change.",
             "Fun-fact": "Never forgetting her roots, Sook-ja is an avid cook and often prepares traditional Korean dishes.",
             "Profession": "Human Rights Advocate",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552484527747102/Sook-ja.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552484527747102/Sook-ja.png"
         },
         {
             "Filename": "static/headshots/Vincent.png",
@@ -348,8 +322,7 @@
             "Narrative-text": "Vincent was born in France and grew up in a family of chefs. He learned to appreciate the art of cooking from a young age and eventually became a Michelin-starred chef. Vincent's culinary creations are known for their exquisite taste and presentation.",
             "Fun-fact": "Vincent enjoys mushroom foraging and knows over 50 edible species.",
             "Profession": "Chef",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552484796170361/Vincent.png",
-            "has_video": true
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552484796170361/Vincent.png"
         },
         {
             "Filename": "static/headshots/Vivian.png",
@@ -361,8 +334,7 @@
             "Narrative-text": "Vivian was born in the United States and grew up in poverty. She was determined to create a better life for herself and her family, so she worked hard and eventually became a successful businesswoman. Vivian now uses her wealth to support various charities and is known for her philanthropic work.",
             "Fun-fact": "Vivian loves exploring urban street art and often takes graffiti tours when traveling.",
             "Profession": "Businesswoman",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552485089779813/Vivian.png",
-            "has_video": false
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552485089779813/Vivian.png"
         },
         {
             "Filename": "static/headshots/Wallace.png",
@@ -374,8 +346,7 @@
             "Narrative-text": "Wallace was born in Scotland and was always interested in sports. He went on to become a professional athlete and represented his country in several international competitions. Wallace now works as a sports commentator and is known for his insightful analysis and commentary.",
             "Fun-fact": "An avid golfer, Wallace regularly competes in charity golf tournaments.",
             "Profession": "Sports Commentator",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552485387579544/Wallace.png",
-            "has_video": false
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552485387579544/Wallace.png"
         },
         {
             "Filename": "static/headshots/Zeva.png",
@@ -387,8 +358,7 @@
             "Narrative-text": "Zeva was born in Israel and grew up during a time of political turmoil. She became involved in political activism at a young age and eventually had to flee the country for her safety. Zeva now works as a human rights advocate and continues to fight for justice and equality.",
             "Fun-fact": "Zeva has a black belt in Krav Maga, a martial art she learned in her home country of Israel.",
             "Profession": "Human Rights Advocate",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552485890883725/Zeva.png",
-            "has_video": false
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552485890883725/Zeva.png"
         },
         {
             "Filename": "static/headshots/Zhen.png",
@@ -400,8 +370,7 @@
             "Narrative-text": "Zhen was born in China and was always interested in technology. He went on to become a successful tech entrepreneur and has founded several successful companies. Zhen's innovations have revolutionized the tech industry and he is considered one of the leading experts in his field.",
             "Fun-fact": "Zhen is a keen chess player, often seen in park tournaments or online competitions.",
             "Profession": "Tech Entrepreneur",
-            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552490164891801/Zhen.png",
-            "has_video": false
+            "CDN Image": "https://cdn.discordapp.com/attachments/1039661966144323624/1142552490164891801/Zhen.png"
         }
     ]
 }
