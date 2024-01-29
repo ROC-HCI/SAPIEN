@@ -28,3 +28,6 @@ start_app/files/db/access_code.sqlite3
 start_app/sapien.wsgi
 community_engagement_qa.csv
 keys.py
+start_app/dialogue_manager/keys.py
+start_app/static/video/*
+start_app/files/db/*
