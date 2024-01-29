@@ -153,11 +153,10 @@ select {
     aspect-ratio: 1/1;
 }
 
-.headshot img:hover {
+.headshot:not(.unclickable) img:hover {
     -webkit-transform: scale(1.10);
     transform: scale(1.10);
 }
-
 .headshot p {
     display: none;
     position: absolute;
@@ -193,4 +192,10 @@ select {
     width: 100px;
     height: auto;
     margin-bottom: 20px;
+}
+
+.unclickable {
+    filter: grayscale(100%);
+    /* darken it a little bit */
+    opacity: 0.5;
 }

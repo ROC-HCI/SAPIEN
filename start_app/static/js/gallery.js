@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     let nextButton = $("#nextButton");
     headshots.forEach(img => {
-        let item = $(`<div class="headshot"></div>`);
+        let item = $(`<div class="headshot" id="headshot-${img}"></div>`);
         let image = $(`<img draggable="false" src="static/img/headshots/${img}.png" alt="${img}" loading="lazy">`);
         let label = $(`<p class="label">${img}</p>`);
         let tooltip = $(`<div class="hoverInfo" style="display: none;"></div>`);
@@ -58,18 +58,20 @@ $(document).ready(function () {
         });
 
         item.click(function () {
-            $(".selected").removeClass("selected");
-            $(this).addClass("selected");
-            if (micPermission) {
-                nextButton.addClass("primary");
-                nextButton.removeClass("disabled");
-            }
-            nextButton.off('click');
-            nextButton.on('click', function () {
-                if (!nextButton.hasClass("disabled")) {
-                    checkOccupiedAndNavigate();
+            if (!$(this).hasClass("unclickable")) {
+                $(".selected").removeClass("selected");
+                $(this).addClass("selected");
+                if (micPermission) {
+                    nextButton.addClass("primary");
+                    nextButton.removeClass("disabled");
                 }
-            });
+                nextButton.off('click');
+                nextButton.on('click', function () {
+                    if (!nextButton.hasClass("disabled")) {
+                        checkOccupiedAndNavigate();
+                    }
+                });
+            }
         });
         $("#galleryGrid").append(item);
     });
@@ -96,7 +98,7 @@ class MetaHuman {
     narrative;
     funFact;
     profession;
-    hasVideo
+    hasVideo;
 
     constructor(newId, newName, newGender, newAge, newImgSrc, newNarrative, newFunFact, newProfession, hasVideo) {
         this.id = newId;
@@ -107,7 +109,7 @@ class MetaHuman {
         this.narrative = newNarrative;
         this.funFact = newFunFact;
         this.profession = newProfession;
-        this.hasVideo
+        this.hasVideo;
     }
 
     getId() {
@@ -148,6 +150,7 @@ let mhAge = [];
 let mhNarrative = [];
 let mhFunFact = [];
 let mhProfession = [];
+let mhHasVideo = [];
 
 function displayMetahumansInitial() {
 
@@ -164,6 +167,7 @@ function displayMetahumansInitial() {
             mhNarrative.push(person['Narrative-text']);
             mhFunFact.push(person['Fun-fact']);
             mhProfession.push(person.Profession);
+            mhHasVideo.push(person.has_video);
         });
     }
 
@@ -184,12 +188,18 @@ function displayMetahumansInitial() {
                 const narrative = mhNarrative[i];
                 const funFact = mhFunFact[i];
                 const profession = mhProfession[i];
+                const hasVideo = mhHasVideo[i];
 
-                const mh = new MetaHuman(i, mhFName[i], pronounMap[mhPronoun[i]], age, filename, narrative, funFact, profession);
+                const mh = new MetaHuman(i, mhFName[i], pronounMap[mhPronoun[i]], age, filename, narrative, funFact, profession, hasVideo);
                 metahumans.push(mh);
 
                 const tooltip = $(`.headshot:nth-child(${i + 1}) .hoverInfo`);
                 tooltip.text(`Age: ${mh.getAge()} \n Narrative: ${mh.getNarrative()} \n Fun Fact: ${mh.getFunFact()} \n Profession: ${mh.getProfession()}`);
+
+                if (!hasVideo) {
+                    const name = mh.getName();
+                    $(`#headshot-${name}`).addClass("unclickable");
+                }
             }
         }
         (async () => {
