@@ -460,7 +460,7 @@ def gallery():
 
         return ("nothing")
     else:
-        return render_template('gallery.html', user_name=session["name"], user_image=session["user_image"], color_mode=session.get("color_mode", ""), sapien_name=mode_to_sapien_name.get(session.get("mode", ""), ""))
+        return render_template('gallery.html', user_name=session["name"], user_image=session["user_image"], color_mode=session.get("color_mode", ""), sapien_name=mode_to_sapien_name.get(session.get("mode", ""), ""), prerendered=prerendered)
 
 @app.route('/mode_select', methods=['GET', 'POST'], endpoint='mode_select')
 @login_required

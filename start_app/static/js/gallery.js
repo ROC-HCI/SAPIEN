@@ -196,7 +196,11 @@ function displayMetahumansInitial() {
                 const tooltip = $(`.headshot:nth-child(${i + 1}) .hoverInfo`);
                 tooltip.text(`Age: ${mh.getAge()} \n Narrative: ${mh.getNarrative()} \n Fun Fact: ${mh.getFunFact()} \n Profession: ${mh.getProfession()}`);
 
-                if (!hasVideo) {
+
+                let scriptTag = document.querySelector('script[src="static/js/gallery.js"]');
+                let prerendered = scriptTag.getAttribute('prerendered');
+                console.log("prerendered: " + prerendered);
+                if ((!hasVideo) && (prerendered == 'True')) {
                     const name = mh.getName();
                     $(`#headshot-${name}`).addClass("unclickable");
                 }
