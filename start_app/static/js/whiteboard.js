@@ -2,17 +2,17 @@
 
 function changeWhiteboardState(state) {
     let whiteboard = new Whiteboard();
-    let $whiteboard_item = $("#whiteboard");
+    let $whiteboardWindow = $("#whiteboard");
     let $whiteboardContent = $("#whiteboardContent");
 
     console.log("changing whiteboard state to " + state);
-    $whiteboard_item.removeClass("small large minimized");
-    $whiteboard_item.addClass(state);
+    $whiteboardWindow.removeClass("small large minimized");
+    $whiteboardWindow.addClass(state);
     // whiteboard.refresh($whiteboardContent);
 }
 
 
-function whiteboard_ready(){
+function whiteboard_ready() {
     console.log("WHITEBOARD STARTING UP");
 
     let whiteboard = new Whiteboard();
@@ -38,23 +38,24 @@ function whiteboard_ready(){
         method: 'GET',
     })
         .then(response => response.json())
-        // .then(result => console.log(result))
         .then(data => {
             console.log(data)
             if (!data.has_media) {
                 console.log("No media in this ping")
                 changeWhiteboardState("minimized");
                 return;
-            } 
-            whiteboard.addItem(data.media);
+            }
+            var newMediaItems = []
+            data.media.forEach(mediaItem => {
+                newMediaItems.push(new WhiteboardContent(mediaItem));
+            })
+            whiteboard.addMediaGroup(newMediaItems);
             changeWhiteboardState("small");
             whiteboard.refresh($whiteboardContent);
         })
         .catch(error => {
             console.error('Error:', error);
         });
-
-    // }));
 }
 
 // Gets attribute data-raw-text, decodes it from Base64, then copies to clipboard
@@ -66,6 +67,10 @@ function copyMarkdown(target) {
     navigator.clipboard.writeText(decoded);
 }
 
+/*
+ * Each WhiteboardContent contains one or more media items
+ * WhiteboardContent(media) takes a single media item
+*/
 class WhiteboardContent {
     constructor(media) {
         this.media = media;
@@ -156,15 +161,14 @@ class WhiteboardContent {
 
 class Whiteboard {
     constructor() {
-        this.items = []
+        this.itemGroups = [] // list of lists
     }
 
-    addItem(media) {
-        console.log(`Adding item: ${media}`);
+    addMediaGroup(whiteboardMediaGroup) { // list of WhiteboardContent objects
+        console.log(`Adding media set: ${whiteboardMediaGroup}`);
 
-        let newItem = new WhiteboardContent(media);
-        if (newItem) {
-            this.items.push(newItem);
+        if (whiteboardMediaGroup && whiteboardMediaGroup.length > 0) {
+            this.itemGroups.push(whiteboardMediaGroup);
             console.log("whiteboard content loaded")
         } else {
             alert("ERROR: Whiteboard content failed to load");
@@ -177,12 +181,17 @@ class Whiteboard {
         $whiteboard.empty();
         console.log("emptied whiteboard");
 
-        if (this.items.length > 0) {
-            $whiteboard.append(this.items[this.items.length - 1].getJQObject());
+        if (this.itemGroups.length > 0) {
+            this.itemGroups[this.itemGroups.length - 1].forEach(item => {
+                console.log(`appending item: ${item.media.type}`)
+                $whiteboard.append(item.getJQObject());
+            });
 
             // TODO: needs improvement
             // Highlight code elements
-            const codeBlocks = document.querySelectorAll('pre code');
+            console.log("highlighting code")
+            const codeBlocks = document.querySelectorAll('pre code'); // pre code
+            console.log(`codeBlocks: ${codeBlocks.length}`);
             codeBlocks.forEach((codeBlock) => {
                 hljs.highlightElement(codeBlock);
             });
@@ -191,14 +200,14 @@ class Whiteboard {
             console.log("content array empty");
         }
 
-        console.log(`refreshed. history: ${JSON.stringify(this.items.map(item => item.media.type))}`);
+        // console.log(`refreshed. history: ${JSON.stringify(this.itemGroups.map(item => item.media.type))}`);
     }
 
     printCurrent() {
-        console.log()
+        // console.log(`Current items: ${this.itemGroups[this.itemGroups.length - 1]}`)
     }
 
     printItems() {
-        console.log(`Whiteboard history (oldest first): ${this.items}`);
+        // console.log(`Whiteboard history (oldest first): ${this.items}`);
     }
 }

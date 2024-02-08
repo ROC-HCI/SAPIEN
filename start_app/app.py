@@ -1173,11 +1173,31 @@ def whiteboard_test_ping():
             "caption": None,
             "has_media": False,
             "reveal_delay_seconds": 0,
-            "media": {
-                "type": None,
-                "content": None
-            }
+            "media": 
+                [
+                    {
+                        "type": None,
+                        "content": None
+                    },
+                ]
         }
+
+    # test_multimedia = {
+    #         "caption": "this is the caption for test media",
+    #         "has_media": True,
+    #         "reveal_delay_seconds": 0,
+    #         "media": 
+    #             [
+    #                 {
+    #                     "type": "image",
+    #                     "content": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/SMPTE_Color_Bars.svg/1200px-SMPTE_Color_Bars.svg.png"
+    #                 },
+    #                 {
+    #                     "type": "markdown",
+    #                     "content": "```py\n\nprint('hello world')\n```"
+    #                 },
+    #             ]
+    #     }
 
     ## Grab the directory from meeting_id
     ## Fetch the json for that specific meeting
@@ -1193,19 +1213,17 @@ def whiteboard_test_ping():
         media_template["caption"] = metadata['caption']
         if metadata['whiteboard']:
             media_template["has_media"] = True
-            media_template["media"] = metadata['whiteboard'][0]
 
-        # if media_template["media"]["type"] == "markdown":
-        #     media_template["media"]["content"] = metadata["whiteboard"][0]
-        # elif media_template["media"]["type"] == "latex":
-        #     media_template["media"]["content"] = metadata["whiteboard"][0]
-        # else:
-        #     media_template["media"]["content"] = metadata["whiteboard"][0]
+            for item in metadata['whiteboard']:
+                media_template["media"].append(item)
+            # media_template["media"] = metadata['whiteboard'][0]
 
+        # print(f"media json: {test_multimedia}")
         print(f"media json: {media_template}")
     except Exception as e:
         print(e)
     return jsonify(media_template)
+    # return jsonify(test_multimedia)
 
 
 
@@ -1237,7 +1255,7 @@ if __name__ == '__main__':
         # args = parser.parse_args()
         # prerendered = args.prerendered
 
-        prerendered = False
+        prerendered = True
 
         print("Light mode: ", prerendered)
 
