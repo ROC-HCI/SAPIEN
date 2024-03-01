@@ -25,7 +25,7 @@ cd SAPIEN
 pip install -r requirements.txt
 ```
 
-- Download the folder: https://rochester.app.box.com/v/SAPIEN-public/folder/233051989858
+- Download the folder: [https://rochester.app.box.com/v/SAPIEN-public/folder/233051989858](https://rochester.app.box.com/v/SAPIEN-public/folder/237414507812)
 - Place all videos under: `start_app/static/videos/Metahumans`
 - In `keys.py` add your own API keys.
   
