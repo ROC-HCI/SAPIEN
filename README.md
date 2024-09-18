@@ -28,7 +28,7 @@ cd SAPIEN
 pip install -r requirements.txt
 ```
 
-- Download the folder: [https://rochester.app.box.com/v/SAPIEN-public/folder/237414507812](https://rochester.app.box.com/v/SAPIEN-public/folder/237414507812)
+- Download the folder: https://rochester.box.com/v/sapien-videos
 - Place the folders `static` and `speaking` under: `start_app/static/video/Metahumans`
 - Create `keys.py` from `keys_template (rename to keys.py).py` and add your own API keys for Microsoft Speech SDK, Azure OpenAI, and SERP (Not required; for enabling google search).
 - Rename `start_app/files/local_mode_dummy.json` to `start_app/files/local_mode.json`.
